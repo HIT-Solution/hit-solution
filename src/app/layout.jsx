@@ -15,7 +15,7 @@ import NavBar from "./shared/NavBar";
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="light">
-      <body className={`${fontName.className} antialiased mx-2`}>
+      <body className={`${fontName.className} antialiased`}>
         <Providers>
           <NavBar />
           {children}
