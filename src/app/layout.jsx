@@ -1,7 +1,7 @@
-
 import localFont from "next/font/local";
 import "./globals.css";
 import { Kanit, Open_Sans, Poppins } from "next/font/google";
+import logo from "../../public/logo.png";
 const fontName = Kanit({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
@@ -11,6 +11,7 @@ export const metadata = {
 
 import { Providers } from "./providers";
 import NavBar from "./shared/NavBar";
+
 
 export default function RootLayout({ children }) {
   return (

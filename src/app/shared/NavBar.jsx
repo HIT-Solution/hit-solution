@@ -29,82 +29,101 @@ const NavBar = () => {
         <h1 className="text-teal-600 font-semibold">Service List</h1>
         <li>
           {" "}
-          <Link href={"/"}>Software Development & Digital Product</Link>
+          <Link className="hover:text-teal-600" href={"/"}>
+            Software Development & Digital Product
+          </Link>
         </li>
         <li>
           {" "}
-          <Link href={"/"}>Cloud Computing Solutions</Link>
+          <Link className="hover:text-teal-600" href={"/"}>
+            Cloud Computing Solutions
+          </Link>
         </li>
         <li>
           {" "}
-          <Link href={"/"}>Internet of Things (IoT) Solutions</Link>
+          <Link className="hover:text-teal-600" href={"/"}>
+            Internet of Things (IoT) Solutions
+          </Link>
         </li>
         <li>
           {" "}
-          <Link href={"/"}>Product Design</Link>
+          <Link className="hover:text-teal-600" href={"/"}>
+            Product Design
+          </Link>
         </li>
         <li>
           {" "}
-          <Link href={"/"}>QuaLinkty Assurance</Link>
+          <Link className="hover:text-teal-600" href={"/"}>
+            QuaLinkty Assurance
+          </Link>
         </li>
         <li>
           {" "}
-          <Link href={"/"}>Tech Consultancy and IT Support</Link>
+          <Link className="hover:text-teal-600" href={"/"}>
+            Tech Consultancy and IT Support
+          </Link>
         </li>
         <li>
           {" "}
-          <Link href={"/"}>Digital Marketing</Link>
+          <Link className="hover:text-teal-600" href={"/"}>
+            Digital Marketing
+          </Link>
         </li>
         <li>
           {" "}
-          <Link href={"/"}>AR Creative Studio</Link>
+          <Link className="hover:text-teal-600" href={"/"}>
+            AR Creative Studio
+          </Link>
         </li>
       </ul>
       <ul className="text-lg space-y-5">
         <h1 className="text-teal-600 font-semibold">For Hiring</h1>
         <li>
           {" "}
-          <Link className="hover:underline" href={"/"}>
+          <Link className="hover:underline hover:text-teal-600" href={"/"}>
             Full-Stack Web-developer
           </Link>
         </li>
         <li>
           {" "}
-          <Link className="hover:underline" href={"/"}>
+          <Link className="hover:underline hover:text-teal-600" href={"/"}>
             Front-end Developer
           </Link>
         </li>
         <li>
           {" "}
-          <Link className="hover:underline" href={"/"}>
+          <Link className="hover:underline hover:text-teal-600" href={"/"}>
             Backend Developer
           </Link>
         </li>
         <li>
           {" "}
-          <Link className="hover:underline" href={"/"}>
+          <Link className="hover:underline hover:text-teal-600" href={"/"}>
             JavaScript Developer
           </Link>
         </li>
         <li>
           {" "}
-          <Link className="hover:underline" href={"/"}>
+          <Link className="hover:underline hover:text-teal-600" href={"/"}>
             Python Developer
           </Link>
         </li>
         <li>
           {" "}
-          <Link className="hover:underline" href={"/"}>
+          <Link className="hover:underline hover:text-teal-600" href={"/"}>
             .Net Developer
           </Link>
         </li>
         <li>
           {" "}
-          <Link className="hover:underline" href={"/"}>
+          <Link className="hover:underline hover:text-teal-600" href={"/"}>
             Java Developer
           </Link>
         </li>
-        <Button className="bg-gradient-to-br from-black to-teal-700 text-white">
+        <Button
+          variant="shadow"
+          className="bg-gradient-to-br from-black to-teal-700 text-white"
+        >
           Hire The Best Team <FaArrowRightLong />
         </Button>
       </ul>
@@ -168,7 +187,7 @@ const NavBar = () => {
               : "hidden lg:flex text-white hover:text-teal-400"
           }
         >
-          <Link href="/portfoliop">Portfolio</Link>
+          <Link href="/portfolio">Portfolio</Link>
         </NavbarItem>
         <NavbarItem
           className={
