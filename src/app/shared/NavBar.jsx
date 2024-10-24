@@ -26,9 +26,7 @@ const NavBar = () => {
   const servicesContent = (
     <div className="p-5 grid grid-cols-2 gap-20 content-center">
       <ul className="text-lg space-y-5">
-        <h1 className="text-teal-600 text-center font-semibold">
-          Service List
-        </h1>
+        <h1 className="text-teal-600 font-semibold">Service List</h1>
         <li>
           {" "}
           <Link href={"/"}>Software Development & Digital Product</Link>
@@ -61,36 +59,57 @@ const NavBar = () => {
           {" "}
           <Link href={"/"}>AR Creative Studio</Link>
         </li>
+      </ul>
+      <ul className="text-lg space-y-5">
+        <h1 className="text-teal-600 font-semibold">For Hiring</h1>
+        <li>
+          {" "}
+          <Link className="hover:underline" href={"/"}>
+            Full-Stack Web-developer
+          </Link>
+        </li>
+        <li>
+          {" "}
+          <Link className="hover:underline" href={"/"}>
+            Front-end Developer
+          </Link>
+        </li>
+        <li>
+          {" "}
+          <Link className="hover:underline" href={"/"}>
+            Backend Developer
+          </Link>
+        </li>
+        <li>
+          {" "}
+          <Link className="hover:underline" href={"/"}>
+            JavaScript Developer
+          </Link>
+        </li>
+        <li>
+          {" "}
+          <Link className="hover:underline" href={"/"}>
+            Python Developer
+          </Link>
+        </li>
+        <li>
+          {" "}
+          <Link className="hover:underline" href={"/"}>
+            .Net Developer
+          </Link>
+        </li>
+        <li>
+          {" "}
+          <Link className="hover:underline" href={"/"}>
+            Java Developer
+          </Link>
+        </li>
         <Button className="bg-gradient-to-br from-black to-teal-700 text-white">
           Hire The Best Team <FaArrowRightLong />
         </Button>
       </ul>
-      <ul className="text-lg space-y-5">
-        <h1 className="text-teal-600 font-semibold text-center">For Hiring</h1>
-        <li>
-          {" "}
-          <Link href={"/"}>Full-Stack Web-developer</Link>
-        </li>
-        <li>
-          {" "}
-          <Link href={"/"}>Front-end Developer</Link>
-        </li>
-        <li>
-          {" "}
-          <Link href={"/"}>JavaScript Developer</Link>
-        </li>
-        <li>
-          {" "}
-          <Link href={"/"}>Python Developer</Link>
-        </li>
-        <li>
-          {" "}
-          <Link href={"/"}>.Net  Developer</Link>
-        </li>
-      </ul>
     </div>
   );
-  const technologiesContent = <div></div>;
 
   return (
     <Navbar
@@ -138,11 +157,18 @@ const NavBar = () => {
               : "hidden lg:flex text-white hover:text-teal-400"
           }
         >
-          <Tooltip content={technologiesContent}>
-            <Link className="flex items-center" href="/technologies">
-              Technologies <IoIosArrowDown />
-            </Link>
-          </Tooltip>
+          <Link className="flex items-center" href="/technologies">
+            Technologies
+          </Link>
+        </NavbarItem>
+        <NavbarItem
+          className={
+            isActive("/portfolio")
+              ? "text-teal-400 hidden lg:flex"
+              : "hidden lg:flex text-white hover:text-teal-400"
+          }
+        >
+          <Link href="/portfoliop">Portfolio</Link>
         </NavbarItem>
         <NavbarItem
           className={
