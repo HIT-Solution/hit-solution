@@ -75,6 +75,18 @@ const NavBar = () => {
           {" "}
           <Link href={"/"}>Front-end Developer</Link>
         </li>
+        <li>
+          {" "}
+          <Link href={"/"}>JavaScript Developer</Link>
+        </li>
+        <li>
+          {" "}
+          <Link href={"/"}>Python Developer</Link>
+        </li>
+        <li>
+          {" "}
+          <Link href={"/"}>.Net  Developer</Link>
+        </li>
       </ul>
     </div>
   );
