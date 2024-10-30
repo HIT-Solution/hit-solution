@@ -22,7 +22,7 @@ const Home = () => {
     >
       <div suppressHydrationWarning={true}>
         <Banner />
-        <BannerSlider/>
+        <BannerSlider />
       </div>
     </Suspense>
   );

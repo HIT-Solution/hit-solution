@@ -1,8 +1,11 @@
-import localFont from "next/font/local";
 import "./globals.css";
-import { Kanit, Open_Sans, Poppins } from "next/font/google";
+import { Kanit } from "next/font/google";
 import logo from "../../public/logo.png";
-const fontName = Kanit({ subsets: ["latin"], weight: "400" });
+const fontName = Kanit({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "Hit Solution",
@@ -15,7 +18,10 @@ import NavBar from "./shared/NavBar";
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="light" suppressHydrationWarning={true}>
-      <body suppressHydrationWarning={true} className={`${fontName.className} antialiased`}>
+      <body
+        suppressHydrationWarning={true}
+        className={`${fontName.className} antialiased`}
+      >
         <Providers>
           <NavBar />
           {children}

@@ -15,12 +15,19 @@ const Banner = () => {
   }, []);
 
   const titleAnimation = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0, y: -10 },
     visible: {
       opacity: 1,
+      y: 10,
       transition: {
         staggerChildren: 0.03,
         delayChildren: 0.04,
+        y: {
+          duration: 4,
+          repeat: Infinity,
+          repeatType: "reverse",
+          ease: "easeInOut",
+        },
       },
     },
   };
@@ -99,9 +106,9 @@ const Banner = () => {
         </video>
 
         {/* Text Overlay */}
-        <motion.div className="absolute inset-0 flex flex-col items-center mt-10 text-white text-center">
-          <div className="text-5xl md:text-7xl font-bold  my-6">
-            <AnimatedText text="Hit Solution" className="text-white" />
+        <motion.div className="absolute inset-0 flex flex-col mt-16 items-center text-white text-center">
+          <div className="text-4xl md:text-7xl font-bold">
+            <AnimatedText text="HIT SOLUTION" className="text-white" />
             <br />
             <AnimatedText
               text="Empowering your tech"
@@ -114,7 +121,7 @@ const Banner = () => {
             />
           </div>
           <motion.div
-            className="text-gray-300 mb-8 max-w-2xl"
+            className="text-gray-300 my-8 max-w-2xl"
             variants={paragraphAnimation}
             initial="hidden"
             animate={isMounted ? "visible" : "hidden"} // Start animation only if mounted
@@ -123,7 +130,7 @@ const Banner = () => {
             your vision with next-level tech, IoT, cloud, and immersive AR
             solutions—driving innovation, precision, and growth for your brand.
           </motion.div>
-      
+
           <div className="flex gap-10">
             <motion.button
               className="bg-teal-600 flex items-center justify-center gap-1 hover:bg-teal-600 text-white py-2 px-4 rounded transition duration-300"
@@ -147,7 +154,6 @@ const Banner = () => {
               Hire The Best Team <IoIosArrowForward size={20} />
             </motion.button>
           </div>
-         
         </motion.div>
       </div>
     </div>
