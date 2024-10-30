@@ -12,11 +12,10 @@ export const metadata = {
 import { Providers } from "./providers";
 import NavBar from "./shared/NavBar";
 
-
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="light">
-      <body className={`${fontName.className} antialiased`}>
+    <html lang="en" className="light" suppressHydrationWarning={true}>
+      <body suppressHydrationWarning={true} className={`${fontName.className} antialiased`}>
         <Providers>
           <NavBar />
           {children}
