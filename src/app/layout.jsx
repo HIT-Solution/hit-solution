@@ -17,7 +17,7 @@ import NavBar from "./shared/NavBar";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="light" suppressHydrationWarning={true}>
+    <html lang="en" className="light">
       <body
         suppressHydrationWarning={true}
         className={`${fontName.className} antialiased`}

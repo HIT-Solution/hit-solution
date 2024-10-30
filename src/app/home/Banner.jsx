@@ -7,13 +7,6 @@ import BannerSlider from "../../components/BannerSlider";
 import { Spinner } from "@nextui-org/react";
 
 const Banner = () => {
-  // State to track if the component has mounted
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
   const titleAnimation = {
     hidden: { opacity: 0, y: -10 },
     visible: {
@@ -66,7 +59,7 @@ const Banner = () => {
       className={`inline-block ${className}`}
       variants={titleAnimation}
       initial="hidden"
-      animate={isMounted ? "visible" : "hidden"}
+      animate={"visible"}
     >
       {text.split("").map((char, index) => (
         <motion.span
@@ -79,19 +72,9 @@ const Banner = () => {
       ))}
     </motion.span>
   );
-  if (!isMounted)
-    return (
-      <div className="flex justify-center items-center gap-4 min-h-screen bg-gradient-to-br from-black to-teal-800">
-        <Spinner color="default" />
-        <Spinner color="primary" />
-        <Spinner color="secondary" />
-        <Spinner color="success" />
-        <Spinner color="warning" />
-        <Spinner color="danger" />
-      </div>
-    );
+
   return (
-    <div suppressHydrationWarning={true}>
+    <div>
       <div className="relative w-full h-[650px] overflow-hidden">
         {/* Video Background */}
         <video
@@ -99,7 +82,7 @@ const Banner = () => {
           autoPlay
           loop
           muted
-          playsInline // Added for better autoplay support
+          playsInline
         >
           <source src="/videos.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -124,7 +107,7 @@ const Banner = () => {
             className="text-gray-300 my-8 max-w-2xl"
             variants={paragraphAnimation}
             initial="hidden"
-            animate={isMounted ? "visible" : "hidden"} // Start animation only if mounted
+            animate={"visible"}
           >
             At <span className="text-teal-400">Hit Solution</span>, we power
             your vision with next-level tech, IoT, cloud, and immersive AR
@@ -136,7 +119,7 @@ const Banner = () => {
               className="bg-teal-600 flex items-center justify-center gap-1 hover:bg-teal-600 text-white py-2 px-4 rounded transition duration-300"
               variants={buttonAnimation}
               initial="hidden"
-              animate={isMounted ? "visible" : "hidden"} // Start animation only if mounted
+              animate={"visible"}
               whileHover="whileHover"
               whileTap="whileTap"
             >
@@ -147,7 +130,7 @@ const Banner = () => {
               className="bg-teal-600 hover:bg-teal-600 text-white py-2 px-4 flex items-center justify-center gap-1 rounded transition duration-300"
               variants={buttonAnimation}
               initial="hidden"
-              animate={isMounted ? "visible" : "hidden"} // Start animation only if mounted
+              animate={"visible"}
               whileHover="whileHover"
               whileTap="whileTap"
             >

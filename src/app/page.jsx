@@ -3,7 +3,6 @@ import dynamic from "next/dynamic";
 import { Spinner } from "@nextui-org/react";
 import BannerSlider from "../components/BannerSlider";
 
-// Dynamically import Banner with `ssr: false` to disable server-side rendering
 const Banner = dynamic(() => import("./home/Banner"));
 
 const Home = () => {
@@ -20,7 +19,7 @@ const Home = () => {
         </div>
       }
     >
-      <div suppressHydrationWarning={true}>
+      <div>
         <Banner />
         <BannerSlider />
       </div>
