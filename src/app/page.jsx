@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import dynamic from "next/dynamic";
 import { Spinner } from "@nextui-org/react";
 import BannerSlider from "../components/BannerSlider";
-
+import IndustryExpertize from "./home/IndustryExpertize";
 const Banner = dynamic(() => import("./home/Banner"));
 
 const Home = () => {
@@ -22,6 +22,7 @@ const Home = () => {
       <div>
         <Banner />
         <BannerSlider />
+        <IndustryExpertize />
       </div>
     </Suspense>
   );

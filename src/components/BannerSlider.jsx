@@ -21,7 +21,7 @@ const BannerSlider = () => {
   const glowAnimation = {
     animate: {
       scale: [1, 1.2, 1],
-      opacity: [0.2, 0.3, 0.2],
+      opacity: [0.3, 0.4, 0.3],
     },
     transition: {
       duration: 5,
