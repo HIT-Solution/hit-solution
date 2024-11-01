@@ -3,7 +3,7 @@ import React from "react";
 const IndustryExpertize = () => {
   return (
     <div>
-      <div className="bg-gradient-to-br from-black to-teal-900 my-10 py-16">
+      <div className="bg-gradient-to-br from-black to-teal-900 my-10 py-16 pb-24">
         <h1 className="text-center text-5xl pt-16 text-white">
           Our Industry Expertise
         </h1>
