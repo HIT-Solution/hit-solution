@@ -79,7 +79,7 @@ const BannerSlider = () => {
           <Link href={"/"}>
             {" "}
             <div
-              className={`relative h-[300px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
+              className={`relative h-[250px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
             >
               {/* Circular glow */}
               <motion.div
@@ -119,7 +119,7 @@ const BannerSlider = () => {
           <Link href={"/"}>
             {" "}
             <div
-              className={`relative h-[300px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
+              className={`relative h-[250px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
             >
               {/* Circular glow */}
               <motion.div
@@ -159,7 +159,7 @@ const BannerSlider = () => {
           <Link href={"/"}>
             {" "}
             <div
-              className={`relative h-[300px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
+              className={`relative h-[250px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
             >
               {/* Circular glow */}
               <motion.div
@@ -199,7 +199,7 @@ const BannerSlider = () => {
           <Link href={"/"}>
             {" "}
             <div
-              className={`relative h-[300px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
+              className={`relative h-[250px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
             >
               {/* Circular glow */}
               <motion.div
@@ -239,7 +239,7 @@ const BannerSlider = () => {
           <Link href={"/"}>
             {" "}
             <div
-              className={`relative h-[300px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
+              className={`relative h-[250px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
             >
               {/* Circular glow */}
               <motion.div
@@ -279,7 +279,7 @@ const BannerSlider = () => {
           <Link href={"/"}>
             {" "}
             <div
-              className={`relative h-[300px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
+              className={`relative h-[250px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
             >
               {/* Circular glow */}
               <motion.div

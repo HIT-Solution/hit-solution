@@ -1,3 +1,4 @@
+import IndustryExpertiseSlider from "../../components/IndustryExpertiseSlider";
 import React from "react";
 
 const IndustryExpertize = () => {
@@ -5,7 +6,7 @@ const IndustryExpertize = () => {
     <div>
       <div className="bg-gradient-to-br from-black to-teal-900 my-10 py-16 pb-24">
         <h1 className="text-center text-5xl pt-16 text-white">
-          Our Industry Expertise
+          Industrial Expertise and Client Projects
         </h1>
         <p className="text-center text-gray-300 my-10">
           With our in-depth industry expertise, we craft tailored software
@@ -795,7 +796,9 @@ const IndustryExpertize = () => {
             <h1>Sports & Fitness</h1>
           </div>
         </div>
+        <IndustryExpertiseSlider/>
       </div>
+     
     </div>
   );
 };
