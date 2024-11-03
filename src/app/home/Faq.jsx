@@ -52,6 +52,7 @@ const Faq = () => {
           <div className="w-3/5 border p-5 py-8">
             {" "}
             <Accordion
+            
               motionProps={{
                 variants: {
                   enter: {
