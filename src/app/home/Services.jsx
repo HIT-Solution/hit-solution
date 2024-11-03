@@ -8,13 +8,15 @@ import iot from "../../../public/iot.png";
 import social from "../../../public/social-media.png";
 import cloud from "../../../public/cloud-storage.png";
 import studio from "../../../public/studio.png";
+import SimpleBackground from "../../components/SimpleBackground";
 
 const Services = () => {
   return (
-    <div>
+   <SimpleBackground>
+     <div>
       <h1 className="text-5xl text-center my-20">Our Services</h1>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16 mx-5 lg:mx-10 ">
-        <div className="border border-teal-500 p-5 rounded-xl shadow-lg shadow-teal-500/60">
+        <div className="p-5 rounded-xl shadow-lg shadow-teal-500/60">
           <Image src={software} alt="" height={80} width={80} />
           <div>
             <h1 className="text-2xl my-1">
@@ -27,7 +29,7 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="border border-teal-500 p-5 rounded-xl shadow-lg shadow-teal-500/60">
+        <div className="p-5 rounded-xl shadow-lg shadow-teal-500/60">
           <Image src={cloud} alt="" height={80} width={80} />
           <div>
             <h1 className="text-2xl my-1">Cloud Computing Solutions</h1>
@@ -37,7 +39,7 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="border border-teal-500 p-5 rounded-xl shadow-lg shadow-teal-500/60">
+        <div className="p-5 rounded-xl shadow-lg shadow-teal-500/60">
           <Image src={iot} alt="" height={80} width={80} />
           <div>
             <h1 className="text-2xl my-1">
@@ -49,7 +51,7 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="border border-teal-500 p-5 rounded-xl shadow-lg shadow-teal-500/60">
+        <div className="p-5 rounded-xl shadow-lg shadow-teal-500/60">
           <Image src={design} alt="" height={80} width={80} />
           <div>
             <h1 className="text-2xl my-1">Product Design</h1>
@@ -60,7 +62,7 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="border border-teal-500 p-5 rounded-xl shadow-lg shadow-teal-500/60">
+        <div className="p-5 rounded-xl shadow-lg shadow-teal-500/60">
           <Image src={qa} alt="" height={80} width={80} />
           <div>
             <h1 className="text-2xl my-1">Quality Assurance</h1>
@@ -70,7 +72,7 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="border border-teal-500 p-5 rounded-xl shadow-lg shadow-teal-500/60">
+        <div className="p-5 rounded-xl shadow-lg shadow-teal-500/60">
           <Image src={support} alt="" height={80} width={80} />
           <div>
             <h1 className="text-2xl my-1">Tech Consultancy and IT Support</h1>
@@ -80,7 +82,7 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="border border-teal-500 p-5 rounded-xl shadow-lg shadow-teal-500/60">
+        <div className="p-5 rounded-xl shadow-lg shadow-teal-500/60">
           <Image src={social} alt="" height={80} width={80} />
           <div>
             <h1 className="text-2xl my-1">Digital Marketing</h1>
@@ -91,7 +93,7 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div className="border border-teal-500 p-5 rounded-xl shadow-lg shadow-teal-500/60">
+        <div className=" p-5 rounded-xl shadow-lg shadow-teal-500/60">
           <Image src={studio} alt="" height={80} width={80} />
           <div>
             <h1 className="text-2xl my-1">AR Creative Studio</h1>
@@ -104,6 +106,7 @@ const Services = () => {
         </div>
       </div>
     </div>
+   </SimpleBackground>
   );
 };
 

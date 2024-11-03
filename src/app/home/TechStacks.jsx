@@ -7,9 +7,12 @@ import { SiTypescript } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { SiMicrosoftazure } from "react-icons/si";
+import ReusableBackground from "../../components/ReusableBackground";
 const TechStacks = () => {
   return (
-    <div className="my-32">
+  
+      <div className="my-32">
+          <ReusableBackground>
       <div className="text-center">
         <h1 className="text-5xl font-bold">We Serve All Tech Stacks</h1>
         <p className="text-gray-400 mt-7 mb-24">
@@ -84,7 +87,9 @@ const TechStacks = () => {
         </Marquee>
         
       </div>
+      </ReusableBackground>
     </div>
+   
   );
 };
 

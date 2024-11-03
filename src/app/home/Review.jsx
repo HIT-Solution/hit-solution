@@ -1,10 +1,12 @@
 
 import ReviewSlider from "../../components/ReviewSlider";
 import React from "react";
+import SimpleBackground from "../../components/SimpleBackground";
 
 const Review = () => {
   return (
-    <div className="my-32 mx-5 lg:mx-10">
+    <SimpleBackground>
+      <div className="my-32 mx-5 lg:mx-10">
       <div className="grid lg:grid-cols-2 gap-10">
         <div>
           <h1 className="text-7xl">
@@ -23,6 +25,7 @@ const Review = () => {
         <ReviewSlider />
       </div>
     </div>
+    </SimpleBackground>
   );
 };
 

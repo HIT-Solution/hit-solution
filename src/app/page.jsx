@@ -6,6 +6,8 @@ import IndustryExpertize from "./home/IndustryExpertize";
 import Services from "./home/Services";
 import TechStacks from "./home/TechStacks";
 import Review from "./home/Review";
+import Blog from "./home/Blog";
+import Faq from "./home/Faq";
 const Banner = dynamic(() => import("./home/Banner"));
 
 const Home = () => {
@@ -29,6 +31,8 @@ const Home = () => {
         <TechStacks />
         <IndustryExpertize />
         <Review />
+        <Blog />
+        <Faq/>
       </div>
     </Suspense>
   );
