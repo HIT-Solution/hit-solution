@@ -15,7 +15,7 @@ const Faq = () => {
         </h1>
 
         <div className="lg:flex flex-row mt-32">
-          <div className="w-2/5">
+          <div className="lg:w-2/5">
             <div>
               <div className="flex gap-2">
                 <Image
@@ -33,7 +33,7 @@ const Faq = () => {
                   <h1 className="font-bold text-4xl">100+</h1>
                 </div>
               </div>
-              <div className="flex gap-2">
+              <div className="flex gap-2 mt-2">
                 <div className="w-[200px] h-[200px] flex flex-col items-center justify-center bg-blue-400 rounded-bl-full">
                   <h1 className="font-bold text-xl text-gray-600"> Projects</h1>
                   <h1 className="font-bold text-4xl">80+</h1>
@@ -49,10 +49,10 @@ const Faq = () => {
               </div>
             </div>
           </div>
-          <div className="w-3/5 border p-5 py-8">
+          <div className="lg:w-3/5 border rounded-lg p-5 py-8 lg:mt-0 mt-5">
             {" "}
             <Accordion
-            
+
               motionProps={{
                 variants: {
                   enter: {
