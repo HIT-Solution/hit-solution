@@ -8,6 +8,8 @@ import TechStacks from "./home/TechStacks";
 import Review from "./home/Review";
 import Blog from "./home/Blog";
 import Faq from "./home/Faq";
+import ContactUs from "./home/ContactUs";
+
 const Banner = dynamic(() => import("./home/Banner"));
 
 const Home = () => {
@@ -33,6 +35,7 @@ const Home = () => {
         <Review />
         <Blog />
         <Faq/>
+        <ContactUs/>
       </div>
     </Suspense>
   );
