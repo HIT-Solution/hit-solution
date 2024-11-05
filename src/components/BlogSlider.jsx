@@ -47,7 +47,7 @@ const BlogSlider = () => {
                <div>
                <h1 className="text-blue-200 mt-5">Staff-Augmentation</h1>
                 <h1 className="text-3xl my-2">How to Hire Offshore Software Developers: 6 Steps to Follow</h1>
-                <p className="text-gray-300 text-justify">However, the answer may not be as straight-cut as you’d think. Technically, JavaScript is an object-oriented programming language, however, it doesn’t function in the same way that most OOP languages function.</p>
+                <p className="text-gray-300 text-start">However, the answer may not be as straight-cut as you’d think. Technically, JavaScript is an object-oriented programming language, however, it doesn’t function in the same way that most OOP languages function.</p>
                </div>
                <div className="flex gap-5 items-center my-3">
                 <Image className="rounded-full border-2 border-white" src={logo} alt="" width={50} height={50} quality={100}/>
@@ -67,7 +67,7 @@ const BlogSlider = () => {
                <div>
                <h1 className="text-blue-200 mt-5">Staff-Augmentation</h1>
                 <h1 className="text-3xl my-2">How to Hire Offshore Software Developers: 6 Steps to Follow</h1>
-                <p className="text-gray-300 text-justify">However, the answer may not be as straight-cut as you’d think. Technically, JavaScript is an object-oriented programming language, however, it doesn’t function in the same way that most OOP languages function.</p>
+                <p className="text-gray-300 text-start">However, the answer may not be as straight-cut as you’d think. Technically, JavaScript is an object-oriented programming language, however, it doesn’t function in the same way that most OOP languages function.</p>
                </div>
                <div className="flex gap-5 items-center my-3">
                 <Image className="rounded-full border-2 border-white" src={logo} alt="" width={50} height={50} quality={100}/>
@@ -87,7 +87,7 @@ const BlogSlider = () => {
                <div>
                <h1 className="text-blue-200 mt-5">Staff-Augmentation</h1>
                 <h1 className="text-3xl my-2">How to Hire Offshore Software Developers: 6 Steps to Follow</h1>
-                <p className="text-gray-300 text-justify">However, the answer may not be as straight-cut as you’d think. Technically, JavaScript is an object-oriented programming language, however, it doesn’t function in the same way that most OOP languages function.</p>
+                <p className="text-gray-300 text-start">However, the answer may not be as straight-cut as you’d think. Technically, JavaScript is an object-oriented programming language, however, it doesn’t function in the same way that most OOP languages function.</p>
                </div>
                <div className="flex gap-5 items-center my-3">
                 <Image className="rounded-full border-2 border-white" src={logo} alt="" width={50} height={50} quality={100}/>
@@ -107,7 +107,7 @@ const BlogSlider = () => {
                <div>
                <h1 className="text-blue-200 mt-5">Staff-Augmentation</h1>
                 <h1 className="text-3xl my-2">How to Hire Offshore Software Developers: 6 Steps to Follow</h1>
-                <p className="text-gray-300 text-justify">However, the answer may not be as straight-cut as you’d think. Technically, JavaScript is an object-oriented programming language, however, it doesn’t function in the same way that most OOP languages function.</p>
+                <p className="text-gray-300 text-start">However, the answer may not be as straight-cut as you’d think. Technically, JavaScript is an object-oriented programming language, however, it doesn’t function in the same way that most OOP languages function.</p>
                </div>
                <div className="flex gap-5 items-center my-3">
                 <Image className="rounded-full border-2 border-white" src={logo} alt="" width={50} height={50} quality={100}/>
@@ -127,7 +127,7 @@ const BlogSlider = () => {
                <div>
                <h1 className="text-blue-200 mt-5">Staff-Augmentation</h1>
                 <h1 className="text-3xl my-2">How to Hire Offshore Software Developers: 6 Steps to Follow</h1>
-                <p className="text-gray-300 text-justify">However, the answer may not be as straight-cut as you’d think. Technically, JavaScript is an object-oriented programming language, however, it doesn’t function in the same way that most OOP languages function.</p>
+                <p className="text-gray-300 text-start">However, the answer may not be as straight-cut as you’d think. Technically, JavaScript is an object-oriented programming language, however, it doesn’t function in the same way that most OOP languages function.</p>
                </div>
                <div className="flex gap-5 items-center my-3">
                 <Image className="rounded-full border-2 border-white" src={logo} alt="" width={50} height={50} quality={100}/>
@@ -147,7 +147,7 @@ const BlogSlider = () => {
                <div>
                <h1 className="text-blue-200 mt-5">Staff-Augmentation</h1>
                 <h1 className="text-3xl my-2">How to Hire Offshore Software Developers: 6 Steps to Follow</h1>
-                <p className="text-gray-300 text-justify">However, the answer may not be as straight-cut as you’d think. Technically, JavaScript is an object-oriented programming language, however, it doesn’t function in the same way that most OOP languages function.</p>
+                <p className="text-gray-300 text-start">However, the answer may not be as straight-cut as you’d think. Technically, JavaScript is an object-oriented programming language, however, it doesn’t function in the same way that most OOP languages function.</p>
                </div>
                <div className="flex gap-5 items-center my-3">
                 <Image className="rounded-full border-2 border-white" src={logo} alt="" width={50} height={50} quality={100}/>

@@ -9,6 +9,8 @@ import Review from "./home/Review";
 import Blog from "./home/Blog";
 import Faq from "./home/Faq";
 import ContactUs from "./home/ContactUs";
+import Methodology from "./home/Methodology";
+import OurProcess from "./home/OurProcess";
 
 const Banner = dynamic(() => import("./home/Banner"));
 
@@ -30,12 +32,15 @@ const Home = () => {
         <Banner />
         <BannerSlider />
         <Services />
+        <Methodology />
+        <OurProcess/>
         <TechStacks />
         <IndustryExpertize />
         <Review />
         <Blog />
-        <Faq/>
-        <ContactUs/>
+        <Faq />
+        <ContactUs />
+       
       </div>
     </Suspense>
   );

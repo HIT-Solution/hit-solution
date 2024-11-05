@@ -6,7 +6,7 @@ import SimpleBackground from "../../components/SimpleBackground";
 const Review = () => {
   return (
     <SimpleBackground>
-      <div className="my-32 mx-5 lg:mx-10">
+      <div className="my-24 mx-5 lg:mx-10">
       <div className="grid lg:grid-cols-2 gap-10">
         <div>
           <h1 className="text-7xl">

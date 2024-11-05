@@ -1,7 +1,7 @@
 import "./globals.css";
-import { Kanit } from "next/font/google";
+import { DM_Sans, Kanit, Lato, Plus_Jakarta_Sans } from "next/font/google";
 import logo from "../../public/logo.png";
-const fontName = Kanit({
+const fontName = DM_Sans({
   weight: "400",
   subsets: ["latin"],
   display: "swap",

@@ -13,7 +13,7 @@ import image1 from "../../public/img.png";
 const ReviewSlider = () => {
   return (
     <div>
-      <div className="mt-32">
+      <div className="mt-16">
         <Swiper
           pagination={{
             clickable: true,
