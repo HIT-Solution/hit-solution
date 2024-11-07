@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="light">
       <body
         suppressHydrationWarning={true}
-        className={`${fontName.className} antialiased`}
+        className={`${fontName.className} antialiased bg-[#F8FAFC]`}
       >
         <Providers>
           <NavBar />
