@@ -16,7 +16,7 @@ const Faq = () => {
         </h1>
 
         <div className="lg:flex flex-row mt-32">
-          <div className="lg:w-2/5">
+          <div className="lg:w-2/5 flex">
             <div>
               <div className="flex gap-2 items-end">
                 <Image
@@ -56,9 +56,9 @@ const Faq = () => {
                 
                 <div className="w-[180px] h-[170px] flex flex-col items-center justify-center bg-blue-400 rounded-tl-[120px]">
                   <h1 className="font-bold text-xl text-gray-600">
-                    Top Talent
+                    Projects
                   </h1>
-                  <h1 className="font-bold text-4xl">100+</h1>
+                  <h1 className="font-bold text-4xl">80+</h1>
                 </div>
                
               </div>

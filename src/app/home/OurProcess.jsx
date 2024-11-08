@@ -7,7 +7,7 @@ import Image from "next/image";
 const OurProcess = () => {
   return (
     <div>
-      <div className="bg-gradient-to-br from-black to-teal-900 py-28 my-5">
+      <div className="bg-gradient-to-br from-black to-teal-900 pt-28 my-5">
         <h1 className="text-5xl font-bold text-center text-white">
           Our process is simple, smooth <br /> and efficient.
         </h1>
