@@ -1,6 +1,9 @@
-import {Button} from "@nextui-org/button";
+import { Button } from "@nextui-org/button";
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import image1 from "../../../public/work-clothes-for-men.jpg";
+import image2 from "../../../public/busy-man-business-man-office-bearded-man-wear-business-casual-office-style-attire-work-business-outfit-boss-man-wear-mustache-beard-fashion-style-career-professional-life_474717-1066.avif";
+import Image from "next/image";
 const OurProcess = () => {
   return (
     <div>
@@ -170,10 +173,49 @@ const OurProcess = () => {
                 needs. Your satisfaction is our cue to excel.
               </p>
             </div>
-            <Button className="bg-teal-500 ms-16" size="lg" variant="shadow" color="success" >Schedule a Call <FaLongArrowAltRight size={20} /></Button>
+            <Button
+              className="bg-teal-500 ms-16"
+              size="lg"
+              variant="shadow"
+              color="success"
+            >
+              Schedule a Call <FaLongArrowAltRight size={20} />
+            </Button>
           </div>
 
-          <div>right</div>
+          <div className="flex gap-3 mx-auto">
+            <div className="flex flex-col gap-3">
+              <div className="w-[160px] md:w-[200px] h-[300px] bg-violet-200 rounded-tr-[120px] flex flex-col justify-end items-center p-5">
+                <h1 className="text-3xl font-bold text-gray-500">Tech Stack</h1>
+                <h1 className="text-6xl font-bold">20+</h1>
+              </div>
+              <div className="w-[160px] md:w-[200px] h-[500px]">
+                <Image
+                  className="rounded-bl-[120px] w-[160px] md:w-[200px] h-[200px] object-cover"
+                  alt=""
+                  src={image2}
+                  width={250}
+                  height={290}
+                  quality={100}
+                />
+              </div>
+            </div>
+            <div className="flex flex-col gap-3">
+              <div className="w-[160px] md:w-[200px] h-[200px] bg-green-200 rounded-tl-[120px]">
+                <Image
+                  className="rounded-tl-[120px] object-cover w-[160px] md:w-[200px] h-[200px]"
+                  alt=""
+                  src={image1}
+                  width={300}
+                  height={290}
+                />
+              </div>
+              <div className="w-[160px] md:w-[200px] h-[300px] bg-cyan-200 rounded-tr-[120px] flex flex-col justify-end items-center p-5">
+                <h1 className="text-3xl font-bold text-gray-500">Top Talents</h1>
+                <h1 className="text-6xl font-bold">100+</h1>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

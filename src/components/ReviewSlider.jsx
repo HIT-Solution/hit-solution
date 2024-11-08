@@ -41,7 +41,7 @@ const ReviewSlider = () => {
         >
           <SwiperSlide>
             <Link href={"/"}>
-              <div className="border p-10 rounded-xl h-[470px] hover:shadow-lg hover:shadow-teal-500/60 m-7  hover:transition-all">
+              <div className="border p-5 rounded-xl h-[470px] hover:shadow-lg hover:shadow-teal-500/60 m-7  hover:transition-all">
                 <div className="flex justify-center items-center gap-5">
                   <div>
                     <Image
@@ -74,7 +74,7 @@ const ReviewSlider = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Link href={"/"}>
-              <div className="border p-10 rounded-xl h-[470px] hover:shadow-lg hover:shadow-teal-500/60 m-7 hover:transition-shadow duration-75">
+              <div className="border p-5 rounded-xl h-[470px] hover:shadow-lg hover:shadow-teal-500/60 m-7 hover:transition-shadow duration-75">
                 <div className="flex justify-center items-center gap-5">
                   <div>
                     <Image
@@ -107,7 +107,7 @@ const ReviewSlider = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Link href={"/"}>
-              <div className="border p-10 rounded-xl h-[470px] hover:shadow-lg hover:shadow-teal-500/60 m-7 hover:transition-shadow duration-75">
+              <div className="border p-5 rounded-xl h-[470px] hover:shadow-lg hover:shadow-teal-500/60 m-7 hover:transition-shadow duration-75">
                 <div className="flex justify-center items-center gap-5">
                   <div>
                     <Image
@@ -140,7 +140,7 @@ const ReviewSlider = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Link href={"/"}>
-              <div className="border p-10 rounded-xl h-[470px] hover:shadow-lg hover:shadow-teal-500/60 m-7 hover:transition-shadow duration-75">
+              <div className="border p-5 rounded-xl h-[470px] hover:shadow-lg hover:shadow-teal-500/60 m-7 hover:transition-shadow duration-75">
                 <div className="flex justify-center items-center gap-5">
                   <div>
                     <Image
@@ -173,7 +173,7 @@ const ReviewSlider = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Link href={"/"}>
-              <div className="border p-10 rounded-xl h-[470px] hover:shadow-lg hover:shadow-teal-500/60 m-7 hover:transition-shadow duration-75">
+              <div className="border p-5 rounded-xl h-[470px] hover:shadow-lg hover:shadow-teal-500/60 m-7 hover:transition-shadow duration-75">
                 <div className="flex justify-center items-center gap-5">
                   <div>
                     <Image
@@ -206,7 +206,7 @@ const ReviewSlider = () => {
           </SwiperSlide>
           <SwiperSlide>
             <Link href={"/"}>
-              <div className="border p-10 rounded-xl h-[470px] hover:shadow-lg hover:shadow-teal-500/60 m-7 hover:transition-shadow duration-75">
+              <div className="border p-5 rounded-xl h-[470px] hover:shadow-lg hover:shadow-teal-500/60 m-7 hover:transition-shadow duration-75">
                 <div className="flex justify-center items-center gap-5">
                   <div>
                     <Image
