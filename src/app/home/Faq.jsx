@@ -3,6 +3,7 @@ import React from "react";
 import SimpleBackground from "../../components/SimpleBackground";
 import Image from "next/image";
 import fq1 from "../../../public/fq1.png";
+import fq2 from "../../../public/fq2.png";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 const Faq = () => {
   const defaultContent =
@@ -17,42 +18,55 @@ const Faq = () => {
         <div className="lg:flex flex-row mt-32">
           <div className="lg:w-2/5">
             <div>
-              <div className="flex gap-2">
+              <div className="flex gap-2 items-end">
                 <Image
-                  className="w-[200px] h-[200px] rounded-tl-full"
+                  className="w-[180px] h-[175px] rounded-tl-[120px]"
                   src={fq1}
                   alt=""
                   width={200}
                   height={200}
                   quality={100}
                 />{" "}
-                <div className="w-[200px] h-[200px] flex flex-col items-center justify-center bg-blue-400 rounded-tr-full">
+                <div className="w-[180px] h-[170px] flex flex-col items-center justify-center bg-blue-400 rounded-tr-[120px]">
                   <h1 className="font-bold text-xl text-gray-600">
                     Top Talent
                   </h1>
                   <h1 className="font-bold text-4xl">100+</h1>
                 </div>
               </div>
-              <div className="flex gap-2 mt-2">
-                <div className="w-[200px] h-[200px] flex flex-col items-center justify-center bg-blue-400 rounded-bl-full">
-                  <h1 className="font-bold text-xl text-gray-600"> Projects</h1>
-                  <h1 className="font-bold text-4xl">80+</h1>
-                </div>
+              <div className="mt-2">
                 <Image
-                  className="w-[200px] h-[200px] rounded-br-full"
-                  src={fq1}
+                  className="w-[360px] h-[180px] rounded-tr-[120px] rounded-bl-[120px]"
+                  src={fq2}
                   alt=""
-                  width={200}
+                  width={400}
                   height={200}
                   quality={100}
                 />{" "}
+              </div>
+              <div className="flex gap-2 mt-2">
+              <Image
+                  className="w-[180px] h-[170px] rounded-bl-[120px]"
+                  src={fq1}
+                  alt=""
+                  width={400}
+                  height={200}
+                  quality={100}
+                />{" "}
+                
+                <div className="w-[180px] h-[170px] flex flex-col items-center justify-center bg-blue-400 rounded-tl-[120px]">
+                  <h1 className="font-bold text-xl text-gray-600">
+                    Top Talent
+                  </h1>
+                  <h1 className="font-bold text-4xl">100+</h1>
+                </div>
+               
               </div>
             </div>
           </div>
           <div className="lg:w-3/5 border rounded-lg p-5 py-8 lg:mt-0 mt-5">
             {" "}
             <Accordion
-
               motionProps={{
                 variants: {
                   enter: {

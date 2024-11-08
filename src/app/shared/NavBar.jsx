@@ -24,7 +24,7 @@ const NavBar = () => {
   const isActive = (path) => path === pathName;
 
   const servicesContent = (
-    <div className="p-5 grid grid-cols-2 gap-20 content-center">
+    <div className="p-10">
       <ul className="text-lg space-y-5">
         <h1 className="text-teal-600 font-semibold">Service List</h1>
         <li>
@@ -54,7 +54,7 @@ const NavBar = () => {
         <li>
           {" "}
           <Link className="hover:text-teal-600" href={"/"}>
-            QuaLinkty Assurance
+            QuaLity Assurance
           </Link>
         </li>
         <li>
@@ -75,51 +75,6 @@ const NavBar = () => {
             AR Creative Studio
           </Link>
         </li>
-      </ul>
-      <ul className="text-lg space-y-5">
-        <h1 className="text-teal-600 font-semibold">For Hiring</h1>
-        <li>
-          {" "}
-          <Link className="hover:underline hover:text-teal-600" href={"/"}>
-            Full-Stack Web-developer
-          </Link>
-        </li>
-        <li>
-          {" "}
-          <Link className="hover:underline hover:text-teal-600" href={"/"}>
-            Front-end Developer
-          </Link>
-        </li>
-        <li>
-          {" "}
-          <Link className="hover:underline hover:text-teal-600" href={"/"}>
-            Backend Developer
-          </Link>
-        </li>
-        <li>
-          {" "}
-          <Link className="hover:underline hover:text-teal-600" href={"/"}>
-            JavaScript Developer
-          </Link>
-        </li>
-        <li>
-          {" "}
-          <Link className="hover:underline hover:text-teal-600" href={"/"}>
-            Python Developer
-          </Link>
-        </li>
-        <li>
-          {" "}
-          <Link className="hover:underline hover:text-teal-600" href={"/"}>
-            .Net Developer
-          </Link>
-        </li>
-        <li>
-          {" "}
-          <Link className="hover:underline hover:text-teal-600" href={"/"}>
-            Java Developer
-          </Link>
-        </li>
         <Button
           variant="shadow"
           className="bg-gradient-to-br from-black to-teal-700 text-white"
@@ -127,6 +82,7 @@ const NavBar = () => {
           Hire The Best Team <FaArrowRightLong />
         </Button>
       </ul>
+    
     </div>
   );
 
@@ -219,7 +175,7 @@ const NavBar = () => {
         </NavbarItem>
 
         <NavbarItem>
-          <Button as={Link} className="bg-teal-600" href="#" variant="flat">
+          <Button as={Link} className="bg-teal-500" href="#" variant="shadow" color="success">
             Contact
           </Button>
         </NavbarItem>

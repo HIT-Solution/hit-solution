@@ -50,6 +50,7 @@ const ReviewSlider = () => {
                       alt=""
                       width={150}
                       height={150}
+                      quality={100}
                     />
                   </div>
 
