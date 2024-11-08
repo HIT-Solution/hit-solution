@@ -1,5 +1,6 @@
+import {Button} from "@nextui-org/button";
 import React from "react";
-
+import { FaLongArrowAltRight } from "react-icons/fa";
 const OurProcess = () => {
   return (
     <div>
@@ -169,6 +170,7 @@ const OurProcess = () => {
                 needs. Your satisfaction is our cue to excel.
               </p>
             </div>
+            <Button className="bg-teal-500 ms-16" size="lg" variant="shadow" color="success" >Schedule a Call <FaLongArrowAltRight size={20} /></Button>
           </div>
 
           <div>right</div>
