@@ -175,7 +175,7 @@ const NavBar = () => {
         </NavbarItem>
 
         <NavbarItem>
-          <Button as={Link} className="bg-teal-500" href="#" variant="shadow" color="success">
+          <Button as={Link} className="bg-teal-400" href="#" variant="shadow" color="success">
             Contact
           </Button>
         </NavbarItem>
