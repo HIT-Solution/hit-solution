@@ -8,7 +8,7 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { IoIosArrowForward } from "react-icons/io";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaChevronLeft, FaChevronRight, FaLocationDot } from "react-icons/fa6";
 import { FaTv } from "react-icons/fa";
 import { GiSkills } from "react-icons/gi";
 import { FaHome } from "react-icons/fa";
@@ -55,7 +55,14 @@ const BannerSlider = () => {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
+        onSwiper={(swiper) => {
+          swiper.navigation.init();
+          swiper.navigation.update();
+        }}
+        navigation={{
+          nextEl: ".custom-next",
+          prevEl: ".custom-prev",
+        }}
         autoplay={{
           delay: 2500,
           disableOnInteraction: true,
@@ -317,6 +324,13 @@ const BannerSlider = () => {
             </div>
           </Link>
         </SwiperSlide>
+        {/* Custom Navigation Buttons */}
+        <div className="custom-prev absolute top-1/2 left-2 transform -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 bg-gray-300 text-black rounded-full cursor-pointer hover:bg-gray-700">
+          <FaChevronLeft />
+        </div>
+        <div className="custom-next absolute top-1/2 right-2 transform -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 bg-gray-300 text-blac rounded-full cursor-pointer hover:bg-gray-700">
+          <FaChevronRight />
+        </div>
       </Swiper>
     </div>
   );
