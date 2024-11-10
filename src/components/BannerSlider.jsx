@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaTv } from "react-icons/fa";
@@ -14,7 +15,7 @@ import { FaHome } from "react-icons/fa";
 import { DiVisualstudio } from "react-icons/di";
 import { ImLab } from "react-icons/im";
 // import required modules
-import { Autoplay, FreeMode } from "swiper/modules";
+import { Autoplay, FreeMode, Navigation } from "swiper/modules";
 import Link from "next/link";
 
 const BannerSlider = () => {
@@ -48,12 +49,13 @@ const BannerSlider = () => {
     },
   };
   return (
-    <div className="mx-10 my-10">
+    <div className="mx-10 mb-10 -translate-y-28">
       <Swiper
         freeMode={true}
         pagination={{
           clickable: true,
         }}
+        navigation={true}
         autoplay={{
           delay: 2500,
           disableOnInteraction: true,
@@ -69,17 +71,17 @@ const BannerSlider = () => {
           },
           1024: {
             slidesPerView: 3,
-            spaceBetween: 50,
+            spaceBetween: 60,
           },
         }}
-        modules={[Autoplay, FreeMode]}
+        modules={[Autoplay, FreeMode, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide>
           <Link href={"/"}>
             {" "}
             <div
-              className={`relative h-[250px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
+              className={`relative h-[230px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
             >
               {/* Circular glow */}
               <motion.div
@@ -119,7 +121,7 @@ const BannerSlider = () => {
           <Link href={"/"}>
             {" "}
             <div
-              className={`relative h-[250px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
+              className={`relative h-[230px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
             >
               {/* Circular glow */}
               <motion.div
@@ -159,7 +161,7 @@ const BannerSlider = () => {
           <Link href={"/"}>
             {" "}
             <div
-              className={`relative h-[250px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
+              className={`relative h-[230px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
             >
               {/* Circular glow */}
               <motion.div
@@ -199,7 +201,7 @@ const BannerSlider = () => {
           <Link href={"/"}>
             {" "}
             <div
-              className={`relative h-[250px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
+              className={`relative h-[230px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
             >
               {/* Circular glow */}
               <motion.div
@@ -239,7 +241,7 @@ const BannerSlider = () => {
           <Link href={"/"}>
             {" "}
             <div
-              className={`relative h-[250px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
+              className={`relative h-[230px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
             >
               {/* Circular glow */}
               <motion.div
@@ -279,7 +281,7 @@ const BannerSlider = () => {
           <Link href={"/"}>
             {" "}
             <div
-              className={`relative h-[250px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
+              className={`relative h-[230px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md`}
             >
               {/* Circular glow */}
               <motion.div
