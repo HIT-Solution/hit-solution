@@ -185,13 +185,13 @@ const OurProcess = () => {
 
           <div className="flex gap-3 mx-auto">
             <div className="flex flex-col gap-3">
-              <div className="w-[160px] md:w-[200px] h-[300px] bg-violet-200 rounded-tr-[120px] flex flex-col justify-end items-center p-5">
+              <div className="w-[160px] md:w-[200px] h-[250px] bg-violet-200 rounded-tr-[120px] flex flex-col justify-center items-center p-5">
                 <h1 className="text-3xl font-bold text-gray-500">Tech Stack</h1>
                 <h1 className="text-6xl font-bold">20+</h1>
               </div>
               <div className="w-[160px] md:w-[200px] h-[500px]">
                 <Image
-                  className="rounded-bl-[120px] w-[160px] md:w-[200px] h-[200px] object-cover"
+                  className="rounded-bl-[120px] w-[160px] md:w-[200px] h-[250px] object-cover"
                   alt=""
                   src={image2}
                   width={250}
@@ -201,16 +201,16 @@ const OurProcess = () => {
               </div>
             </div>
             <div className="flex flex-col gap-3">
-              <div className="w-[160px] md:w-[200px] h-[200px] bg-green-200 rounded-tl-[120px]">
+              <div className="w-[160px] md:w-[200px] h-[250px] bg-green-200 rounded-tl-[120px]">
                 <Image
-                  className="rounded-tl-[120px] object-cover w-[160px] md:w-[200px] h-[200px]"
+                  className="rounded-tl-[120px] object-cover w-[160px] md:w-[200px] h-[250px]"
                   alt=""
                   src={image1}
                   width={300}
                   height={290}
                 />
               </div>
-              <div className="w-[160px] md:w-[200px] h-[300px] bg-cyan-200 rounded-tr-[120px] flex flex-col justify-end items-center p-5">
+              <div className="w-[160px] md:w-[200px] h-[250px] bg-cyan-200 rounded-br-[120px] flex flex-col justify-center items-center p-5">
                 <h1 className="text-3xl font-bold text-gray-500">Top Talents</h1>
                 <h1 className="text-6xl font-bold">100+</h1>
               </div>
