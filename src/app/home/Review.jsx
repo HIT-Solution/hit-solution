@@ -9,7 +9,7 @@ const Review = () => {
       <div className="my-10 mx-5 lg:mx-10">
       <div className="grid lg:grid-cols-2 gap-10">
         <div>
-          <h1 className="text-6xl mt-24">
+          <h1 className="text-6xl mt-32">
             Over 50+ Leading <br /> Brands Rely On Our Expertise
           </h1>
         </div>

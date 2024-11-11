@@ -20,7 +20,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        "my-gradient": "linear-gradient(135deg, black, #134e4a)",
+        "my-gradient": "linear-gradient(135deg, black, #319795)",
       },
     },
   },
