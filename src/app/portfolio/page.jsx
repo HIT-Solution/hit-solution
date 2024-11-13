@@ -1,9 +1,18 @@
 import React from "react";
+import PortfolioSlider from "../../components/PortfolioSlider";
+import PortfolioTab from "../../components/PortfolioTab";
 
 const Portfolio = () => {
   return (
     <div>
-      <h1>this is portfolio page</h1>
+      {/* portfolio slider */}
+      <div>
+        <PortfolioSlider />
+      </div>
+      {/* tab */}
+      <div>
+        <PortfolioTab />
+      </div>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import BackgroundModel from "../../components/BackgroundModel";
+import SimpleBackground from "../../components/SimpleBackground";
 import { Button, Checkbox, Input } from "@nextui-org/react";
 import { Select, SelectItem } from "@nextui-org/react";
 import { Textarea } from "@nextui-org/react";
@@ -9,10 +9,10 @@ import contacLogo from "../../../public/contactlogo.jpeg";
 import Image from "next/image";
 const ContactUs = () => {
   return (
-    <div>
-      <BackgroundModel>
+    <div className="">
+      {/* <SimpleBackground> */}
         <h1 className="text-center text-5xl my-5">Contact with us</h1>
-        <div className="grid md:grid-cols-2 gap-20 mx-5 mt-16 lg:mx-10">
+        <div className="grid md:grid-cols-2 gap-20 mx-5 my-16 lg:mx-10">
           <div className="space-y-5">
             <h1 className="text-4xl md:mt-6">
               Talk to us and <br />
@@ -93,7 +93,7 @@ const ContactUs = () => {
             </form>
           </div>
         </div>
-      </BackgroundModel>
+      {/* </SimpleBackground> */}
     </div>
   );
 };
