@@ -6,7 +6,7 @@ const PortfolioTab = () => {
     <div>
       <div className="flex mx-5 lg:mx-10 flex-col">
         <Tabs color="" aria-label="Options">
-          <Tab key="photos" title="Photos">
+          <Tab key="Products" title="Products">
             <Card>
               <CardBody>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -16,7 +16,7 @@ const PortfolioTab = () => {
               </CardBody>
             </Card>
           </Tab>
-          <Tab key="music" title="Music">
+          <Tab key="Services" title="Services">
             <Card>
               <CardBody>
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -26,7 +26,7 @@ const PortfolioTab = () => {
               </CardBody>
             </Card>
           </Tab>
-          <Tab key="videos" title="Videos">
+          <Tab key="Technologies" title="Technologies">
             <Card>
               <CardBody>
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa
