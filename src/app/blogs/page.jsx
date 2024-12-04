@@ -1,14 +1,74 @@
-import React from 'react';
-import BannerSlider from '../../components/BannerSlider';
+import { Button } from "@nextui-org/button";
+import Image from "next/image";
+import React from "react";
+import SocialSharing from "../../components/SocialSharing";
 
 const Blogs = () => {
-    return (
-        <div>
-           <h1 className='text-center'>this is blogs page</h1>
+  const text =
+    "Discover the latest insights, trends, and strategies in the world of technologyand software development Our blog covers everything from cutting-edge development techniques and industry updates to case studies and success stories Stay informed with expert opinions, actionable tips, and deep dives into how modern software solutions are transforming industries and shaping the future Whether you are a developer, business owner, or tech enthusiast,there are something here for you";
 
-           <BannerSlider/>
+  return (
+    <div>
+      <section className="relative h-[800px] lg:h-[540px]">
+        {/* Image Container */}
+        <div className="absolute top-0 left-0 w-full h-full">
+          <Image
+            className="object-cover"
+            src={"/5125962.jpg"}
+            alt="Blog Header"
+            layout="fill" // Makes the image fill its container
+            objectFit="cover" // Ensures the image covers the container proportionally
+            quality={100}
+          />
         </div>
-    );
+        {/* Text Overlay */}
+        <div className="absolute inset-0 mx-5 lg:mx-10 grid lg:grid-cols-2 gap-5 mt-10 lg:flex-row py-10">
+          <div className="">
+            <h1 className="lg:text-8xl md:text-5xl text-3xl font-bold text-gray-200">
+              Latest Blog<span className="text-teal-500">.</span>
+            </h1>
+            <h1 className="lg:text-5xl md-text-3xl text-xl lg:mt-6 text-gray-300 font-semibold">
+              Title of The BLog
+            </h1>
+            <p className="text-lg text-gray-400">
+              Saturday - November 23rd, 2024
+            </p>
+
+            <p className="text-gray-300 my-3">
+              {text.slice(0, 200)}
+              <span> ..............</span>
+            </p>
+            <Button
+              className="bg-teal-500 mt-3"
+              size="lg"
+              variant="shadow"
+              color="success"
+            >
+              Read The Article
+            </Button>
+            <h1 className="text-gray-200 text-3xl font-bold mt-3">
+              Share on ,
+            </h1>
+            <SocialSharing />
+          </div>
+          <div className="">
+            <div className="">
+              <Image
+                className="object-cover rounded-tr-[120px] rounded-bl-[120px]"
+                src={"/blog.png"}
+                alt="Blog Header"
+                // layout="responsive"
+                objectFit="cover" // Ensures the image covers the container proportionally
+                quality={100}
+                height={400}
+                width={600}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 };
 
 export default Blogs;

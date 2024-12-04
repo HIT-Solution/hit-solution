@@ -2,7 +2,6 @@
 import React, { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { FaChevronLeft, FaChevronRight, FaLocationDot } from "react-icons/fa6";
@@ -343,14 +342,13 @@ const MethodologySlider = () => {
 
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
-        freeMode={true}
         pagination={{ clickable: true }}
         autoplay={{ delay: 2500, disableOnInteraction: true }}
         navigation={{
           nextEl: ".custom-next",
           prevEl: ".custom-prev",
         }}
-        modules={[Autoplay, FreeMode, Navigation]}
+        modules={[Autoplay, Navigation]}
         breakpoints={{
           0: { slidesPerView: 1, spaceBetween: 30 },
           390: { slidesPerView: 1, spaceBetween: 30 },

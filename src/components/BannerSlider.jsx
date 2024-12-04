@@ -68,7 +68,7 @@ const BannerSlider = () => {
   }, []);
 
   return (
-    <div className="mx-10 mb-10 -translate-y-24 relative">
+    <div className="lg:mx-10 mx-5 mb-10 -translate-y-24 relative">
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         freeMode={true}
