@@ -2,6 +2,7 @@ import { Button } from "@nextui-org/button";
 import Image from "next/image";
 import React from "react";
 import SocialSharing from "../../components/SocialSharing";
+import BlogsTab from "../../components/BlogsTab";
 
 const Blogs = () => {
   const text =
@@ -9,7 +10,7 @@ const Blogs = () => {
 
   return (
     <div>
-      <section className="relative h-[800px] lg:h-[540px]">
+      <section className="relative h-[800px] md:h-[540px]">
         {/* Image Container */}
         <div className="absolute top-0 left-0 w-full h-full">
           <Image
@@ -22,7 +23,7 @@ const Blogs = () => {
           />
         </div>
         {/* Text Overlay */}
-        <div className="absolute inset-0 mx-5 lg:mx-10 grid lg:grid-cols-2 gap-5 mt-10 lg:flex-row py-10">
+        <div className="absolute inset-0 mx-5 lg:mx-10 grid md:grid-cols-2 gap-5 mt-10 lg:flex-row py-10">
           <div className="">
             <h1 className="lg:text-8xl md:text-5xl text-3xl font-bold text-gray-200">
               Latest Blog<span className="text-teal-500">.</span>
@@ -67,6 +68,9 @@ const Blogs = () => {
           </div>
         </div>
       </section>
+      <div className="my-20">
+        <BlogsTab />
+      </div>
     </div>
   );
 };

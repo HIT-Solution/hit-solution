@@ -20,14 +20,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="light">
       <body
-        suppressHydrationWarning={true}
+        suppressHydrationWarning
         className={`${fontName.className} antialiased bg-[#F8FAFC]`}
       >
-        <Providers>
-          <Loader>
-            <NavBar />
-            {children}
-          </Loader>
+        <Providers suppressHydrationWarning>
+          <NavBar />
+          <Loader suppressHydrationWarning>{children}</Loader>
         </Providers>
       </body>
     </html>

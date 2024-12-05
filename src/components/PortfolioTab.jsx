@@ -5,7 +5,7 @@ const PortfolioTab = () => {
   return (
     <div>
       <div className="flex mx-5 lg:mx-10 flex-col">
-        <Tabs color="" aria-label="Options">
+        <Tabs color="default" aria-label="Options">
           <Tab key="Products" title="Products">
             <Card>
               <CardBody>
