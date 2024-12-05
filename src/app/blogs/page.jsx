@@ -46,9 +46,9 @@ const Blogs = () => {
             >
               Read The Article
             </Button>
-            <h1 className="text-gray-200 text-3xl font-bold mt-3">
+            {/* <h1 className="text-gray-200 text-3xl font-bold mt-3">
               Share on ,
-            </h1>
+            </h1> */}
             <SocialSharing />
           </div>
           <div className="">

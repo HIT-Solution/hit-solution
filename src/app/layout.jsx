@@ -14,6 +14,7 @@ export const metadata = {
 
 import { Providers } from "./providers";
 import NavBar from "./shared/NavBar";
+import Loader from "./loader";
 
 export default function RootLayout({ children }) {
   return (
@@ -23,8 +24,10 @@ export default function RootLayout({ children }) {
         className={`${fontName.className} antialiased bg-[#F8FAFC]`}
       >
         <Providers>
-          <NavBar />
-          {children}
+          <Loader>
+            <NavBar />
+            {children}
+          </Loader>
         </Providers>
       </body>
     </html>

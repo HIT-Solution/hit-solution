@@ -14,7 +14,13 @@ import OurProcess from "./home/OurProcess";
 
 const Banner = dynamic(() => import("./home/Banner"));
 
-const Home = () => {
+const Home = async () => {
+
+
+  // function wait(ms) {
+  //   return new Promise((resolve) => setTimeout(resolve, ms));
+  // }
+  // await wait(10000);
   return (
     <Suspense
       fallback={
@@ -33,14 +39,13 @@ const Home = () => {
         <BannerSlider />
         <Services />
         <Methodology />
-        <OurProcess/>
+        <OurProcess />
         <TechStacks />
         <IndustryExpertize />
         <Review />
         <Blog />
         <Faq />
         <ContactUs />
-       
       </div>
     </Suspense>
   );
