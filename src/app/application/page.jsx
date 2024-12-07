@@ -48,8 +48,8 @@ const Application = () => {
           </div>
         </div>
       </div>
-      <div id="applicationForm">
-        <ApplicationForm />
+      <div>
+        <ApplicationForm id={"applicationForm"} />
       </div>
     </div>
   );

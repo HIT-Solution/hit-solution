@@ -1,6 +1,7 @@
+import { Input } from "@nextui-org/input";
 import React from "react";
 
-const ApplicationForm = () => {
+const ApplicationForm = ({ id }) => {
   return (
     <div>
       <div className="mx-5 lg:mx-28 py-20">
@@ -101,6 +102,72 @@ const ApplicationForm = () => {
         <h1 className="text-2xl font-bold my-10">
           Salary: <span className="font-normal"> 90k-100k</span>
         </h1>
+      </div>
+      <div id={id} className="bg-gradient-to-br from-black to-teal-900 py-20">
+        <h1 className="text-gray-200 font-bold text-5xl pt-10 text-center  mx-5 lg:mx-10">
+          Application Form
+        </h1>
+        <p className="text-xl text-gray-300 pt-5 pb-10 text-center mx-5 lg:mx-10">
+          Your journey starts here — complete the application form and
+          let&apos;s build the future together!
+        </p>
+        <div className="flex justify-center items-center">
+
+            {/*====== Form ======*/}
+          <form className="space-y-5 mx-5 lg:mx-10">
+            <div className="grid lg:grid-cols-2 gap-5">
+              <Input
+                className="w-[340px]"
+                color="success"
+                label="First Name"
+                placeholder="Enter your firs name"
+                type="text"
+              />
+              <Input
+                className="w-[340px]"
+                color="success"
+                label="Last Name"
+                placeholder="Enter your last name"
+                type="text"
+              />
+              
+            </div>
+            <div className="grid lg:grid-cols-2 gap-5">
+              <Input
+                className="w-[340px]"
+                color="success"
+                label="Email"
+                placeholder="Enter your email"
+                type="email"
+              />
+              <Input
+                className="w-[340px]"
+                color="success"
+                label="Email"
+                placeholder="Enter your email"
+                type="email"
+              />
+              
+            </div>
+            <div className="grid lg:grid-cols-2 gap-5">
+              <Input
+                className="w-[340px]"
+                color="success"
+                label="Email"
+                placeholder="Enter your email"
+                type="email"
+              />
+              <Input
+                className="w-[340px]"
+                color="success"
+                label="Email"
+                placeholder="Enter your email"
+                type="email"
+              />
+              
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );
