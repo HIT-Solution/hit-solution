@@ -6,7 +6,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiTypescript } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
-import { SiMicrosoftazure } from "react-icons/si";
+import { VscAzure } from "react-icons/vsc";
 import ReusableBackground from "../../components/ReusableBackground";
 const TechStacks = () => {
   return (
@@ -67,7 +67,7 @@ const TechStacks = () => {
               <h1 className="flex">
                 <span className="bg-cyan-200 w-12 h-12 rounded-full">
                   {" "}
-                  <SiMicrosoftazure />
+                  <VscAzure />
                 </span>
                 Azure
               </h1>
@@ -120,7 +120,7 @@ const TechStacks = () => {
               <h1 className="flex">
                 <span className="bg-cyan-200 w-12 h-12 rounded-full">
                   {" "}
-                  <SiMicrosoftazure />
+                  <VscAzure />
                 </span>
                 Azure
               </h1>

@@ -4,7 +4,7 @@ import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import {FaLongArrowAltRight} from "react-icons/fa";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const BlogsCard = () => {
   return (
@@ -45,7 +45,8 @@ const BlogsCard = () => {
               radius="full"
               size="sm"
             >
-              View Details<FaLongArrowAltRight size={15} />
+              View Details
+              <FaLongArrowAltRight size={15} />
             </Button>
           </Link>
         </CardFooter>

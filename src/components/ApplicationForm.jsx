@@ -1,5 +1,11 @@
+"use client";
+import { Button } from "@nextui-org/button";
+import { DatePicker } from "@nextui-org/react";
 import { Input } from "@nextui-org/input";
+import { Textarea } from "@nextui-org/input";
+import { Select, SelectItem } from "@nextui-org/select";
 import React from "react";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const ApplicationForm = ({ id }) => {
   return (
@@ -103,7 +109,10 @@ const ApplicationForm = ({ id }) => {
           Salary: <span className="font-normal"> 90k-100k</span>
         </h1>
       </div>
-      <div id={id} className="bg-gradient-to-br from-black to-teal-900 py-20">
+      <div
+        id={id}
+        className="bg-gradient-to-br from-black to-teal-900 py-20 border-teal-400 border"
+      >
         <h1 className="text-gray-200 font-bold text-5xl pt-10 text-center  mx-5 lg:mx-10">
           Application Form
         </h1>
@@ -112,9 +121,8 @@ const ApplicationForm = ({ id }) => {
           let&apos;s build the future together!
         </p>
         <div className="flex justify-center items-center">
-
-            {/*====== Form ======*/}
-          <form className="space-y-5 mx-5 lg:mx-10">
+          {/*====== Form ======*/}
+          <form className="space-y-10 mx-5 lg:mx-10">
             <div className="grid lg:grid-cols-2 gap-5">
               <Input
                 className="w-[340px]"
@@ -130,15 +138,36 @@ const ApplicationForm = ({ id }) => {
                 placeholder="Enter your last name"
                 type="text"
               />
-              
+            </div>
+            <div className="grid lg:grid-cols-2 gap-5">
+              <Select
+                className="w-[340px]"
+                label="Gender"
+                color="success"
+                placeholder="Select your gender"
+              >
+                <SelectItem key="male" value="male">
+                  Male
+                </SelectItem>
+                <SelectItem key="female" value="female">
+                  Female
+                </SelectItem>
+              </Select>
+              <div>
+                <DatePicker
+                  color="success"
+                  className="w-[340px]"
+                  label="Date"
+                />
+              </div>
             </div>
             <div className="grid lg:grid-cols-2 gap-5">
               <Input
                 className="w-[340px]"
                 color="success"
-                label="Email"
-                placeholder="Enter your email"
-                type="email"
+                label="Contact"
+                placeholder="Enter your contact number"
+                type="text"
               />
               <Input
                 className="w-[340px]"
@@ -147,25 +176,52 @@ const ApplicationForm = ({ id }) => {
                 placeholder="Enter your email"
                 type="email"
               />
-              
             </div>
             <div className="grid lg:grid-cols-2 gap-5">
               <Input
                 className="w-[340px]"
                 color="success"
-                label="Email"
-                placeholder="Enter your email"
-                type="email"
+                label="Position"
+                placeholder="Enter position"
+                type="text"
               />
               <Input
                 className="w-[340px]"
                 color="success"
-                label="Email"
-                placeholder="Enter your email"
-                type="email"
+                label="Experience"
+                placeholder="Enter your experience (in year)"
+                type="text"
               />
-              
             </div>
+            <Input
+              className="w-full"
+              color="success"
+              label="Address"
+              placeholder="Enter your address"
+              type="text"
+            />
+            <Textarea
+              className="w-full"
+              size="sm"
+              color="success"
+              label="Cover Letter"
+              placeholder="type your cover letter here"
+            />
+            <Input
+              className="w-full"
+              color="success"
+              label="Attach CV (PDF)"
+              placeholder="Enter your address"
+              type="file"
+            />
+            <Button
+              className="bg-teal-500 w-full"
+              size="lg"
+              variant="shadow"
+              color="success"
+            >
+              Apply Now <FaLongArrowAltRight size={20} />
+            </Button>
           </form>
         </div>
       </div>
