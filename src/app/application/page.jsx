@@ -1,15 +1,18 @@
+import { Button } from "@nextui-org/button";
 import ApplicationForm from "../../components/ApplicationForm";
 import Image from "next/image";
 import React from "react";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import Link from "next/link";
 
 const Application = () => {
   return (
     <div>
       <div className="py-20 bg-gradient-to-br from-black to-teal-900">
         <div className="grid lg:grid-cols-2 gap-5 content-center mx-5 lg:mx-10">
-          <div className="space-y-8">
+          <div className="space-y-8 mt-2">
             <h1 className="text-5xl text-gray-200">Career</h1>
-            <h1 className="text-6xl font-bold text-gray-200">
+            <h1 className="text-6xl font-bold text-teal-400">
               Application Form
             </h1>
             <h1 className="text-3xl  text-gray-300">
@@ -21,6 +24,18 @@ const Application = () => {
               the talent you bring, and together, let&apos;s craft a future full
               of innovation and success.
             </p>
+            <div>
+              <Link href={"#applicationForm"}>
+                <Button
+                  className="bg-teal-500"
+                  size="lg"
+                  variant="shadow"
+                  color="success"
+                >
+                  Application Form <FaLongArrowAltRight size={20} />
+                </Button>
+              </Link>
+            </div>
           </div>
           <div>
             <Image
@@ -33,7 +48,9 @@ const Application = () => {
           </div>
         </div>
       </div>
-      <ApplicationForm />
+      <div id="applicationForm">
+        <ApplicationForm />
+      </div>
     </div>
   );
 };

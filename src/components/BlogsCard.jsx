@@ -4,6 +4,7 @@ import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import {FaLongArrowAltRight} from "react-icons/fa";
 
 const BlogsCard = () => {
   return (
@@ -11,7 +12,9 @@ const BlogsCard = () => {
       <Card isFooterBlurred className="w-full h-[360px]">
         <CardHeader className="absolute z-10 top-1 flex-col items-start">
           <p className="text-xs font-bold">Sunday - November 24th, 2024</p>
-          <h4 className="font-bold text-2xl">Title of the Blog</h4>
+          <h4 className="font-bold text-2xl text-teal-600">
+            Title of the Blog
+          </h4>
         </CardHeader>
         <Image
           alt="Relaxing app background"
@@ -31,12 +34,18 @@ const BlogsCard = () => {
               height={40}
             />
             <div className="flex flex-col">
-              <h1>Blog Poster Name</h1>
+              <h1 className="font-bold">Blog Poster Name</h1>
             </div>
           </div>
           <Link href={"/"}>
-            <Button radius="full" size="sm">
-              View Details
+            <Button
+              className="bg-teal-500 ms-16"
+              variant="shadow"
+              color="success"
+              radius="full"
+              size="sm"
+            >
+              View Details<FaLongArrowAltRight size={15} />
             </Button>
           </Link>
         </CardFooter>

@@ -17,7 +17,7 @@ const Career = () => {
         <div className="mx-5 lg:mx-10 py-24 grid md:grid-cols-2 gap-5 content-center text-3xl md:text-6xl font-bold ">
           <div>
             <h1 className="text-gray-200">
-              Transform Your Vision Into Reality—Join Us and Build a Career of
+              Transform Your Vision Into Reality—Join Us and Build a <span className="text-teal-400">Career</span> of
               Innovation and Growth.
             </h1>
             <Link href={"#jobs"}>

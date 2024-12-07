@@ -89,7 +89,7 @@ const Banner = () => {
         </video>
 
         {/* Text Overlay */}
-        <motion.div className="absolute inset-0 flex flex-col mt-32 items-center text-white text-center">
+        <motion.div className="absolute inset-0 flex flex-col mt-32 items-center text-white text-center mx-5">
           <div className="text-4xl md:text-7xl font-bold">
             <AnimatedText text="HIT SOLUTION" className="text-white" />
             <br />

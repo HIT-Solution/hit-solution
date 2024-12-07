@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import SocialSharing from "../../components/SocialSharing";
 import BlogsTab from "../../components/BlogsTab";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Blogs = () => {
   const text =
@@ -25,10 +26,10 @@ const Blogs = () => {
         {/* Text Overlay */}
         <div className="absolute inset-0 mx-5 lg:mx-10 grid md:grid-cols-2 gap-5 mt-10 lg:flex-row py-10">
           <div className="">
-            <h1 className="lg:text-8xl md:text-5xl text-3xl font-bold text-gray-200">
+            <h1 className="lg:text-8xl md:text-5xl text-5xl font-bold text-gray-200">
               Latest Blog<span className="text-teal-500">.</span>
             </h1>
-            <h1 className="lg:text-5xl md-text-3xl text-xl lg:mt-6 text-gray-300 font-semibold">
+            <h1 className="lg:text-5xl md-text-4xl text-3xl mt-6 text-teal-300 font-semibold">
               Title of The BLog
             </h1>
             <p className="text-lg text-gray-400">
@@ -45,7 +46,7 @@ const Blogs = () => {
               variant="shadow"
               color="success"
             >
-              Read The Article
+              Read The Article <FaLongArrowAltRight size={20} />
             </Button>
             {/* <h1 className="text-gray-200 text-3xl font-bold mt-3">
               Share on ,

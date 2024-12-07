@@ -82,7 +82,6 @@ const NavBar = () => {
           Hire The Best Team <FaArrowRightLong />
         </Button>
       </ul>
-    
     </div>
   );
 
@@ -175,41 +174,64 @@ const NavBar = () => {
         </NavbarItem>
 
         <NavbarItem>
-          <Button as={Link} className="bg-teal-400" href="#" variant="shadow" color="success">
+          <Button
+            as={Link}
+            className="bg-teal-400"
+            href="#"
+            variant="shadow"
+            color="success"
+          >
             Contact
           </Button>
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu className="bg-gradient-to-br from-black to-teal-800">
         <NavbarMenuItem>
-          <Link className="text-white" href="#">
+          <Link className="text-white" href="/">
             Home
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link className="text-white" href="#">
+          <Link className="text-white" href="/services">
             Services
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link className="text-white" href="#">
-            Blogs
-          </Link>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
-          <Link className="text-white" href="#">
+          <Link className="text-white" href="/technologies">
             Technologies
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link className="text-white" href="#">
+          <Link className="text-white" href="/portfolio">
+            Portfolio
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link className="text-white" href="/blogs">
+            Blogs
+          </Link>
+        </NavbarMenuItem>
+
+        <NavbarMenuItem>
+          <Link className="text-white" href="/career">
             Career
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link className="text-white" href="#">
+          <Link className="text-white" href="/aboutUs">
             AboutUs
           </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Button
+            as={Link}
+            className="bg-teal-400"
+            href="/contact"
+            variant="shadow"
+            color="success"
+          >
+            Contact
+          </Button>
         </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>
