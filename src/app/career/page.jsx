@@ -20,14 +20,17 @@ const Career = () => {
               Transform Your Vision Into Reality—Join Us and Build a Career of
               Innovation and Growth.
             </h1>
-         <Link href={'#jobs'}>   <Button
-              className="bg-teal-500 mt-16 h-16 w-72"
-              size="lg"
-              variant="shadow"
-              color="success"
-            >
-              Explore Job Openings <FaLongArrowAltRight size={20} />
-            </Button></Link>
+            <Link href={"#jobs"}>
+              {" "}
+              <Button
+                className="bg-teal-500 mt-16 h-16 w-72"
+                size="lg"
+                variant="shadow"
+                color="success"
+              >
+                Explore Job Openings <FaLongArrowAltRight size={20} />
+              </Button>
+            </Link>
           </div>
           <div>
             <Image
@@ -65,9 +68,11 @@ const Career = () => {
                   </h1>
                 </div>
                 <div className="lg:mt-0 mt-5">
-                  <Button className="bg-teal-500" size="lg" color="success">
-                    Apply Now <FaLongArrowAltRight size={20} />
-                  </Button>
+                  <Link href={"/application"}>
+                    <Button className="bg-teal-500" size="lg" color="success">
+                      Apply Now <FaLongArrowAltRight size={20} />
+                    </Button>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -131,7 +136,16 @@ const Career = () => {
               </h1>
               <h1></h1>
             </div>
-            <div><Image className="rounded-tr-[130px] rounded-bl-[130px]" src={'/co-working-people-working-together.jpg'} height={350} width={600} alt="" quality={100}/></div>
+            <div>
+              <Image
+                className="rounded-tr-[130px] rounded-bl-[130px]"
+                src={"/co-working-people-working-together.jpg"}
+                height={350}
+                width={600}
+                alt=""
+                quality={100}
+              />
+            </div>
           </div>
         </div>
       </div>

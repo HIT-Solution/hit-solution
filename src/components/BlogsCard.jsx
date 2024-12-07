@@ -2,12 +2,13 @@
 import { Button } from "@nextui-org/button";
 import { Card, CardHeader, CardBody, CardFooter } from "@nextui-org/card";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const BlogsCard = () => {
   return (
     <div>
-      <Card isFooterBlurred className="w-full h-[350px]">
+      <Card isFooterBlurred className="w-full h-[360px]">
         <CardHeader className="absolute z-10 top-1 flex-col items-start">
           <p className="text-xs font-bold">Sunday - November 24th, 2024</p>
           <h4 className="font-bold text-2xl">Title of the Blog</h4>
@@ -33,9 +34,11 @@ const BlogsCard = () => {
               <h1>Blog Poster Name</h1>
             </div>
           </div>
-          <Button radius="full" size="sm">
-            View Details
-          </Button>
+          <Link href={"/"}>
+            <Button radius="full" size="sm">
+              View Details
+            </Button>
+          </Link>
         </CardFooter>
       </Card>
     </div>
