@@ -2,8 +2,8 @@ import { Button } from "@nextui-org/button";
 import Image from "next/image";
 import React from "react";
 import SocialSharing from "../../components/SocialSharing";
-import BlogsTab from "../../components/BlogsTab";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import BlogsTab from "@/components/BlogsTab";
 
 const Blogs = () => {
   const text =

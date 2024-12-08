@@ -47,12 +47,22 @@ const ContactUs = () => {
         </div>
         <div>
           <form className="p-7 bg-white shadow-2xl lg:mx-20 rounded-xl pt-10 space-y-2">
+            <div className="grid grid-cols-2 gap-5">
             <Input
+              required
               className="bg-teal-50 rounded-xl"
               type="text"
               variant="bordered"
-              label="Name"
+              label="First Name"
             />
+            <Input
+              required
+              className="bg-teal-50 rounded-xl"
+              type="text"
+              variant="bordered"
+              label="Last Name"
+            />
+            </div>
             <Input
               required
               className="bg-teal-50 rounded-xl"
@@ -60,6 +70,12 @@ const ContactUs = () => {
               variant="bordered"
               label="Email"
             />
+             <Input
+                className="bg-teal-50 rounded-xl"
+                type="text"
+                variant="bordered"
+                label="Contact Number"
+              />
             <Select
               required
               className="bg-teal-50 rounded-xl"
@@ -75,7 +91,7 @@ const ContactUs = () => {
               className="bg-teal-50 rounded-xl"
               type="text"
               variant="bordered"
-              label="Description"
+              label="Project Description"
             />
             <Input
               required

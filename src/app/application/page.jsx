@@ -1,9 +1,9 @@
 import { Button } from "@nextui-org/button";
-import ApplicationForm from "../../components/ApplicationForm";
 import Image from "next/image";
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Link from "next/link";
+import ApplicationForm from "@/components/ApplicationForm";
 
 const Application = () => {
   return (
