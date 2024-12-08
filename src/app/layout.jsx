@@ -18,14 +18,14 @@ import Loader from "./loader";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="light">
+    <html suppressHydrationWarning={true} lang="en" className="light">
       <body
-        suppressHydrationWarning
+        suppressHydrationWarning={true}
         className={`${fontName.className} antialiased bg-[#F8FAFC]`}
       >
-        <Providers suppressHydrationWarning>
+        <Providers suppressHydrationWarning={true}>
           <NavBar />
-          <Loader suppressHydrationWarning>{children}</Loader>
+          <Loader suppressHydrationWarning={true}>{children}</Loader>
         </Providers>
       </body>
     </html>

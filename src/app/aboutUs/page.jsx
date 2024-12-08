@@ -1,5 +1,6 @@
 import { Button } from "@nextui-org/button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
@@ -34,22 +35,30 @@ const AboutUs = () => {
             between challenges and impactful solutions.
           </h1>
           <div className="flex items-center justify-center gap-4 md:gap-10  mt-3 lg:mt-8">
-            <Button
-              className="bg-teal-500 w-52"
-              size="lg"
-              variant="shadow"
-              color="success"
-            >
-              Services <FaLongArrowAltRight size={20} />
-            </Button>
-            <Button
-              className="bg-teal-500 w-52"
-              size="lg"
-              variant="shadow"
-              color="success"
-            >
-              Contact us <FaLongArrowAltRight size={20} />
-            </Button>
+            <div>
+              <Link href={"/services"}>
+                <Button
+                  className="bg-teal-500 w-52"
+                  size="lg"
+                  variant="shadow"
+                  color="success"
+                >
+                  Services <FaLongArrowAltRight size={20} />
+                </Button>
+              </Link>
+            </div>
+            <div>
+              <Link href={"/contact"}>
+                <Button
+                  className="bg-teal-500 w-52"
+                  size="lg"
+                  variant="shadow"
+                  color="success"
+                >
+                  Contact us <FaLongArrowAltRight size={20} />
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

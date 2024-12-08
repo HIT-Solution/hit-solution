@@ -174,15 +174,11 @@ const NavBar = () => {
         </NavbarItem>
 
         <NavbarItem>
-          <Button
-            as={Link}
-            className="bg-teal-400"
-            href="#"
-            variant="shadow"
-            color="success"
-          >
-            Contact
-          </Button>
+          <Link href={"/contact"}>
+            <Button className="bg-teal-400" variant="shadow" color="success">
+              Contact
+            </Button>
+          </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu className="bg-gradient-to-br from-black to-teal-800">
@@ -223,15 +219,11 @@ const NavBar = () => {
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Button
-            as={Link}
-            className="bg-teal-400"
-            href="/contact"
-            variant="shadow"
-            color="success"
-          >
-            Contact
-          </Button>
+          <Link href={"/contact"}>
+            <Button className="bg-teal-400" variant="shadow" color="success">
+              Contact
+            </Button>
+          </Link>
         </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>
