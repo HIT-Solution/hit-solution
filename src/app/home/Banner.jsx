@@ -39,7 +39,7 @@ const Banner = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { delay: 1.5, duration: 0.8 },
+      transition: { delay: 1.5, duration: 1 },
     },
   };
 

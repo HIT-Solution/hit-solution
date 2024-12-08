@@ -7,7 +7,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Blogs = () => {
   const text =
-    "Discover the latest insights, trends, and strategies in the world of technologyand software development Our blog covers everything from cutting-edge development techniques and industry updates to case studies and success stories Stay informed with expert opinions, actionable tips, and deep dives into how modern software solutions are transforming industries and shaping the future Whether you are a developer, business owner, or tech enthusiast,there are something here for you";
+    "Discover the latest insights, trends, and strategies in the world of technology and software development Our blog covers everything from cutting-edge development techniques and industry updates to case studies and success stories Stay informed with expert opinions, actionable tips, and deep dives into how modern software solutions are transforming industries and shaping the future Whether you are a developer, business owner, or tech enthusiast,there are something here for you";
 
   return (
     <div>
