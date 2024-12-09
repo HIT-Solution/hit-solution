@@ -43,6 +43,7 @@ const Contact = () => {
               width={600}
               height={400}
               quality={100}
+              loading="lazy"
               className="object-cover rounded-tr-[120px] rounded-bl-[120px]"
             />
           </div>

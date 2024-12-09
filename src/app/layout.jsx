@@ -14,7 +14,8 @@ export const metadata = {
 
 import { Providers } from "./providers";
 import NavBar from "./shared/NavBar";
-import Loader from "./loader";
+import Footer from "./shared/Footer";
+// import Loader from "./loader";
 
 export default function RootLayout({ children }) {
   return (
@@ -25,7 +26,8 @@ export default function RootLayout({ children }) {
       >
         <Providers suppressHydrationWarning={true}>
           <NavBar />
-          <Loader suppressHydrationWarning={true}>{children}</Loader>
+          {children}
+          <Footer />
         </Providers>
       </body>
     </html>
