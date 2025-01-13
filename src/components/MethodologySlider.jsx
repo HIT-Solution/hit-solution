@@ -47,6 +47,49 @@ const MethodologySlider = () => {
   }, []);
   const data = [
     {
+      name: "Internet of Things (IoT) Solutions",
+      data: [
+        {
+          title: "Requirements Analysis",
+          description: "Understand the project details from client.",
+          link: "/",
+          color: "bg-red-200",
+          TextColor: "text-red-400",
+        },
+        {
+          title: "Solution Design",
+          description:
+            "Customize IoT frameworks and choose compatible devices.",
+          link: "/",
+          color: "bg-green-200",
+          TextColor: "text-green-400",
+        },
+        // {
+        //   title: "MVP Development",
+        //   description: "Set up secure connections and collect real-time data.",
+        //   link: "/",
+        //   color: "bg-orange-200",
+        //   TextColor: "text-orange-400",
+        // },
+        {
+          title: "Dashboard & Control",
+          description:
+            "Develop an interface for monitoring and controlling devices.",
+          link: "/",
+          color: "bg-blue-200",
+          TextColor: "text-blue-400",
+        },
+        {
+          title: "Maintenance & Updates",
+          description:
+            "Provide regular updates and maintain device functionality.",
+          link: "/",
+          color: "bg-violet-200",
+          TextColor: "text-violet-400",
+        },
+      ],
+    },
+    {
       name: "Softwares & Digital Product",
       data: [
         {
@@ -117,49 +160,7 @@ const MethodologySlider = () => {
         },
       ],
     },
-    {
-      name: "Internet of Things (IoT) Solutions",
-      data: [
-        {
-          title: "Requirements Analysis",
-          description: "Understand the project details from client.",
-          link: "/",
-          color: "bg-red-200",
-          TextColor: "text-red-400",
-        },
-        {
-          title: "Solution Design",
-          description:
-            "Customize IoT frameworks and choose compatible devices.",
-          link: "/",
-          color: "bg-green-200",
-          TextColor: "text-green-400",
-        },
-        {
-          title: "MVP Development",
-          description: "Set up secure connections and collect real-time data.",
-          link: "/",
-          color: "bg-orange-200",
-          TextColor: "text-orange-400",
-        },
-        {
-          title: "Dashboard & Control",
-          description:
-            "Develop an interface for monitoring and controlling devices.",
-          link: "/",
-          color: "bg-blue-200",
-          TextColor: "text-blue-400",
-        },
-        {
-          title: "Maintenance & Updates",
-          description:
-            "Provide regular updates and maintain device functionality.",
-          link: "/",
-          color: "bg-violet-200",
-          TextColor: "text-violet-400",
-        },
-      ],
-    },
+
     {
       name: "Product Design",
       data: [
@@ -362,10 +363,10 @@ const MethodologySlider = () => {
         {data.map((item) => (
           <SwiperSlide key={item.name}>
             <div className="relative overflow-hidden">
-              <h1 className="text-4xl text-white text-center my-3">
+              <h1 className="lg:text-4xl md:text-3xl text-2xl text-white text-center my-3">
                 {item.name}
               </h1>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+              <div className="grid grid-cols-1 pt-12 md:grid-cols-2 lg:grid-cols-4 gap-5">
                 {item.data.map((item, index) => (
                   <div
                     key={item.color}
@@ -391,13 +392,13 @@ const MethodologySlider = () => {
                         </svg>
                       </h1>
                       <h1
-                        className={`font-bold text-9xl ${item.TextColor} opacity-40`}
+                        className={`font-bold lg:text-9xl md:text-8xl text-7xl ${item.TextColor} opacity-40`}
                       >
                         {index + 1}
                       </h1>
                     </div>
                     <div className="absolute bottom-5 left-5 right-5">
-                      <h1 className="text-3xl transform group-hover:-translate-y-20 transition-transform duration-300">
+                      <h1 className="lg:text-3xl md:text-2xl text-2xl transform group-hover:-translate-y-12 transition-transform duration-300">
                         {item.title}
                       </h1>
                       <div className="text-lg transform translate-y-[270px] group-hover:translate-y-0 transition-transform duration-400">

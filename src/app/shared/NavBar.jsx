@@ -28,49 +28,41 @@ const NavBar = () => {
       <ul className="text-lg space-y-5">
         <h1 className="text-teal-600 font-semibold">Service List</h1>
         <li>
-          {" "}
           <Link className="hover:text-teal-600" href={"/"}>
             Software Development & Digital Product
           </Link>
         </li>
         <li>
-          {" "}
           <Link className="hover:text-teal-600" href={"/"}>
             Cloud Computing Solutions
           </Link>
         </li>
         <li>
-          {" "}
           <Link className="hover:text-teal-600" href={"/"}>
             Internet of Things (IoT) Solutions
           </Link>
         </li>
         <li>
-          {" "}
           <Link className="hover:text-teal-600" href={"/"}>
             Product Design
           </Link>
         </li>
         <li>
-          {" "}
           <Link className="hover:text-teal-600" href={"/"}>
-            QuaLity Assurance
+            Quality Assurance
           </Link>
         </li>
         <li>
-          {" "}
           <Link className="hover:text-teal-600" href={"/"}>
             Tech Consultancy and IT Support
           </Link>
         </li>
         <li>
-          {" "}
           <Link className="hover:text-teal-600" href={"/"}>
             Digital Marketing
           </Link>
         </li>
         <li>
-          {" "}
           <Link className="hover:text-teal-600" href={"/"}>
             AR Creative Studio
           </Link>
@@ -91,31 +83,32 @@ const NavBar = () => {
       onMenuOpenChange={setIsMenuOpen}
     >
       <NavbarContent>
+        {/* Hamburger Menu Toggle */}
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden text-white"
+          className="sm:block md:hidden text-white"
         />
         <NavbarBrand>
-          <Image alt="" quality={100} width={60} height={60} src={logo} />
+          <Link href={"/"}>
+            <Image alt="Logo" quality={100} width={60} height={60} src={logo} />
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="" justify="end">
+      {/* Main Navbar Items */}
+      <NavbarContent className="hidden md:flex" justify="end">
         <NavbarItem
           className={
-            isActive("/")
-              ? "text-teal-400 hidden lg:flex"
-              : "hidden lg:flex text-white hover:text-teal-400"
+            isActive("/") ? "text-teal-400" : "text-white hover:text-teal-400"
           }
         >
           <Link href="/">Home</Link>
         </NavbarItem>
-
         <NavbarItem
           className={
             isActive("/services")
-              ? "text-teal-400 hidden lg:flex"
-              : "hidden lg:flex text-white hover:text-teal-400"
+              ? "text-teal-400"
+              : "text-white hover:text-teal-400"
           }
         >
           <Tooltip content={servicesContent}>
@@ -127,8 +120,8 @@ const NavBar = () => {
         <NavbarItem
           className={
             isActive("/technologies")
-              ? "text-teal-400 hidden lg:flex"
-              : "hidden lg:flex text-white hover:text-teal-400"
+              ? "text-teal-400"
+              : "text-white hover:text-teal-400"
           }
         >
           <Link className="flex items-center" href="/technologies">
@@ -137,28 +130,27 @@ const NavBar = () => {
         </NavbarItem>
         <NavbarItem
           className={
-            isActive("/portfolio")
-              ? "text-teal-400 hidden lg:flex"
-              : "hidden lg:flex text-white hover:text-teal-400"
+            isActive("/")
+              ? "text-teal-400"
+              : "text-white hover:text-teal-400"
           }
         >
-          <Link href="/portfolio">Portfolio</Link>
+          <Link href="/">Portfolio</Link>
         </NavbarItem>
         <NavbarItem
           className={
             isActive("/blogs")
-              ? "text-teal-400 hidden lg:flex"
-              : "hidden lg:flex text-white hover:text-teal-400"
+              ? "text-teal-400"
+              : "text-white hover:text-teal-400"
           }
         >
           <Link href="/blogs">Blogs</Link>
         </NavbarItem>
-
         <NavbarItem
           className={
             isActive("/career")
-              ? "text-teal-400 hidden lg:flex"
-              : "hidden lg:flex text-white hover:text-teal-400"
+              ? "text-teal-400"
+              : "text-white hover:text-teal-400"
           }
         >
           <Link href="/career">Career</Link>
@@ -166,13 +158,12 @@ const NavBar = () => {
         <NavbarItem
           className={
             isActive("/aboutUs")
-              ? "text-teal-400 hidden lg:flex"
-              : "hidden lg:flex text-white hover:text-teal-400"
+              ? "text-teal-400"
+              : "text-white hover:text-teal-400"
           }
         >
-          <Link href="/aboutUs">AboutUs</Link>
+          <Link href="/aboutUs">About Us</Link>
         </NavbarItem>
-
         <NavbarItem>
           <Link href={"/contact"}>
             <Button className="bg-teal-400" variant="shadow" color="success">
@@ -181,7 +172,9 @@ const NavBar = () => {
           </Link>
         </NavbarItem>
       </NavbarContent>
-      <NavbarMenu className="bg-gradient-to-br from-black to-teal-800">
+
+      {/* Hamburger Menu Content */}
+      <NavbarMenu className="bg-gradient-to-br from-black to-teal-800 sm:block md:hidden">
         <NavbarMenuItem>
           <Link className="text-white" href="/">
             Home
@@ -198,7 +191,7 @@ const NavBar = () => {
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link className="text-white" href="/portfolio">
+          <Link className="text-white" href="/">
             Portfolio
           </Link>
         </NavbarMenuItem>
@@ -207,7 +200,6 @@ const NavBar = () => {
             Blogs
           </Link>
         </NavbarMenuItem>
-
         <NavbarMenuItem>
           <Link className="text-white" href="/career">
             Career
@@ -215,7 +207,7 @@ const NavBar = () => {
         </NavbarMenuItem>
         <NavbarMenuItem>
           <Link className="text-white" href="/aboutUs">
-            AboutUs
+            About Us
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>

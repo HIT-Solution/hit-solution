@@ -3,8 +3,8 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { IoIosArrowForward } from "react-icons/io";
-import BannerSlider from "../../components/BannerSlider";
-import { Spinner } from "@nextui-org/react";
+// import BannerSlider from "../../components/BannerSlider";
+// import { Spinner } from "@nextui-org/react";
 
 const Banner = () => {
   const titleAnimation = {
@@ -75,7 +75,7 @@ const Banner = () => {
 
   return (
     <div>
-      <div className="relative w-full h-[650px] overflow-hidden">
+      <div className="relative w-full lg:h-[650px] md:h-[600px] h-[500px] overflow-hidden">
         {/* Video Background */}
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"
@@ -89,8 +89,8 @@ const Banner = () => {
         </video>
 
         {/* Text Overlay */}
-        <motion.div className="absolute inset-0 flex flex-col mt-32 items-center text-white text-center mx-5">
-          <div className="text-4xl md:text-7xl font-bold">
+        <motion.div className="absolute inset-0 flex flex-col md:mt-28 mt-12 lg:mt-32 items-center text-white text-center mx-5">
+          <div className="text-2xl md:text-7xl lg:text-7xl  font-bold">
             <AnimatedText text="HIT SOLUTION" className="text-white" />
             <br />
             <AnimatedText

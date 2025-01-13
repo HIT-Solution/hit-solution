@@ -61,14 +61,20 @@ const BannerSlider = () => {
     // Clean up event listeners on unmount
     return () => {
       if (swiperRef.current?.el) {
-        swiperRef.current.el.removeEventListener("mouseenter", handleMouseEnter);
-        swiperRef.current.el.removeEventListener("mouseleave", handleMouseLeave);
+        swiperRef.current.el.removeEventListener(
+          "mouseenter",
+          handleMouseEnter
+        );
+        swiperRef.current.el.removeEventListener(
+          "mouseleave",
+          handleMouseLeave
+        );
       }
     };
   }, []);
 
   return (
-    <div className="lg:mx-10 mx-5 mb-10 -translate-y-24 relative">
+    <div className="lg:mx-10 mx-5 -translate-y-24 relative">
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         freeMode={true}
@@ -82,36 +88,63 @@ const BannerSlider = () => {
         breakpoints={{
           390: { slidesPerView: 1, spaceBetween: 30 },
           768: { slidesPerView: 2, spaceBetween: 40 },
-          1024: { slidesPerView: 3, spaceBetween: 60 },
+          1024: { slidesPerView: 4, spaceBetween: 20 },
         }}
         className="mySwiper"
       >
         {/* Slides */}
-        {[{ Icon: FaTv, label: "Portfolio" },
-          { Icon: FaLocationDot, label: "Ukilzone.com" },
-          { Icon: GiSkills, label: "SkillHub" },
-          { Icon: FaHome, label: "Bashakhuji.com" },
-          { Icon: DiVisualstudio, label: "AR Creative studio" },
-          { Icon: ImLab, label: "HIT Labs" }]
-          .map(({ Icon, label }, index) => (
-            <SwiperSlide key={index}>
-              <Link href="/">
-                <div className="relative h-[230px] overflow-hidden bg-gradient-to-br from-black to-teal-900 rounded-md">
-                  <motion.div className="absolute top-1/2 right-1/4 w-96 h-96 bg-teal-500 rounded-full filter blur-3xl opacity-20"
-                    animate={glowAnimation.animate} transition={glowAnimation.transition} />
-                  <svg className="absolute bottom-0 left-0 w-full" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
-                    <motion.path fill="rgba(0, 128, 128, 0.1)" initial={waveAnimation.initial} animate={waveAnimation.animate} transition={waveAnimation.transition} />
-                  </svg>
-                  <div className="relative z-10 flex flex-col items-center justify-center h-full max-w-4xl mx-auto px-4">
-                    <div className="flex flex-col gap-5 justify-center items-center text-2xl text-white">
-                      <Icon size={60} />
-                      <h1 className="flex items-center">{label} <IoIosArrowForward /></h1>
-                    </div>
+        {[
+          { Icon: FaTv, label: "Portfolio", link: "/" },
+          {
+            Icon: FaLocationDot,
+            label: "Ukilzone.com",
+            link: "https://www.ukilzone.com",
+          },
+          {
+            Icon: GiSkills,
+            label: "SkillHub",
+            link: "https://eloquent-stardust-e9120f.netlify.app/?fbclid=IwZXh0bgNhZW0CMTEAAR1XuNWT9L-glggdNhc8vsixDRyVH_V3MZLBOqqtjw44Yl5O4gyK1sMm898_aem_LRkWmYzGLTgd54ht_LccAQ",
+          },
+          {
+            Icon: FaHome,
+            label: "Bashakhuji.com",
+            link: "https://strong-yeot-422847.netlify.app/",
+          },
+          { Icon: DiVisualstudio, label: "AR Creative studio", link: "/" },
+          { Icon: ImLab, label: "HIT Labs", link: "/" },
+        ].map(({ Icon, label, link }, index) => (
+          <SwiperSlide key={index}>
+            <Link target="_blank" href={link}>
+              <div className="relative h-[230px] overflow-hidden bg-gradient-to-br from-gray-900 to-teal-500 rounded-md">
+                <motion.div
+                  className="absolute top-1/2 right-1/4 w-96 h-96 bg-teal-500 rounded-full filter blur-3xl opacity-20"
+                  animate={glowAnimation.animate}
+                  transition={glowAnimation.transition}
+                />
+                <svg
+                  className="absolute bottom-0 left-0 w-full"
+                  viewBox="0 0 1440 320"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <motion.path
+                    fill="rgba(0, 128, 128, 0.1)"
+                    initial={waveAnimation.initial}
+                    animate={waveAnimation.animate}
+                    transition={waveAnimation.transition}
+                  />
+                </svg>
+                <div className="relative z-10 flex flex-col items-center justify-center h-full max-w-4xl mx-auto px-4">
+                  <div className="flex flex-col gap-5 justify-center items-center text-2xl text-white">
+                    <Icon size={60} />
+                    <h1 className="flex items-center">
+                      {label} <IoIosArrowForward />
+                    </h1>
                   </div>
                 </div>
-              </Link>
-            </SwiperSlide>
-          ))}
+              </div>
+            </Link>
+          </SwiperSlide>
+        ))}
         {/* Custom Navigation Buttons */}
         <div className="custom-prev absolute top-1/2 left-2 transform -translate-y-1/2 z-10 flex items-center justify-center w-8 h-8 bg-gray-300 text-black rounded-full cursor-pointer hover:bg-gray-200">
           <FaChevronLeft />

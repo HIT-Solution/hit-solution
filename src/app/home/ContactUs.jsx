@@ -1,22 +1,28 @@
 "use client";
 import React from "react";
-import SimpleBackground from "../../components/SimpleBackground";
-import { Button, Checkbox, Input } from "@nextui-org/react";
-import { Select, SelectItem } from "@nextui-org/react";
-import { Textarea } from "@nextui-org/react";
+// import SimpleBackground from "../../components/SimpleBackground";
+// import { Button, Checkbox, Input } from "@nextui-org/react";
+// import { Select, SelectItem } from "@nextui-org/react";
+// import { Textarea } from "@nextui-org/react";
 import { IoCheckmarkCircleOutline } from "react-icons/io5";
 import contacLogo from "../../../public/contactlogo.jpeg";
 import Image from "next/image";
+import ContactUsForm from "@/components/ContactUsForm";
 const ContactUs = () => {
   return (
     <div className="">
       {/* <SimpleBackground> */}
-      <h1 className="text-center text-5xl my-5">Contact with us</h1>
-      <div className="grid md:grid-cols-2 gap-20 mx-5 my-16 lg:mx-10">
-        <div className="space-y-5">
-          <h1 className="text-4xl md:mt-6">
+      <h1 className="text-center font-bold lg:text-5xl md:text-4xl text-3xl my-5">
+        Contact with us
+      </h1>
+      <div
+        className="lg:flex
+       container justify-center mx-auto  items-center"
+      >
+        <div className="space-y-8">
+          <h1 className="lg:text-4xl md:text-4xl text-2xl md:mt-6">
             Talk to us and <br />
-            <span className="font-bold">
+            <span className="font-semibold">
               {" "}
               get your project moving <span className="text-teal-500">!</span>
             </span>
@@ -45,9 +51,10 @@ const ContactUs = () => {
             quality={100}
           />
         </div>
-        <div>
-          <form className="p-7 bg-white shadow-2xl lg:mx-20 rounded-xl pt-10 space-y-2">
-            <div className="grid grid-cols-2 gap-5">
+
+        <ContactUsForm />
+        {/* <form className="p-7 bg-white shadow-2xl lg:mx-20 rounded-xl pt-10 space-y-2">
+          <div className="grid grid-cols-2 gap-5">
             <Input
               required
               className="bg-teal-50 rounded-xl"
@@ -62,56 +69,55 @@ const ContactUs = () => {
               variant="bordered"
               label="Last Name"
             />
-            </div>
-            <Input
-              required
-              className="bg-teal-50 rounded-xl"
-              type="email"
-              variant="bordered"
-              label="Email"
-            />
-             <Input
-                className="bg-teal-50 rounded-xl"
-                type="text"
-                variant="bordered"
-                label="Contact Number"
-              />
-            <Select
-              required
-              className="bg-teal-50 rounded-xl"
-              variant="bordered"
-              label="Budget Size"
+          </div>
+          <Input
+            required
+            className="bg-teal-50 rounded-xl"
+            type="email"
+            variant="bordered"
+            label="Email"
+          />
+          <Input
+            className="bg-teal-50 rounded-xl"
+            type="text"
+            variant="bordered"
+            label="Contact Number"
+          />
+          <Select
+            required
+            className="bg-teal-50 rounded-xl"
+            variant="bordered"
+            label="Budget Size"
+          >
+            <SelectItem>0-50k</SelectItem>
+            <SelectItem>60k-100k</SelectItem>
+            <SelectItem>101k-200k</SelectItem>
+          </Select>
+          <Textarea
+            required
+            className="bg-teal-50 rounded-xl"
+            type="text"
+            variant="bordered"
+            label="Project Description"
+          />
+          <Input
+            required
+            className="bg-teal-50 rounded-xl"
+            type="text"
+            variant="bordered"
+            label="How did you hear about us?"
+          />
+          <Checkbox color="success">This Project requires an NDA</Checkbox>
+          <div>
+            <Button
+              className="bg-teal-500 border-teal-500 rounded-full"
+              type="submit"
+              color="success"
             >
-              <SelectItem>0-50k</SelectItem>
-              <SelectItem>60k-100k</SelectItem>
-              <SelectItem>101k-200k</SelectItem>
-            </Select>
-            <Textarea
-              required
-              className="bg-teal-50 rounded-xl"
-              type="text"
-              variant="bordered"
-              label="Project Description"
-            />
-            <Input
-              required
-              className="bg-teal-50 rounded-xl"
-              type="text"
-              variant="bordered"
-              label="How did you hear about us?"
-            />
-            <Checkbox color="success">This Project requires an NDA</Checkbox>
-            <div>
-              <Button
-                className="bg-teal-500 border-teal-500 rounded-full"
-                type="submit"
-                color="success"
-              >
-                Submit
-              </Button>
-            </div>
-          </form>
-        </div>
+              Submit
+            </Button>
+          </div>
+        </form> */}
       </div>
       {/* </SimpleBackground> */}
     </div>

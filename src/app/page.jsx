@@ -14,9 +14,9 @@ import OurProcess from "./home/OurProcess";
 
 const Banner = dynamic(() => import("./home/Banner"));
 
+import "sweetalert2/src/sweetalert2.scss";
+
 const Home = async () => {
-
-
   // function wait(ms) {
   //   return new Promise((resolve) => setTimeout(resolve, ms));
   // }

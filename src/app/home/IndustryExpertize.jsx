@@ -5,7 +5,7 @@ const IndustryExpertize = () => {
   return (
     <div>
       <div className="bg-gradient-to-br from-black to-teal-900 my-10 py-16 pb-24">
-        <h1 className="text-center text-5xl pt-16 text-white">
+        <h1 className="text-center lg:text-5xl md:text-4xl text-3xl lg:pt-16 text-white">
           Industrial Expertise and Client Projects
         </h1>
         <p className="text-center text-gray-300 my-10">
@@ -322,8 +322,6 @@ const IndustryExpertize = () => {
             </svg>
             <h1>Automotive</h1>
           </div>
-
-         
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-5 mx-5 md:mx-16 my-5">
           <div className="flex flex-col justify-center items-center gap-5 rounded-tl-3xl rounded-br-3xl h-32 bg-cyan-200 p-1">
@@ -528,8 +526,8 @@ const IndustryExpertize = () => {
             <h1>Non-profit</h1>
           </div>
         </div>
-        <div  className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-7 gap-5 mx-5 md:mx-10 my-5">
-        <div className="flex flex-col justify-center items-center gap-5 rounded-tl-3xl rounded-br-3xl h-32 bg-red-200">
+        <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-7 gap-5 mx-5 md:mx-10 my-5">
+          <div className="flex flex-col justify-center items-center gap-5 rounded-tl-3xl rounded-br-3xl h-32 bg-red-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -796,9 +794,8 @@ const IndustryExpertize = () => {
             <h1>Sports & Fitness</h1>
           </div>
         </div>
-        <IndustryExpertiseSlider/>
+        <IndustryExpertiseSlider />
       </div>
-     
     </div>
   );
 };

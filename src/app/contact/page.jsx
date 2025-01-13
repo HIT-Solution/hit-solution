@@ -50,9 +50,12 @@ const Contact = () => {
         </div>
       </div>
 
+      {/* This is Contuct From  */}
+
       <div id="contactForm" className="">
         <ContactUsForm />
       </div>
+
       <div className="bg-gradient-to-br from-black to-teal-900 py-20 my-10">
         <div className="flex flex-col lg:flex-row mx-5 gap-5 lg:mx-10 justify-center items-center">
           <div className="flex gap-5 items-center w-[330px] md:w-[400px] h-[180px] px-3 py-10 shadow-2xl border-teal-400 border">

@@ -6,28 +6,28 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <section className="relative  h-[850px] md:h-[400px] mt-16">
+      <section className="relative h-[930px] md:h-[550px]  pt-32">
         <div className="absolute top-0 left-0 w-full h-full">
           <Image
             className="brightness-50"
             src={"/5125962.jpg"}
             alt="Blog Header"
             layout="fill" // Makes the image fill its container
-            objectFit="cover" // Ensures the image covers the container proportionally
+            style={{ objectFit: "cover" }} // Ensures the image covers the container proportionally
             quality={100}
           />
         </div>
         <div className="absolute inset-0 mx-5 lg:mx-10 lg:p-10">
           <div className=" flex flex-col md:flex-row gap-10 justify-between">
             <div className="md:w-[350px]">
-              <div className="p-5 rounded-full bg-gray-300 w-[120px] h-[120px] mt-10">
-                {" "}
+              <div className="p-2 sm:p-5 w-[80px] h-[80px] sm:w-[120px] sm:h-[120px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px] mt-10 mx-auto">
                 <Image
                   src={"/logo.png"}
-                  height={150}
-                  width={150}
+                  height={200}
+                  width={200}
                   quality={100}
-                  alt=""
+                  alt="Logo"
+                  className="object-contain"
                 />
               </div>
               <h1 className="text-gray-400 mt-5 text-justify">
@@ -47,10 +47,13 @@ const Footer = () => {
                 <Link href={"/services"}>Services</Link>
               </h1>
               <h1 className=" text-gray-400 font-semibold">
-                <Link href={"/portfolio"}>Portfolio</Link>
+                <Link href={"/"}>Portfolio</Link>
               </h1>
               <h1 className=" text-gray-400 font-semibold">
                 <Link href={"blogs"}>Blogs</Link>
+              </h1>
+              <h1 className=" text-gray-400 font-semibold">
+                <Link href={"/career"}>Career</Link>
               </h1>
               <h1 className=" text-gray-400 font-semibold">
                 <Link href={"/technologies"}>Technologies</Link>
@@ -70,16 +73,17 @@ const Footer = () => {
                 <Link href={"/"}>Terms of use</Link>
               </h1>
               <h1 className=" text-gray-400 font-semibold">
-                <Link href={"/"}>Privacy policy</Link>
+                <Link href={"/policy/privicypolicy"}>Privacy policy</Link>
               </h1>
               <h1 className=" text-gray-400 font-semibold">
                 <Link href={"/"}>Cookie policy</Link>
               </h1>
             </div>
           </div>
-          <h1 className="text-gray-300 mt-7 text-center">
-            © 2024 <span className="text-teal-400">Hit Solution</span>. All
-            Rights Reserved.
+          <h1 className="text-gray-300 pt-12 text-center">
+            © {new Date().getFullYear()}{" "}
+            <span className="text-teal-400">Hit Solution</span>. All Rights
+            Reserved.
           </h1>
         </div>
       </section>

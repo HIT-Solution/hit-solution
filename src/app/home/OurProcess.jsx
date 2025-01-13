@@ -7,13 +7,13 @@ import Image from "next/image";
 const OurProcess = () => {
   return (
     <div>
-      <div className="bg-gradient-to-br from-black to-teal-900 pt-28 my-5">
-        <h1 className="text-5xl font-bold text-center text-white">
-          Our process is simple, smooth <br /> and efficient.
+      <div className="bg-gradient-to-br from-black to-teal-900 lg:pt-16 md:pt-14 pt-12 py-5">
+        <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold text-center text-white">
+          Our process is simple, smooth <br /> and efficient
         </h1>
-        <div className="grid lg:grid-cols-2 gap-10 mx-5 lg:mx-10 my-16">
+        <div className="grid lg:grid-cols-2 lg:gap-10 md:gap-8 gap-7 mx-5 lg:mx-10  pt-20">
           <div>
-            <div className="mb-16">
+            <div className="lg:mb-16 md:mb-12 pb-8">
               <div className="flex gap-5 items-end">
                 <div className="bg-red-200 w-12 h-12 rounded-full flex justify-center items-center">
                   <svg
@@ -49,7 +49,7 @@ const OurProcess = () => {
                 resources.
               </p>
             </div>
-            <div className="mb-16">
+            <div className="lg:mb-16 md:mb-12 pb-8">
               <div className="flex gap-5 items-end">
                 <div className="bg-green-200 w-12 h-12 rounded-full flex justify-center items-center">
                   <svg
@@ -122,7 +122,7 @@ const OurProcess = () => {
                 experts with your vision.
               </p>
             </div>
-            <div className="mb-16">
+            <div className="lg:mb-16 md:mb-12 pb-8">
               <div className="flex gap-5 items-end">
                 <div className="bg-blue-200 w-12 h-12 rounded-full flex justify-center items-center">
                   <svg
@@ -211,7 +211,9 @@ const OurProcess = () => {
                 />
               </div>
               <div className="w-[160px] md:w-[200px] h-[250px] bg-cyan-200 rounded-br-[120px] flex flex-col justify-center items-center p-5">
-                <h1 className="text-3xl font-bold text-gray-500">Top Talents</h1>
+                <h1 className="text-3xl font-bold text-gray-500">
+                  Top Talents
+                </h1>
                 <h1 className="text-6xl font-bold">100+</h1>
               </div>
             </div>

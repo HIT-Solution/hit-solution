@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -24,10 +24,13 @@
     "framer-motion": "^11.13.1",
     "lucide-react": "^0.468.0",
     "next": "^15.0.1",
+    "nodemailer": "^6.9.16",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-fast-marquee": "^1.6.5",
-    "react-icons": "^5.3.0",
+    "react-icons": "^5.4.0",
+    "sass": "^1.83.1",
+    "sweetalert2": "^11.15.10",
     "swiper": "^11.1.14",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7"

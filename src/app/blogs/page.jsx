@@ -4,7 +4,7 @@ import React from "react";
 import SocialSharing from "../../components/SocialSharing";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import BlogsTab from "@/components/BlogsTab";
-
+import banner from "../../../public/banner/banner.png";
 const Blogs = () => {
   const text =
     "Discover the latest insights, trends, and strategies in the world of technology and software development Our blog covers everything from cutting-edge development techniques and industry updates to case studies and success stories Stay informed with expert opinions, actionable tips, and deep dives into how modern software solutions are transforming industries and shaping the future Whether you are a developer, business owner, or tech enthusiast,there are something here for you";
@@ -19,7 +19,7 @@ const Blogs = () => {
             src={"/5125962.jpg"}
             alt="Blog Header"
             layout="fill" // Makes the image fill its container
-            objectFit="cover" // Ensures the image covers the container proportionally
+            style={{ objectFit: "cover" }} // Ensures the image covers the container proportionally
             quality={100}
           />
         </div>
@@ -56,8 +56,8 @@ const Blogs = () => {
           <div className="">
             <div className="">
               <Image
-                className="object-cover rounded-tr-[120px] rounded-bl-[120px]"
-                src={"/blog.png"}
+                className="object-cover rounded-tr-[110px] rounded-bl-[110px]"
+                src={banner}
                 alt="Blog Header"
                 // layout="responsive"
                 objectFit="cover" // Ensures the image covers the container proportionally
