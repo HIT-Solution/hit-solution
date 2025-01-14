@@ -267,7 +267,7 @@ const BlogSlider = () => {
                 <Image
                   className="rounded-tl-xl rounded-tr-xl"
                   src={blog1}
-                  alt=""
+                  alt="abc"
                   width={600}
                   height={300}
                   quality={100}
@@ -288,7 +288,7 @@ const BlogSlider = () => {
                   <Image
                     className="rounded-full border-2 border-white"
                     src={logo}
-                    alt=""
+                    alt="abc"
                     width={50}
                     height={50}
                     quality={100}
@@ -308,7 +308,7 @@ const BlogSlider = () => {
                 <Image
                   className="rounded-tl-xl rounded-tr-xl"
                   src={blog1}
-                  alt=""
+                  alt="abc"
                   width={600}
                   height={300}
                   quality={100}
@@ -329,7 +329,7 @@ const BlogSlider = () => {
                   <Image
                     className="rounded-full border-2 border-white"
                     src={logo}
-                    alt=""
+                    alt="abc"
                     width={50}
                     height={50}
                     quality={100}

@@ -41,7 +41,7 @@ const Career = () => {
             <Image
               className="h-[500px] object-cover rounded-tl-[120px] rounded-br-[120px]"
               src={"/social-integration-working-team.jpg"}
-              alt=""
+              alt="abc"
               width={600}
               height={400}
               quality={100}
@@ -164,7 +164,7 @@ const Career = () => {
                 src={"/co-working-people-working-together.jpg"}
                 height={350}
                 width={600}
-                alt=""
+                alt="abc"
                 quality={100}
               />
             </div>

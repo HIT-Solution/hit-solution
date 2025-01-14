@@ -14,7 +14,7 @@ const AboutUs = () => {
         <div className="absolute top-0 left-0 w-full h-full">
           <Image
             className="object-cover brightness-50"
-            alt=""
+            alt="abc"
             layout="fill" // Makes the image fill its container
             objectFit="cover" // Ensures the image covers the container proportionally
             quality={100}
@@ -70,7 +70,7 @@ const AboutUs = () => {
         <div className="absolute top-0 left-0 w-full h-full">
           <Image
             className="object-cover"
-            alt=""
+            alt="abc"
             layout="fill" // Makes the image fill its container
             objectFit="cover" // Ensures the image covers the container proportionally
             quality={100}
@@ -131,7 +131,7 @@ const AboutUs = () => {
               "/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working.jpg"
             }
             className="rounded-tr-[120px] rounded-bl-[120px]"
-            alt=""
+            alt="abc"
             width={550}
             height={400}
             quality={100}
@@ -176,7 +176,7 @@ const AboutUs = () => {
             <Image
               src={"/full-shot-man-experiencing-virtual-reality.jpg"}
               className="rounded-tr-[120px] rounded-bl-[120px] h-[380px] object-cover"
-              alt=""
+              alt="abc"
               width={550}
               height={400}
               quality={100}
@@ -193,7 +193,7 @@ const AboutUs = () => {
                 "/mission-goals-target-aspirations-motivation-strategy-concept.jpg"
               }
               className="w-[150px] h-[200px] md:w-[250px] md:h[250] object-cover "
-              alt=""
+              alt="abc"
               width={550}
               height={400}
               quality={100}
@@ -202,7 +202,7 @@ const AboutUs = () => {
             <Image
               src={arrowImg}
               className="w-[150px] h-[200px] md:w-[250px] md:h[250] object-cover rounded-tr-[120px]"
-              alt=""
+              alt="abc"
               width={550}
               height={400}
               quality={100}
@@ -213,7 +213,7 @@ const AboutUs = () => {
             <Image
               src={finger}
               className="w-[150px] h-[200px] md:w-[250px] md:h[250] object-cover rounded-bl-[120px]"
-              alt=""
+              alt="abc"
               width={550}
               height={400}
               quality={100}
@@ -224,7 +224,7 @@ const AboutUs = () => {
                 "/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working.jpg"
               }
               className="w-[150px] h-[200px] md:w-[250px] md:h[250] object-cover "
-              alt=""
+              alt="abc"
               width={550}
               height={400}
               quality={100}

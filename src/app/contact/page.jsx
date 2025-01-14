@@ -39,7 +39,7 @@ const Contact = () => {
           <div>
             <Image
               src={"/cropped-view-hands-typing-laptop.jpg"}
-              alt=""
+              alt="abc"
               width={600}
               height={400}
               quality={100}
