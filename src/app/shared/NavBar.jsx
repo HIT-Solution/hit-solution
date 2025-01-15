@@ -176,7 +176,9 @@ const NavBar = () => {
         </NavbarItem>
         <NavbarItem
           className={
-            isActive("/") ? "text-teal-400" : "text-white hover:text-teal-400"
+            isActive("/Portfolio")
+              ? "text-teal-400"
+              : "text-white hover:text-teal-400"
           }
         >
           <Link href="/" onClick={handleMenuClick}>
