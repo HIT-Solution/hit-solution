@@ -42,41 +42,84 @@ export const POST = async (req) => {
 
 // Delete Services api
 
-// export const DELETE = async (req) => {
+export const DELETE = async (req) => {
+  try {
+    await connectToDatabase();
+    console.log("Connected to MongoDB.");
+
+    // Extract the _id from the request body or query params
+    const { _id } = await req.json(); // If sending via body
+    // const _id = req.nextUrl.searchParams.get("_id"); // If sending via query params
+
+    console.log("_id received for deletion:", _id);
+
+    if (!_id) {
+      return NextResponse.json(
+        { error: "Service _id is required." },
+        { status: 400 }
+      );
+    }
+
+    // Delete the service by _id
+    const response = await ServciceData.findByIdAndDelete(_id);
+
+    if (!response) {
+      return NextResponse.json(
+        { error: "Service not found or already deleted." },
+        { status: 404 }
+      );
+    }
+
+    console.log("Service deleted:", response);
+
+    return NextResponse.json({ message: "Service deleted successfully." });
+  } catch (error) {
+    console.error("Error in DELETE handler:", error);
+    return NextResponse.json(
+      { error: "An error occurred while deleting the service." },
+      { status: 500 }
+    );
+  }
+};
+
+// // Services PUT API (Update a service)
+// export const PUT = async (req) => {
 //   try {
 //     await connectToDatabase();
 //     console.log("Connected to MongoDB.");
 
-//     // Extract the _id from the request body or query params
-//     const { _id } = await req.json(); // If sending via body
-//     // const _id = req.nextUrl.searchParams.get("_id"); // If sending via query params
+//     // Parse the JSON payload from the request
+//     const { _id, ...updateFields } = await req.json();
 
-//     console.log("_id received for deletion:", _id);
+//     console.log("Payload received for update:", { _id, updateFields });
 
 //     if (!_id) {
 //       return NextResponse.json(
-//         { error: "Service _id is required." },
+//         { error: "Service _id is required for updating." },
 //         { status: 400 }
 //       );
 //     }
 
-//     // Delete the service by _id
-//     const response = await ServciceData.findByIdAndDelete(_id);
+//     // Update the service by _id
+//     const updatedService = await ServciceData.findByIdAndUpdate(
+//       _id,
+//       updateFields,
+//       { new: true, runValidators: true }
+//     );
 
-//     if (!response) {
+//     if (!updatedService) {
 //       return NextResponse.json(
-//         { error: "Service not found or already deleted." },
+//         { error: "Service not found or could not be updated." },
 //         { status: 404 }
 //       );
 //     }
 
-//     console.log("Service deleted:", response);
-
-//     return NextResponse.json({ message: "Service deleted successfully." });
+//     console.log("Service updated:", updatedService);
+//     return NextResponse.json({ result: updatedService });
 //   } catch (error) {
-//     console.error("Error in DELETE handler:", error);
+//     console.error("Error in PUT handler:", error);
 //     return NextResponse.json(
-//       { error: "An error occurred while deleting the service." },
+//       { error: "An error occurred while updating the service." },
 //       { status: 500 }
 //     );
 //   }

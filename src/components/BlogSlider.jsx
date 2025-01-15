@@ -16,7 +16,7 @@ import logo from "../../public/logo.png";
 const BlogSlider = () => {
   return (
     <div>
-      <div className="lg:mt-32 md:mt-20 mt-12">
+      <div className="lg:mt-32 md:mt-20 mt-12 lg:mx-48 md:mx-28 mx-auto">
         <Swiper
           pagination={{
             clickable: true,
@@ -40,7 +40,7 @@ const BlogSlider = () => {
             },
           }}
           modules={[Autoplay, FreeMode, Pagination]}
-          className="mySwiper"
+          className="mySwiper space-x-64"
         >
           <SwiperSlide>
             <Link href={"/"}>
@@ -59,7 +59,7 @@ const BlogSlider = () => {
                   {/* Main Title (Category) */}
                   <h1 className="text-blue-200 mt-5">Data Science Insights</h1>
                   {/* Blog Title */}
-                  <h1 className="lg:text-3xl md:text-2xl text-xl my-2">
+                  <h1 className="lg:text-3xl md:text-2xl text-xl my-2 line-clamp-2">
                     How to Build a Successful Data Science Team: 6 Key Steps to
                     Follow
                   </h1>
@@ -117,7 +117,7 @@ const BlogSlider = () => {
                   {/* Main Title (Category) */}
                   <h1 className="text-blue-200 mt-5">Software Development</h1>
                   {/* Blog Title */}
-                  <h1 className="lg:text-3xl md:text-2xl text-xl my-2">
+                  <h1 className="lg:text-3xl md:text-2xl text-xl my-2 line-clamp-2">
                     6 Best Practices for Building Scalable Software Applications
                   </h1>
                   {/* Content Summary */}
@@ -169,7 +169,7 @@ const BlogSlider = () => {
                   {/* Main Title (Category) */}
                   <h1 className="text-blue-200 mt-5">IoT Innovations</h1>
                   {/* Blog Title */}
-                  <h1 className="lg:text-3xl md:text-2xl text-xl my-2">
+                  <h1 className="lg:text-3xl md:text-2xl text-xl my-2 line-clamp-2">
                     6 Essential Steps to Build a Successful IoT Ecosystem
                   </h1>
                   {/* Content Summary */}
@@ -210,6 +210,59 @@ const BlogSlider = () => {
                 {/* Main Blog Image */}
                 <Image
                   className="rounded-tl-xl rounded-tr-xl"
+                  src={blog2} // Replace with the web development blog image source
+                  alt="Web Development Trends Blog" // Alt Text
+                  width={600} // Fixed width
+                  height={300} // Fixed height
+                  quality={100} // High Quality
+                  style={{ width: "600px", height: "300px" }} // Fixed Size Style
+                />
+                <div>
+                  {/* Main Title (Category) */}
+                  <h1 className="text-blue-200 mt-5">Web Development Trends</h1>
+                  {/* Blog Title */}
+                  <h1 className="lg:text-3xl md:text-2xl text-xl my-2 line-clamp-2">
+                    Top Web Development Trends to Watch in 2025
+                  </h1>
+                  {/* Content Summary */}
+                  <p className="text-gray-300 text-start line-clamp-4">
+                    Web development is evolving faster than ever. From AI-driven
+                    web applications to immersive AR/VR integrations, 2025 is
+                    set to bring groundbreaking innovations. Explore the latest
+                    trends, including serverless architectures, micro frontends,
+                    WebAssembly, and how they are reshaping the way we build
+                    dynamic and efficient web experiences.
+                  </p>
+                </div>
+                {/* Author Section */}
+                <div className="flex gap-5 items-center my-3">
+                  {/* Author Profile Image */}
+                  <Image
+                    className="rounded-full border-2 border-white"
+                    src={logo} // Replace with the author's image source
+                    alt="Author's Logo or Profile" // Alt Text
+                    width={50} // Fixed width
+                    height={50} // Fixed height
+                    quality={100} // High Quality
+                    style={{ width: "50px", height: "50px" }} // Fixed Size Style
+                  />
+                  <div>
+                    {/* Author Name */}
+                    <h1 className="font-semibold">Web Dev Insights Team</h1>
+                    {/* Publish Date */}
+                    <h1>January 14, 2025</h1>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Link href={"/"}>
+              <div className="text-gray-200 rounded-xl h-[600px]">
+                {/* Main Blog Image */}
+                <Image
+                  className="rounded-tl-xl rounded-tr-xl"
                   src={blog1} // Main Image Source
                   alt="AI in Software Development Blog" // Alt Text
                   width={600} // Fixed width
@@ -223,7 +276,7 @@ const BlogSlider = () => {
                     AI-Driven Software Development
                   </h1>
                   {/* Blog Title */}
-                  <h1 className="lg:text-3xl md:text-2xl text-xl my-2">
+                  <h1 className="lg:text-3xl md:text-2xl text-xl my-2 line-clamp-2">
                     How Artificial Intelligence is Transforming Software
                     Development
                   </h1>
@@ -267,7 +320,7 @@ const BlogSlider = () => {
                 <Image
                   className="rounded-tl-xl rounded-tr-xl"
                   src={blog1}
-                  alt=""
+                  alt="abc"
                   width={600}
                   height={300}
                   quality={100}
@@ -288,7 +341,7 @@ const BlogSlider = () => {
                   <Image
                     className="rounded-full border-2 border-white"
                     src={logo}
-                    alt=""
+                    alt="abc"
                     width={50}
                     height={50}
                     quality={100}
@@ -300,15 +353,15 @@ const BlogSlider = () => {
                 </div>
               </div>
             </Link>
-          </SwiperSlide>
+          </SwiperSlide> */}
 
-          <SwiperSlide>
+          {/* <SwiperSlide>
             <Link href={"/"}>
               <div className="text-gray-200 rounded-xl h-[600px]">
                 <Image
                   className="rounded-tl-xl rounded-tr-xl"
                   src={blog1}
-                  alt=""
+                  alt="abc"
                   width={600}
                   height={300}
                   quality={100}
@@ -329,7 +382,7 @@ const BlogSlider = () => {
                   <Image
                     className="rounded-full border-2 border-white"
                     src={logo}
-                    alt=""
+                    alt="abc"
                     width={50}
                     height={50}
                     quality={100}

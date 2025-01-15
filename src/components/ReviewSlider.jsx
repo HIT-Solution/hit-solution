@@ -245,7 +245,7 @@ const ReviewSlider = () => {
                     <Image
                       className="rounded-xl"
                       src={review?.image}
-                      alt=""
+                      alt="abc"
                       width={100}
                       height={100}
                       quality={100}

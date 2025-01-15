@@ -41,7 +41,7 @@ const Application = () => {
             <Image
               className="rounded-tl-[120px] rounded-br-[120px]"
               src={"/close-up-female-hands-typing-laptop-table.jpg"}
-              alt=""
+              alt="abc"
               width={600}
               height={400}
             />
