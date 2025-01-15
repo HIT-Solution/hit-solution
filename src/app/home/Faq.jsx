@@ -58,7 +58,7 @@ const Faq = () => {
             <Image
               className="w-[150px] lg:w-[200px] h-[200px] rounded-tl-[120px] rounded-br-[120px]"
               src={fq1}
-              alt=""
+              alt="abc"
               width={250}
               height={200}
               quality={100}
@@ -69,7 +69,7 @@ const Faq = () => {
             <Image
               className="w-[150px] lg:w-[200px] h-[200px] rounded-tl-[120px] rounded-br-[120px]"
               src={fq1}
-              alt=""
+              alt="abc"
               width={250}
               height={200}
               quality={100}

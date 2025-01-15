@@ -72,13 +72,13 @@ const PortfolioSlider = () => {
         }}
         className="mySwiper"
       >
-        {images.map((img,index) => (
+        {images.map((img, index) => (
           <SwiperSlide key={index}>
             <Link href="/">
               <div>
                 <Image
-                className="rounded-md"
-                  alt=""
+                  className="rounded-md"
+                  alt="abc"
                   src={img}
                   width={500}
                   height={500}

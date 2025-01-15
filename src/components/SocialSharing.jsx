@@ -49,7 +49,7 @@ const SocialSharing = ({ title }) => {
           {" "}
           <Image
             className="object-cover"
-            alt=""
+            alt="abc"
             src={"/twitter.png"}
             height={30}
             width={30}
@@ -61,7 +61,7 @@ const SocialSharing = ({ title }) => {
           {" "}
           <Image
             className="object-cover"
-            alt=""
+            alt="abc"
             src={"/facebook.png"}
             height={30}
             width={30}
@@ -73,7 +73,7 @@ const SocialSharing = ({ title }) => {
           {" "}
           <Image
             className="object-cover"
-            alt=""
+            alt="abc"
             src={"/linkedin.png"}
             height={40}
             width={30}
@@ -85,7 +85,7 @@ const SocialSharing = ({ title }) => {
           {" "}
           <Image
             className="object-cover"
-            alt=""
+            alt="abc"
             src={"/gmail.png"}
             height={40}
             width={30}

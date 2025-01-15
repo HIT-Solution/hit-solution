@@ -19,7 +19,7 @@ const Services = () => {
       </h1>
       <div className="grid md:grid-cols-3 lg:grid-cols-4 lg:gap-8 md:gap-8 gap-5 mx-5 lg:mx-10 ">
         <div className="p-5 h-[245px] lg:h-[290px] md:h-[250px] rounded-xl shadow-lg shadow-teal-800/50">
-          <Image src={software} alt="" height={50} width={50} />
+          <Image src={software} alt="abc" height={50} width={50} />
           <div>
             <h1 className="text-xl  my-1">
               Software Development & Digital Product{" "}
@@ -32,7 +32,7 @@ const Services = () => {
           </div>
         </div>
         <div className="p-5 h-[245px] lg:h-[290px] md:h-[250px] rounded-xl shadow-lg shadow-teal-800/50">
-          <Image src={cloud} alt="" height={50} width={50} />
+          <Image src={cloud} alt="abc" height={50} width={50} />
           <div>
             <h1 className="text-xl my-1">Cloud Computing Solutions</h1>
             <p className="text-sm">
@@ -42,7 +42,7 @@ const Services = () => {
           </div>
         </div>
         <div className="p-5 h-[245px] lg:h-[290px] md:h-[250px] rounded-xl shadow-lg shadow-teal-800/50">
-          <Image src={iot} alt="" height={50} width={50} />
+          <Image src={iot} alt="abc" height={50} width={50} />
           <div>
             <h1 className="text-xl my-1">Internet of Things (IoT) Solutions</h1>
             <p className="text-sm">
@@ -52,7 +52,7 @@ const Services = () => {
           </div>
         </div>
         <div className="p-5 h-[245px] lg:h-[290px] md:h-[250px] rounded-xl shadow-lg shadow-teal-800/50">
-          <Image src={design} alt="" height={50} width={50} />
+          <Image src={design} alt="abc" height={50} width={50} />
           <div>
             <h1 className="text-xl my-1">Product Design</h1>
             <p className="text-sm">
@@ -63,7 +63,7 @@ const Services = () => {
           </div>
         </div>
         <div className="p-5 h-[245px] lg:h-[290px] md:h-[250px] rounded-xl shadow-lg shadow-teal-800/50">
-          <Image src={qa} alt="" height={50} width={50} />
+          <Image src={qa} alt="abc" height={50} width={50} />
           <div>
             <h1 className="text-xl my-1">Quality Assurance</h1>
             <p className="text-sm">
@@ -73,7 +73,7 @@ const Services = () => {
           </div>
         </div>
         <div className="p-5 h-[245px] lg:h-[290px] md:h-[250px] rounded-xl shadow-lg shadow-teal-800/50">
-          <Image src={support} alt="" height={50} width={50} />
+          <Image src={support} alt="abc" height={50} width={50} />
           <div>
             <h1 className="text-xl my-1">Tech Consultancy and IT Support</h1>
             <p className="text-sm">
@@ -83,7 +83,7 @@ const Services = () => {
           </div>
         </div>
         <div className="p-5 h-[245px] lg:h-[290px] md:h-[250px] rounded-xl shadow-lg shadow-teal-800/50">
-          <Image src={social} alt="" height={50} width={50} />
+          <Image src={social} alt="abc" height={50} width={50} />
           <div>
             <h1 className="text-xl my-1">Digital Marketing</h1>
             <p className="text-sm">
@@ -94,7 +94,7 @@ const Services = () => {
           </div>
         </div>
         <div className=" p-5 h-[245px] lg:h-[290px] md:h-[250px] rounded-xl shadow-lg shadow-teal-800/50">
-          <Image src={studio} alt="" height={50} width={50} />
+          <Image src={studio} alt="abc" height={50} width={50} />
           <div>
             <h1 className="text-xl my-1">AR Creative Studio</h1>
             <p className="text-sm">

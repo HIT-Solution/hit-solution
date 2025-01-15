@@ -58,7 +58,7 @@ const IndustryExpertiseSlider = () => {
                   src={image1}
                   width={300}
                   height={600}
-                  alt=""
+                  alt="abc"
                 />
               </div>
             </div>
@@ -80,7 +80,7 @@ const IndustryExpertiseSlider = () => {
                   src={image2}
                   width={300}
                   height={600}
-                  alt=""
+                  alt="abc"
                 />
               </div>
             </div>
@@ -102,7 +102,7 @@ const IndustryExpertiseSlider = () => {
                   src={image3}
                   width={300}
                   height={600}
-                  alt=""
+                  alt="abc"
                 />
               </div>
             </div>
@@ -124,13 +124,12 @@ const IndustryExpertiseSlider = () => {
                   src={image1}
                   width={300}
                   height={600}
-                  alt=""
+                  alt="abc"
                 />
               </div>
             </div>
           </Link>
         </SwiperSlide>
-       
       </Swiper>
     </div>
   );

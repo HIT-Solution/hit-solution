@@ -16,8 +16,14 @@ import {
   SiTailwindcss,
   SiFirebase,
   SiGraphql,
+  SiTypescript,
+  SiKubernetes,
+  SiPostgresql,
+  SiRedis,
+  SiTensorflow,
 } from "react-icons/si";
 import TechStacks from "../home/TechStacks";
+import { FaAws, FaBootstrap, FaPython } from "react-icons/fa6";
 
 const Technologies = () => {
   const technologies = [
@@ -90,6 +96,54 @@ const Technologies = () => {
       description:
         "A NoSQL database for scalable and high-performance data storage.",
       icon: <SiMongodb />,
+    },
+    {
+      name: "TypeScript",
+      description:
+        "A strongly typed superset of JavaScript for scalable and error-free development.",
+      icon: <SiTypescript />,
+    },
+    {
+      name: "Kubernetes",
+      description:
+        "An open-source system for automating deployment, scaling, and management of containerized applications.",
+      icon: <SiKubernetes />,
+    },
+    {
+      name: "Python",
+      description:
+        "A versatile programming language for web development, data analysis, and scripting.",
+      icon: <FaPython />,
+    },
+    {
+      name: "AWS",
+      description:
+        "Amazon Web Services provides scalable cloud computing solutions.",
+      icon: <FaAws />,
+    },
+    {
+      name: "PostgreSQL",
+      description:
+        "An advanced open-source relational database for data storage and analysis.",
+      icon: <SiPostgresql />,
+    },
+    {
+      name: "Redis",
+      description:
+        "An in-memory data structure store for caching and real-time analytics.",
+      icon: <SiRedis />,
+    },
+    {
+      name: "TensorFlow",
+      description:
+        "An open-source framework for machine learning and AI model development.",
+      icon: <SiTensorflow />,
+    },
+    {
+      name: "Bootstrap",
+      description:
+        "A front-end framework for designing responsive and mobile-first websites.",
+      icon: <FaBootstrap />,
     },
   ];
 

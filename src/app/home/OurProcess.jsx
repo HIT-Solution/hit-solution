@@ -8,7 +8,7 @@ const OurProcess = () => {
   return (
     <div>
       <div className="bg-gradient-to-br from-black to-teal-900 lg:pt-16 md:pt-14 pt-12 py-5">
-        <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold text-center text-white">
+        <h1 className="lg:text-5xl px-1 md:text-4xl text-3xl font-bold text-center text-white">
           Our process is simple, smooth <br /> and efficient
         </h1>
         <div className="grid lg:grid-cols-2 lg:gap-10 md:gap-8 gap-7 mx-5 lg:mx-10  pt-20">
@@ -192,7 +192,7 @@ const OurProcess = () => {
               <div className="w-[160px] md:w-[200px] h-[500px]">
                 <Image
                   className="rounded-bl-[120px] w-[160px] md:w-[200px] h-[250px] object-cover"
-                  alt=""
+                  alt="abc"
                   src={image2}
                   width={250}
                   height={290}
@@ -204,7 +204,7 @@ const OurProcess = () => {
               <div className="w-[160px] md:w-[200px] h-[250px] bg-green-200 rounded-tl-[120px]">
                 <Image
                   className="rounded-tl-[120px] object-cover w-[160px] md:w-[200px] h-[250px]"
-                  alt=""
+                  alt="abc"
                   src={image1}
                   width={300}
                   height={290}
