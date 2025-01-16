@@ -1,38 +1,39 @@
 "use client";
 
 import Layout from "@/components/Layout";
-import Loading from "@/components/Loading";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 
-const Services = () => {
-  const [services, setServices] = useState([]);
+import Loading from "../../../components/Loading";
+
+const demoProject = () => {
+  const [demoProjectData, setDemoProjectData] = useState([]);
   const [showModal, setShowModal] = useState(false); // Modal state
+  const [isUpdating, setIsUpdating] = useState(false); // Update mode flag
   const [loading, setLoading] = useState(true);
+  const [demoProjectId, setCurrentDemoProjectId] = useState(null); // ID for update
+
   const [formData, setFormData] = useState({
     imgUrl: "",
-    title: "",
+    projectUrl: "",
     desc: "",
-  }); // Form state for create/update
+  });
 
-  const [isUpdating, setIsUpdating] = useState(false); // Update mode flag
-
-  const [currentServiceId, setCurrentServiceId] = useState(null); // ID for update
-
-  // Fetch services data
+  //  Get Demo Project data
   useEffect(() => {
-    const fetchServices = async () => {
+    const fetchDemoData = async () => {
       try {
-        const response = await fetch("/api/services"); // Example API endpoint
+        const response = await fetch("/api/demoProjects");
         const data = await response.json();
-        setServices(data.result);
+        setDemoProjectData(data.result);
         setLoading(false);
+        console.log(data.result);
       } catch (error) {
-        console.error("Error fetching services:", error);
+        console.error("Error fetching Demo data :", error);
       }
     };
 
-    fetchServices();
+    fetchDemoData();
   }, []);
 
   // Handle form input changes
@@ -41,22 +42,22 @@ const Services = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  // Open the modal for create
-  const handleCreate = () => {
-    setFormData({ imgUrl: "", title: "", desc: "" });
-    setIsUpdating(false);
+  // Open the modal for update
+  const handleUpdate = (demoData) => {
+    setFormData({
+      imgUrl: demoData.imgUrl,
+      projectUrl: demoData.projectUrl,
+      desc: demoData.desc,
+    });
+    setCurrentDemoProjectId(demoData._id);
+    setIsUpdating(true);
     setShowModal(true);
   };
 
-  // Open the modal for update
-  const handleUpdate = (service) => {
-    setFormData({
-      imgUrl: service.imgUrl,
-      title: service.title,
-      desc: service.desc,
-    });
-    setCurrentServiceId(service._id);
-    setIsUpdating(true);
+  // Open the modal for create
+  const handleCreate = () => {
+    setFormData({ imgUrl: "", projectUrl: "", desc: "" });
+    setIsUpdating(false);
     setShowModal(true);
   };
 
@@ -65,8 +66,8 @@ const Services = () => {
     e.preventDefault();
 
     const endpoint = isUpdating
-      ? `/api/services/${currentServiceId}`
-      : "/api/services";
+      ? `/api/demoProjects/${demoProjectId}`
+      : "/api/demoProjects";
     const method = isUpdating ? "PUT" : "POST";
 
     try {
@@ -81,23 +82,31 @@ const Services = () => {
       if (!response.ok) {
         throw new Error(
           isUpdating
-            ? "Failed to update the service"
-            : "Failed to create the service"
+            ? "Failed to update the Demo Project Data"
+            : "Failed to create the Demo Project Data"
         );
       }
 
       const result = await response.json();
 
       if (isUpdating) {
-        setServices((prevServices) =>
-          prevServices.map((service) =>
-            service._id === currentServiceId ? result.result : service
+        setDemoProjectData((prevDemoData) =>
+          prevDemoData.map((demoData) =>
+            demoData._id === currentServiceId ? result.result : demoData
           )
         );
-        Swal.fire("Updated!", "Service updated successfully.", "success");
+        Swal.fire(
+          "Updated!",
+          "Demo Project Data updated successfully.",
+          "success"
+        );
       } else {
-        setServices((prevServices) => [...prevServices, result.result]);
-        Swal.fire("Created!", "Service created successfully.", "success");
+        setDemoProjectData((prevDemoData) => [...prevDemoData, result.result]);
+        Swal.fire(
+          "Created!",
+          "Demo Project Data created successfully.",
+          "success"
+        );
       }
 
       setShowModal(false); // Close the modal
@@ -105,7 +114,7 @@ const Services = () => {
       console.error(error.message);
       Swal.fire(
         "Error!",
-        "An error occurred while saving the service.",
+        "An error occurred while saving the Demo Project Data.",
         "error"
       );
     }
@@ -124,7 +133,7 @@ const Services = () => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          const response = await fetch(`/api/services`, {
+          const response = await fetch(`/api/demoProjects/${id}`, {
             method: "DELETE",
             headers: {
               "Content-Type": "application/json",
@@ -133,14 +142,14 @@ const Services = () => {
           });
 
           if (!response.ok) {
-            throw new Error("Failed to delete the service");
+            throw new Error("Failed to delete the Demo Project");
           }
 
-          setServices((prevServices) =>
-            prevServices.filter((service) => service._id !== id)
+          setDemoProjectData((preDemoProject) =>
+            preDemoProject.filter((demoProject) => demoProject._id !== id)
           );
 
-          Swal.fire("Deleted!", "Service has been deleted.", "success");
+          Swal.fire("Deleted!", "Demo Project has been deleted.", "success");
         } catch (error) {
           console.error("Error deleting the service:", error);
           Swal.fire("Error!", "Failed to delete the service.", "error");
@@ -152,17 +161,17 @@ const Services = () => {
   return (
     <Layout>
       <div className="min-h-screen bg-gray-100 p-6">
-        <h1 className="text-3xl font-bold text-teal-700 mb-6">Services</h1>
+        <h1 className="text-3xl font-bold text-teal-700 mb-6">Demo Project</h1>
         <div className="bg-white shadow rounded-lg p-4">
           <div className="flex justify-between items-center mb-4">
             <h2 className="text-xl font-semibold text-teal-600">
-              All Services
+              All Demo Project
             </h2>
             <button
               onClick={handleCreate}
               className="bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700"
             >
-              Add New Service
+              Add New Demo Project
             </button>
           </div>
           <div className="overflow-x-auto">
@@ -172,17 +181,17 @@ const Services = () => {
                   <th className="text-left p-4 text-sm font-medium text-teal-800">
                     Image
                   </th>
-                  <th className="text-left p-4 text-sm font-medium text-teal-800">
-                    Title
-                  </th>
+                  {/* <th className="text-left p-4 text-sm font-medium text-teal-800">
+                    Project Url
+                  </th> */}
                   <th className="text-left p-4 text-sm font-medium text-teal-800">
                     Description
                   </th>
                   <th className="text-left p-4 text-sm font-medium text-teal-800">
-                    Create Time{" "}
+                    Create Date{" "}
                   </th>
                   <th className="text-left p-4 text-sm font-medium text-teal-800">
-                    Update Time
+                    Update Date
                   </th>
                   <th className="text-left p-4 text-sm font-medium text-teal-800">
                     Actions
@@ -197,34 +206,38 @@ const Services = () => {
                       <Loading />
                     </td>
                   </tr>
-                ) : services.length > 0 ? (
-                  services.map((service) => (
-                    <tr key={service._id} className="border-b hover:bg-gray-50">
+                ) : demoProjectData?.length > 0 ? (
+                  demoProjectData.map((data) => (
+                    <tr
+                      key={data._id}
+                      className="border-b items-center hover:bg-gray-50"
+                    >
                       <td className="p-4">
                         <img
-                          src={service.imgUrl}
-                          alt={service.title}
+                          src={data.imgUrl}
+                          alt="img url"
                           className="h-12 w-12 object-cover rounded-md"
                         />
                       </td>
-                      <td className="p-4 text-gray-800">{service.title}</td>
-                      <td className="p-4 text-gray-800">{service.desc}</td>
-                      <td className="p-4 text-gray-800">
-                        {new Date(service.createdAt).toLocaleString()}
-                      </td>
-                      <td className="p-4 text-gray-800">
-                        {new Date(service.updatedAt).toLocaleString()}
-                      </td>
 
+                      {/* <td className="p-4 text-gray-800">{data.projectUrl}</td> */}
+                      <td className="p-4 text-gray-800">{data.desc}</td>
+
+                      <td className="p-4 text-gray-800">
+                        {new Date(data.createdAt).toLocaleString()}
+                      </td>
+                      <td className="p-4 text-gray-800">
+                        {new Date(data.updatedAt).toLocaleString()}
+                      </td>
                       <td className="p-4 flex space-x-2">
                         <button
-                          onClick={() => handleUpdate(service)}
+                          onClick={() => handleUpdate(data)}
                           className="text-blue-600 hover:text-blue-800"
                         >
                           Update
                         </button>
                         <button
-                          onClick={() => handleDelete(service._id)}
+                          onClick={() => handleDelete(data._id)}
                           className="text-red-600 hover:text-red-800"
                         >
                           Delete
@@ -238,7 +251,7 @@ const Services = () => {
                       colSpan="4"
                       className="p-4 text-center text-gray-500 italic"
                     >
-                      No services found.
+                      No data found.
                     </td>
                   </tr>
                 )}
@@ -253,7 +266,7 @@ const Services = () => {
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
           <div className="bg-white rounded-lg shadow-lg w-[700px] p-6">
             <h2 className="text-xl font-bold flex justify-between mb-4">
-              {isUpdating ? "Update Service" : "Create Service"}
+              {isUpdating ? "Update Demo Project" : "Create Demo Project"}
 
               <button onClick={() => setShowModal(false)}>X</button>
             </h2>
@@ -277,16 +290,16 @@ const Services = () => {
               </div>
               <div>
                 <label
-                  htmlFor="title"
+                  htmlFor="projectUrl"
                   className="block text-sm font-medium text-teal-800"
                 >
-                  Title
+                  Project Url
                 </label>
                 <input
                   type="text"
-                  id="title"
-                  name="title"
-                  value={formData.title}
+                  id="projectUrl"
+                  name="projectUrl"
+                  value={formData.projectUrl}
                   onChange={handleChange}
                   className="mt-1 w-full border border-teal-300 rounded-md p-2 focus:ring-teal-500 focus:border-teal-500"
                   required
@@ -297,7 +310,7 @@ const Services = () => {
                   htmlFor="desc"
                   className="block text-sm font-medium text-teal-800"
                 >
-                  Description
+                  Project Description
                 </label>
                 <textarea
                   id="desc"
@@ -325,4 +338,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default demoProject;
