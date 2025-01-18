@@ -7,7 +7,6 @@ const Sidebar = () => {
     { name: "DemoProject", path: "demoProject" },
     { name: "ReviewData ", path: "reviews" },
     { name: "Technologies", path: "technologies" },
-    { name: "Portfolio", path: "portfolio" },
     { name: "Blogs", path: "blogs" },
     { name: "Career", path: "career" },
     { name: "About Us", path: "aboutus" },

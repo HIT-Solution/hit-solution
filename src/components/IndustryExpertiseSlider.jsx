@@ -113,7 +113,9 @@ const IndustryExpertiseSlider = () => {
                     bgColors[index % bgColors.length]
                   } p-5 rounded-3xl flex flex-col justify-between items-center`}
                 >
-                  <h1 className="text-3xl pt-8 pb-5">Demo {index + 1}</h1>
+                  <h1 className="text-3xl font-bold pt-8 pb-5">
+                    Our Client Project- {index + 1}
+                  </h1>
                   <p className="text-lg">{slide.desc}</p>
                   <div className="my-10">
                     <img
