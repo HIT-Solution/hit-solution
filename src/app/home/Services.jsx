@@ -9,6 +9,8 @@ import social from "../../../public/social-media.png";
 import cloud from "../../../public/cloud-storage.png";
 import studio from "../../../public/studio.png";
 import ReusableBackground from "@/components/ReusableBackground";
+import TitleFontStyle from "@/components/TitleFontStyle";
+
 // import SimpleBackground from "../../components/SimpleBackground";
 
 const Services = () => {
@@ -80,10 +82,9 @@ const Services = () => {
           className="absolute inset-0 w-full h-full bg-gradient-to-r from-gray-800 via-gray-600 to-teal-600 
       opacity-30 blur-2xl animate-[gradientMove_6s_infinite_alternate]"
         ></div> */}
-
           {/* Main Text */}
-          <h1 className="lg:text-6xl text-black font-bold md:text-4xl pb-12 text-2xl">
-            Our Services
+          <h1 className="text-4xl flex gap-2 md:text-5xl font-extrabold pb-12">
+            Our <TitleFontStyle title={"Services"} />
           </h1>
         </div>
 

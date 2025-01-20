@@ -16,7 +16,7 @@ import logo from "../../public/logo.png";
 const BlogSlider = () => {
   return (
     <div>
-      <div className="lg:mt-32 md:mt-20 mt-12 lg:mx-48 md:mx-28 mx-auto">
+      <div className="lg:mt-20 container mx-auto md:mt-12 mt-12 ">
         <Swiper
           pagination={{
             clickable: true,

@@ -2,7 +2,8 @@
 import React from "react";
 // import SimpleBackground from "../../components/SimpleBackground";
 import Image from "next/image";
-import fq1 from "../../../public/fq1.png";
+import fq1 from "../../../public/clinet-profile/profile5.jpg";
+import fq2 from "../../../public/clinet-profile/client2.png";
 
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import ReusableBackground from "@/components/ReusableBackground";
@@ -44,7 +45,7 @@ const Faq = () => {
 
   return (
     <ReusableBackground>
-      <div className="pb-20 container mx-auto py-24">
+      <div className=" container mx-auto py-32">
         {/* <SimpleBackground> */}
         <h1 className="text-center lg:text-5xl md:text-4xl text-3xl ">
           Frequently Asked Questions
@@ -53,13 +54,13 @@ const Faq = () => {
         <div className="grid lg:grid-cols-2 gap-16 content-center mt-16">
           <div>
             <div className="flex gap-2 justify-center items-center">
-              <div className="w-[150px] lg:w-[200px] h-[200px] flex flex-col items-center justify-center bg-blue-300 rounded-tr-[120px] rounded-bl-[120px]">
+              <div className="w-[150px] font-serif lg:w-[200px] h-[200px] flex flex-col items-center justify-center bg-blue-300 rounded-tr-[120px] rounded-bl-[120px]">
                 <h1 className="font-bold text-xl text-gray-600">Top Talent</h1>
-                <h1 className="font-bold text-4xl">100+</h1>
+                <h1 className="font-bold  text-4xl">99+</h1>
               </div>
               <Image
                 className="w-[150px] lg:w-[200px] h-[200px] rounded-tl-[120px] rounded-br-[120px]"
-                src={fq1}
+                src={fq2}
                 alt="abc"
                 width={250}
                 height={200}
@@ -69,7 +70,7 @@ const Faq = () => {
 
             <div className="flex gap-2 mt-2 justify-center items-center">
               <Image
-                className="w-[150px] lg:w-[200px] h-[200px] rounded-tl-[120px] rounded-br-[120px]"
+                className="w-[150px] lg:w-[200px] font-serif h-[200px] rounded-tl-[120px] rounded-br-[120px]"
                 src={fq1}
                 alt="abc"
                 width={250}
@@ -78,7 +79,7 @@ const Faq = () => {
               />{" "}
               <div className="w-[150px] lg:w-[200px] h-[200px] flex flex-col items-center justify-center bg-green-300 rounded-tr-[120px] rounded-bl-[120px]">
                 <h1 className="font-bold text-xl text-gray-600">Projects</h1>
-                <h1 className="font-bold text-4xl">80+</h1>
+                <h1 className="font-bold text-4xl">50+</h1>
               </div>
             </div>
           </div>

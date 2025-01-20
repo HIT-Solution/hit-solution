@@ -17,10 +17,7 @@ const ContactUs = () => {
         <h1 className="text-center font-bold lg:text-5xl md:text-4xl text-3xl ">
           Contact with us
         </h1>
-        <div
-          className="lg:flex
-       container justify-center mx-auto  items-center"
-        >
+        <div className="container justify-center mx-auto  items-center">
           <div className="space-y-8 lg:px-0 md:px-0 px-5">
             <h1 className="lg:text-4xl md:text-4xl text-2xl md:mt-6">
               Talk to us and <br />

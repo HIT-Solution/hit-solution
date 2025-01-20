@@ -74,13 +74,13 @@ const ContactUsForm = () => {
   };
 
   return (
-    <div className="lg:my-32 md:my-28 my-20 mx-5 lg:mx-10">
+    <div className="lg:my-32 lg:max-w-7xl md:my-28 my-20 mx-5 lg:mx-10">
       <div>
-        <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold text-gray-500 text-center">
+        {/* <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold text-gray-500 text-center">
           Contact Form
-        </h1>
+        </h1> */}
 
-        <div className="md:px-20 lg:px-52">
+        <div>
           <form
             onSubmit={handleSubmit}
             className="space-y-8 py-16 shadow-xl px-5 lg:px-16 rounded-lg"

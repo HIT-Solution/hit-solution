@@ -45,7 +45,8 @@ const Home = async () => {
         <Review />
         <Blog />
         <Faq />
-        <ContactUs />
+
+        {/* <ContactUs /> */}
       </div>
     </Suspense>
   );

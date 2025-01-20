@@ -9,14 +9,69 @@ import "swiper/css/pagination";
 import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 import Link from "next/link";
 
-import image1 from "../../public/Service_Requirements_bcff041d73.png";
-import image2 from "../../public/Software-as-a-service-saas_final-5caef210a00b48f5ac5de4964f72a016.png";
-import image3 from "../../public/custom-software-development-company.jpg";
-import Image from "next/image";
-
 const IndustryExpertiseSlider = () => {
+  const slidesData = [
+    {
+      id: 1,
+      projectUrl: "https://www.ukilzone.com/",
+      imgUrl: "https://i.ibb.co.com/58NXnjg/UlikZone.png",
+      desc: "We offer end-to-end Ukilzone services, from Custom Website Design and Development to Integration and Maintenance",
+    },
+    {
+      id: 2,
+      projectUrl:
+        "https://eloquent-stardust-e9120f.netlify.app/?fbclid=IwZXh0bgNhZW0CMTEAAR1XuNWT9L-glggdNhc8vsixDRyVH_V3MZLBOqqtjw44Yl5O4gyK1sMm898_aem_LRkWmYzGLTgd54ht_LccAQ",
+      imgUrl: "https://i.ibb.co.com/BBBgP2P/SkillHub.png",
+      desc: "We offer end-to-end SkillHub services, from Course Creation and Learning Management to Integration and Support",
+    },
+    {
+      id: 3,
+      projectUrl: "https://strong-yeot-422847.netlify.app/",
+      imgUrl: "https://i.ibb.co.com/zHsJBdZ/Screenshot-2025-01-16-124601.png",
+      desc: "We offer end-to-end BashaKhuzi services, from Property Management and Leasing to Renovation and Support.",
+    },
+    {
+      id: 4,
+      projectUrl: "https://hasansit.com/",
+      imgUrl: "https://i.ibb.co.com/tqfDDbN/Screenshot-2025-01-16-125105.png",
+      desc: "Showcasing Innovative Designs, Seamless Integrations, and End-to-End Solutions for Every Client Need.",
+    },
+    // {
+    //   id: 5,
+    //   projectUrl: "https://www.youtube.com/",
+    //   imgUrl: image1,
+    //   desc: "Secure your applications with our comprehensive cybersecurity services and compliance assurance.",
+    // },
+  ];
+
+  // //  Get Demo Project data
+  // useEffect(() => {
+  //   const fetchDemoData = async () => {
+  //     try {
+  //       const response = await fetch("/api/demoProjects");
+  //       const data = await response.json();
+  //       setDemoProjectData(data.result);
+  //       setLoading(false);
+  //       console.log(data.result);
+  //     } catch (error) {
+  //       console.error("Error fetching Demo data :", error);
+  //     }
+  //   };
+
+  //   fetchDemoData();
+  // }, []);
+
+  // Predefined array of background colors
+  const bgColors = [
+    "bg-gray-100",
+    "bg-green-100",
+    "bg-blue-100",
+    "bg-purple-100",
+    "bg-orange-100",
+  ];
+
   return (
-    <div className="mt-32 mx-5 lg:mx-10">
+    <div className="mt-32 mx-5 ">
       <Swiper
         pagination={{
           clickable: true,
@@ -42,94 +97,33 @@ const IndustryExpertiseSlider = () => {
         modules={[Autoplay, FreeMode, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <Link href={"/"}>
-            {" "}
-            <div className="h-[550px] bg-red-200 p-5 rounded-3xl flex flex-col justify-between items-center">
-              <h1 className="text-3xl pt-8 pb-5">Demo1</h1>
-              <p className="text-lg">
-                We offer end-to-end Quality Assurance, from Performance Testing
-                and QA Consulting to Compliance Reviews and System Integration.
-              </p>
-              <div className="my-10">
-                {" "}
-                <Image
-                  className="rounded-3xl border-4 border-black h-[200px]"
-                  src={image1}
-                  width={300}
-                  height={600}
-                  alt="abc"
-                />
-              </div>
-            </div>
-          </Link>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Link href={"/"}>
-            {" "}
-            <div className="h-[550px] bg-green-200 p-5 rounded-3xl flex flex-col justify-between items-center">
-              <h1 className="text-3xl pt-8 pb-5">Demo1</h1>
-              <p className="text-lg">
-                We offer end-to-end Quality Assurance, from Performance Testing
-                and QA Consulting to Compliance Reviews and System Integration.
-              </p>
-              <div className="my-10">
-                {" "}
-                <Image
-                  className="rounded-3xl border-4 border-black h-[200px]"
-                  src={image2}
-                  width={300}
-                  height={600}
-                  alt="abc"
-                />
-              </div>
-            </div>
-          </Link>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Link href={"/"}>
-            {" "}
-            <div className="h-[550px] bg-blue-200 p-5 rounded-3xl flex flex-col justify-between items-center">
-              <h1 className="text-3xl pt-8 pb-5">Demo1</h1>
-              <p className="text-lg">
-                We offer end-to-end Quality Assurance, from Performance Testing
-                and QA Consulting to Compliance Reviews and System Integration.
-              </p>
-              <div className="my-10">
-                {" "}
-                <Image
-                  className="rounded-3xl border-4 border-black h-[200px]"
-                  src={image3}
-                  width={300}
-                  height={600}
-                  alt="abc"
-                />
-              </div>
-            </div>
-          </Link>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Link href={"/"}>
-            {" "}
-            <div className="h-[550px] bg-orange-200 p-5 rounded-3xl flex flex-col justify-between items-center">
-              <h1 className="text-3xl pt-8 pb-5">Demo1</h1>
-              <p className="text-lg">
-                We offer end-to-end Quality Assurance, from Performance Testing
-                and QA Consulting to Compliance Reviews and System Integration.
-              </p>
-              <div className="my-10">
-                {" "}
-                <Image
-                  className="rounded-3xl border-4 border-black h-[200px]"
-                  src={image1}
-                  width={300}
-                  height={600}
-                  alt="abc"
-                />
-              </div>
-            </div>
-          </Link>
-        </SwiperSlide>
+        <Swiper>
+          {slidesData?.map((slide, index) => (
+            <SwiperSlide key={slide.id}>
+              <Link target="_blank" href={slide.projectUrl}>
+                <div
+                  className={`h-[550px] ${
+                    bgColors[index % bgColors.length]
+                  } p-5 rounded-3xl flex flex-col justify-between hover:zoom-in-110 items-center`}
+                >
+                  <h1 className="text-3xl font-bold pt-8 pb-5">
+                    Our Client Project- {index + 1}
+                  </h1>
+                  <p className="text-lg">{slide.desc}</p>
+                  <div className="my-10">
+                    <img
+                      className="rounded-3xl border-4 border-black h-[300px]"
+                      src={slide.imgUrl}
+                      width={350}
+                      height={600}
+                      alt={`Project ${slide.id}`}
+                    />
+                  </div>
+                </div>
+              </Link>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </Swiper>
     </div>
   );

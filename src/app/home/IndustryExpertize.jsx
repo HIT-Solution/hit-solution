@@ -2,14 +2,16 @@ import Marquee from "react-fast-marquee";
 import IndustryExpertiseSlider from "../../components/IndustryExpertiseSlider";
 import React from "react";
 import ReusableBackground from "@/components/ReusableBackground";
+import TitleFontStyle from "@/components/TitleFontStyle";
 
 const IndustryExpertize = () => {
   return (
     <div>
       <div className="bg-gradient-to-br px-3 from-black to-teal-900  py-16 pb-24">
         <ReusableBackground>
-          <h1 className="text-center lg:text-5xl md:text-4xl text-3xl lg:pt-16 text-white">
-            Industrial Expertise and Client Projects
+          <h1 className="text-center lg:flex gap-3 justify-center  lg:text-5xl md:text-4xl text-3xl lg:pt-16 text-white">
+            Industrial Expertise and{" "}
+            <TitleFontStyle title={"  Client Projects"} />
           </h1>
           <p className="text-center text-gray-300 my-10">
             With our in-depth industry expertise, we craft tailored software
@@ -17,9 +19,8 @@ const IndustryExpertize = () => {
             designed to drive your next success. Let our knowledge be the
             catalyst for your achievements
           </p>
-
           <Marquee
-            speed={70}
+            speed={40}
             gradient={false}
             direction="right"
             loop={0}
@@ -247,7 +248,6 @@ const IndustryExpertize = () => {
               </div>
             </div>
           </Marquee>
-
           <Marquee
             speed={60}
             gradient={false}
@@ -425,7 +425,6 @@ const IndustryExpertize = () => {
               </div>
             </div>
           </Marquee>
-
           <Marquee
             speed={50}
             gradient={false}
@@ -631,7 +630,9 @@ const IndustryExpertize = () => {
               </div>
             </div>
           </Marquee>
-          <IndustryExpertiseSlider />
+          <div className="container mx-auto">
+            <IndustryExpertiseSlider />
+          </div>{" "}
         </ReusableBackground>
       </div>
     </div>
