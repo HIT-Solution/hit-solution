@@ -118,7 +118,8 @@ const NavBar = () => {
 
   return (
     <Navbar
-      className="bg-gradient-to-br from-black to-teal-800"
+      // className="bg-gradient-to-br lg:py-4 md:py-2 py-1 from-black to-teal-800"
+      className="py-2  bg-transparent fixed from-black to-teal-800 bg-opacity-60"
       onMenuOpenChange={setIsMenuOpen}
       isMenuOpen={isMenuOpen}
     >
@@ -126,17 +127,20 @@ const NavBar = () => {
         {/* Hamburger Menu Toggle */}
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:block md:hidden text-white"
+          className="sm:block md:hidden text-white w-10 h-10 bg-teal-700"
         />
         <NavbarBrand>
           <Link href={"/"} onClick={handleMenuClick}>
-            <Image alt="Logo" quality={100} width={60} height={60} src={logo} />
+            <Image alt="Logo" quality={100} width={80} height={80} src={logo} />
           </Link>
         </NavbarBrand>
       </NavbarContent>
 
       {/* Main Navbar Items */}
-      <NavbarContent className="hidden md:flex" justify="end">
+      <NavbarContent
+        className="hidden md:flex bg-transparent py-10 from-black  to-teal-800 bg-opacity-60 rounded-tl-full rounded-br-full px-24 bg-teal-950"
+        justify="end"
+      >
         <NavbarItem
           className={
             isActive("/") ? "text-teal-400" : "text-white hover:text-teal-400"
@@ -220,7 +224,12 @@ const NavBar = () => {
         </NavbarItem>
         <NavbarItem>
           <Link href={"/contact"} onClick={handleMenuClick}>
-            <Button className="bg-teal-400" variant="shadow" color="success">
+            <Button
+              className="bg-transparent text-white border-2 border-teal-400 rounded-full relative overflow-hidden group"
+              variant="shadow"
+              color="success"
+            >
+              <span className="absolute inset-0 border-2 border-white rounded-full group-hover:animate-border-motion"></span>
               Contact
             </Button>
           </Link>

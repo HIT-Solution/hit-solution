@@ -37,8 +37,8 @@ const Home = async () => {
       <div>
         <Banner />
         <BannerSlider />
-        <Services />
         <Methodology />
+        <Services />
         <OurProcess />
         <TechStacks />
         <IndustryExpertize />

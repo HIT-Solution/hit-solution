@@ -1,3 +1,4 @@
+import ReusableBackground from "@/components/ReusableBackground";
 import SocialSharing from "@/components/SocialSharing";
 import Image from "next/image";
 import Link from "next/link";

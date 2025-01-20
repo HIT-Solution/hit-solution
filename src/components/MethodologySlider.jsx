@@ -9,6 +9,10 @@ import { FaExternalLinkAlt, FaTv } from "react-icons/fa";
 import { Autoplay, FreeMode, Navigation } from "swiper/modules";
 import Link from "next/link";
 import { Button } from "@nextui-org/button";
+import { LiaQuinscape } from "react-icons/lia";
+
+import { motion } from "framer-motion";
+import ReusableBackground from "./ReusableBackground";
 
 const MethodologySlider = () => {
   const swiperRef = useRef(null);
@@ -332,7 +336,7 @@ const MethodologySlider = () => {
   return (
     <div className="mx-10 relative">
       {/* Custom Navigation Buttons positioned above Swiper on the right side */}
-      <div className="absolute -top-8 right-4 z-10 flex space-x-2">
+      <div className="absolute z-10 flex lg:right-52 right-10 lg:space-x-[700px] space-x-12">
         <div className="custom-prev flex items-center justify-center w-8 h-8 bg-gray-300 text-black rounded-full cursor-pointer hover:bg-gray-200">
           <FaChevronLeft />
         </div>
@@ -363,38 +367,33 @@ const MethodologySlider = () => {
         {data.map((item) => (
           <SwiperSlide key={item.name}>
             <div className="relative overflow-hidden">
-              <h1 className="lg:text-4xl md:text-3xl text-2xl text-white text-center my-3">
+              <h1 className="lg:text-4xl md:text-3xl text-2xl text-white text-center pl-[500px]">
                 {item.name}
               </h1>
-              <div className="grid grid-cols-1 pt-12 md:grid-cols-2 lg:grid-cols-4 gap-5">
+              <div className="grid grid-cols-1 gap-5 pt-12 md:grid-cols-2 lg:grid-cols-4 lg:px-52 md:px-32">
                 {item.data.map((item, index) => (
                   <div
                     key={item.color}
-                    className={`${item.color} rounded-2xl h-[450px] hover:cursor-pointer overflow-hidden py-10 group relative`}
+                    className={`${item.color} rounded-2xl w-80 h-[450px] hover:cursor-pointer overflow-hidden py-10 group relative`}
                   >
                     <div className="flex justify-between px-5">
                       <h1>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="40"
-                          height="40"
-                          viewBox="0 0 40 40"
-                          fill="none"
-                        >
-                          <path
-                            d="M8.66602 19.8887C8.66602 15.6747 10.2639 11.6333 13.1082 8.65353C15.9525 5.67379 19.8102 3.99978 23.8327 3.99978C27.8551 3.99978 31.7128 5.67379 34.5571 8.65353C37.4014 11.6333 38.9993 15.6747 38.9993 19.8887L23.8327 19.8887L8.66602 19.8887Z"
-                            fill="#0C0A25"
-                          ></path>
-                          <path
-                            d="M0 19.8887C-3.52568e-07 23.9216 1.60206 27.7893 4.45376 30.641C7.30545 33.4927 11.1732 35.0948 15.2061 35.0948C19.239 35.0948 23.1067 33.4927 25.9584 30.641C28.8101 27.7893 30.4122 23.9216 30.4122 19.8887L15.2061 19.8887L0 19.8887Z"
-                            fill="#0C0A25"
-                          ></path>
-                        </svg>
+                        <motion.img
+                          className="w-12 h-12"
+                          src="https://aicdn.picsart.com/077e0c34-8995-4017-ba75-a7818bfc7e83.png"
+                          alt=""
+                          animate={{ rotate: 360 }}
+                          transition={{
+                            repeat: Infinity,
+                            duration: 12,
+                            ease: "linear",
+                          }}
+                        />
                       </h1>
                       <h1
-                        className={`font-bold lg:text-9xl md:text-8xl text-7xl ${item.TextColor} opacity-40`}
+                        className={`font-bold font-serif lg:text-9xl md:text-8xl text-7xl ${item.TextColor} opacity-40`}
                       >
-                        {index + 1}
+                        0{index + 1}
                       </h1>
                     </div>
                     <div className="absolute bottom-5 left-5 right-5">

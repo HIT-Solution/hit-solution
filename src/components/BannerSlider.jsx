@@ -15,6 +15,7 @@ import { DiVisualstudio } from "react-icons/di";
 import { ImLab } from "react-icons/im";
 import { Autoplay, FreeMode, Navigation } from "swiper/modules";
 import Link from "next/link";
+import ReusableBackground from "./ReusableBackground";
 
 const BannerSlider = () => {
   const swiperRef = useRef(null);
@@ -74,86 +75,88 @@ const BannerSlider = () => {
   }, []);
 
   return (
-    <div className="lg:mx-10 mx-5 -translate-y-24 relative">
-      <Swiper
-        onSwiper={(swiper) => (swiperRef.current = swiper)}
-        freeMode={true}
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 2500, disableOnInteraction: true }}
-        navigation={{
-          nextEl: ".custom-next",
-          prevEl: ".custom-prev",
-        }}
-        modules={[Autoplay, FreeMode, Navigation]}
-        breakpoints={{
-          390: { slidesPerView: 1, spaceBetween: 30 },
-          768: { slidesPerView: 2, spaceBetween: 40 },
-          1024: { slidesPerView: 4, spaceBetween: 20 },
-        }}
-        className="mySwiper"
-      >
-        {/* Slides */}
-        {[
-          { Icon: FaTv, label: "Portfolio", link: "/" },
-          {
-            Icon: FaLocationDot,
-            label: "Ukilzone.com",
-            link: "https://www.ukilzone.com",
-          },
-          {
-            Icon: GiSkills,
-            label: "SkillHub",
-            link: "https://eloquent-stardust-e9120f.netlify.app/?fbclid=IwZXh0bgNhZW0CMTEAAR1XuNWT9L-glggdNhc8vsixDRyVH_V3MZLBOqqtjw44Yl5O4gyK1sMm898_aem_LRkWmYzGLTgd54ht_LccAQ",
-          },
-          {
-            Icon: FaHome,
-            label: "Bashakhuji.com",
-            link: "https://strong-yeot-422847.netlify.app/",
-          },
-          { Icon: DiVisualstudio, label: "AR Creative studio", link: "/" },
-          { Icon: ImLab, label: "HIT Labs", link: "/" },
-        ].map(({ Icon, label, link }, index) => (
-          <SwiperSlide key={index}>
-            <Link target="_blank" href={link}>
-              <div className="relative h-[230px] overflow-hidden bg-gradient-to-br from-gray-900 to-teal-500 rounded-md">
-                <motion.div
-                  className="absolute top-1/2 right-1/4 w-96 h-96 bg-teal-500 rounded-full filter blur-3xl opacity-20"
-                  animate={glowAnimation.animate}
-                  transition={glowAnimation.transition}
-                />
-                <svg
-                  className="absolute bottom-0 left-0 w-full"
-                  viewBox="0 0 1440 320"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <motion.path
-                    fill="rgba(0, 128, 128, 0.1)"
-                    initial={waveAnimation.initial}
-                    animate={waveAnimation.animate}
-                    transition={waveAnimation.transition}
+    <ReusableBackground>
+      <div className="lg:mx-52 mx-5 -translate-y-32 relative">
+        <Swiper
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          freeMode={true}
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 2500, disableOnInteraction: true }}
+          navigation={{
+            nextEl: ".custom-next",
+            prevEl: ".custom-prev",
+          }}
+          modules={[Autoplay, FreeMode, Navigation]}
+          breakpoints={{
+            390: { slidesPerView: 1, spaceBetween: 30 },
+            768: { slidesPerView: 2, spaceBetween: 40 },
+            1024: { slidesPerView: 4, spaceBetween: 20 },
+          }}
+          className="mySwiper"
+        >
+          {/* Slides */}
+          {[
+            { Icon: FaTv, label: "Portfolio", link: "/" },
+            {
+              Icon: FaLocationDot,
+              label: "Ukilzone.com",
+              link: "https://www.ukilzone.com",
+            },
+            {
+              Icon: GiSkills,
+              label: "SkillHub",
+              link: "https://eloquent-stardust-e9120f.netlify.app/?fbclid=IwZXh0bgNhZW0CMTEAAR1XuNWT9L-glggdNhc8vsixDRyVH_V3MZLBOqqtjw44Yl5O4gyK1sMm898_aem_LRkWmYzGLTgd54ht_LccAQ",
+            },
+            {
+              Icon: FaHome,
+              label: "Bashakhuji.com",
+              link: "https://strong-yeot-422847.netlify.app/",
+            },
+            { Icon: DiVisualstudio, label: "AR Creative studio", link: "/" },
+            { Icon: ImLab, label: "HIT Labs", link: "/" },
+          ].map(({ Icon, label, link }, index) => (
+            <SwiperSlide key={index}>
+              <Link target="_blank" href={link}>
+                <div className="relative h-[230px] overflow-hidden bg-gradient-to-br from-gray-900 to-teal-500 rounded-md">
+                  <motion.div
+                    className="absolute top-1/2 right-1/4 w-96 h-96 bg-teal-500 rounded-full filter blur-3xl opacity-20"
+                    animate={glowAnimation.animate}
+                    transition={glowAnimation.transition}
                   />
-                </svg>
-                <div className="relative z-10 flex flex-col items-center justify-center h-full max-w-4xl mx-auto px-4">
-                  <div className="flex flex-col gap-5 justify-center items-center text-2xl text-white">
-                    <Icon size={60} />
-                    <h1 className="flex items-center">
-                      {label} <IoIosArrowForward />
-                    </h1>
+                  <svg
+                    className="absolute bottom-0 left-0 w-full"
+                    viewBox="0 0 1440 320"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <motion.path
+                      fill="rgba(0, 128, 128, 0.1)"
+                      initial={waveAnimation.initial}
+                      animate={waveAnimation.animate}
+                      transition={waveAnimation.transition}
+                    />
+                  </svg>
+                  <div className="relative z-10 flex flex-col items-center justify-center h-full max-w-4xl mx-auto px-4">
+                    <div className="flex flex-col gap-5 justify-center items-center text-2xl text-white">
+                      <Icon size={60} />
+                      <h1 className="flex items-center">
+                        {label} <IoIosArrowForward />
+                      </h1>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Link>
-          </SwiperSlide>
-        ))}
-        {/* Custom Navigation Buttons */}
-        <div className="custom-prev absolute top-1/2 left-2 transform -translate-y-1/2 z-10 flex items-center justify-center w-8 h-8 bg-gray-300 text-black rounded-full cursor-pointer hover:bg-gray-200">
-          <FaChevronLeft />
-        </div>
-        <div className="custom-next absolute top-1/2 right-2 transform -translate-y-1/2 z-10 flex items-center justify-center w-8 h-8 bg-gray-300 text-black rounded-full cursor-pointer hover:bg-gray-200">
-          <FaChevronRight />
-        </div>
-      </Swiper>
-    </div>
+              </Link>
+            </SwiperSlide>
+          ))}
+          {/* Custom Navigation Buttons */}
+          <div className="custom-prev absolute top-1/2 left-2 transform -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 bg-gray-300 text-black rounded-full cursor-pointer hover:bg-gray-200">
+            <FaChevronLeft />
+          </div>
+          <div className="custom-next absolute top-1/2 right-2 transform -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 bg-gray-300 text-black rounded-full cursor-pointer hover:bg-gray-200">
+            <FaChevronRight />
+          </div>
+        </Swiper>
+      </div>
+    </ReusableBackground>
   );
 };
 

@@ -10,8 +10,8 @@ import { VscAzure } from "react-icons/vsc";
 import ReusableBackground from "../../components/ReusableBackground";
 const TechStacks = () => {
   return (
-    <div>
-      <ReusableBackground>
+    <ReusableBackground>
+      <div className="py-24 container mx-auto">
         <div className="text-center">
           <h1 className="lg:text-5xl text-3xl font-bold">
             We Serve All Tech Stacks
@@ -137,8 +137,8 @@ const TechStacks = () => {
             </div>
           </Marquee>
         </div>
-      </ReusableBackground>
-    </div>
+      </div>
+    </ReusableBackground>
   );
 };
 

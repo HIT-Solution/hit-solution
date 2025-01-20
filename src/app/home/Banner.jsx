@@ -1,63 +1,63 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { IoIosArrowForward } from "react-icons/io";
 // import BannerSlider from "../../components/BannerSlider";
 // import { Spinner } from "@nextui-org/react";
 
 const Banner = () => {
-  const titleAnimation = {
-    hidden: { opacity: 0, y: -10 },
-    visible: {
-      opacity: 1,
-      y: 10,
-      transition: {
-        staggerChildren: 0.03,
-        delayChildren: 0.04,
-        y: {
-          duration: 4,
-          repeat: Infinity,
-          repeatType: "reverse",
-          ease: "easeInOut",
-        },
-      },
-    },
-  };
+  // const titleAnimation = {
+  //   hidden: { opacity: 0, y: -10 },
+  //   visible: {
+  //     opacity: 1,
+  //     y: 10,
+  //     transition: {
+  //       staggerChildren: 0.03,
+  //       delayChildren: 0.04,
+  //       y: {
+  //         duration: 4,
+  //         repeat: Infinity,
+  //         repeatType: "reverse",
+  //         ease: "easeInOut",
+  //       },
+  //     },
+  //   },
+  // };
 
-  const letterAnimation = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { type: "spring", damping: 12, stiffness: 200 },
-    },
-  };
+  // const letterAnimation = {
+  //   hidden: { opacity: 0, y: 50 },
+  //   visible: {
+  //     opacity: 1,
+  //     y: 0,
+  //     transition: { type: "spring", damping: 12, stiffness: 200 },
+  //   },
+  // };
 
-  const paragraphAnimation = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { delay: 1.5, duration: 1 },
-    },
-  };
+  // const paragraphAnimation = {
+  //   hidden: { opacity: 0, y: 20 },
+  //   visible: {
+  //     opacity: 1,
+  //     y: 0,
+  //     transition: { delay: 1.5, duration: 1 },
+  //   },
+  // };
 
-  const buttonAnimation = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { delay: 2, duration: 0.6 },
-    },
-    whileHover: { scale: 1.05 },
-    whileTap: { scale: 0.95 },
-  };
+  // const buttonAnimation = {
+  //   hidden: { opacity: 0, y: 20 },
+  //   visible: {
+  //     opacity: 1,
+  //     y: 0,
+  //     transition: { delay: 2, duration: 0.6 },
+  //   },
+  //   whileHover: { scale: 1.05 },
+  //   whileTap: { scale: 0.95 },
+  // };
 
   const AnimatedText = ({ text, className = "" }) => (
     <motion.span
       className={`inline-block ${className}`}
-      variants={titleAnimation}
+      // variants={titleAnimation}
       initial="hidden"
       animate={"visible"}
     >
@@ -65,7 +65,7 @@ const Banner = () => {
         <motion.span
           key={`${char}-${index}`}
           className="inline-block"
-          variants={letterAnimation}
+          // variants={letterAnimation}
         >
           {char === " " ? "\u00A0" : char}
         </motion.span>
@@ -75,7 +75,7 @@ const Banner = () => {
 
   return (
     <div>
-      <div className="relative w-full lg:h-[650px] md:h-[600px] h-[500px] overflow-hidden">
+      <div className="relative w-full lg:h-[850px] md:h-[600px] h-[500px] overflow-hidden">
         {/* Video Background */}
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"
@@ -89,21 +89,16 @@ const Banner = () => {
         </video>
 
         {/* Text Overlay */}
-        <motion.div className="absolute inset-0 flex flex-col md:mt-28 mt-12 lg:mt-32 items-center text-white text-center mx-5">
-          <div className="text-2xl md:text-7xl lg:text-7xl  font-bold">
+        <motion.div className="absolute inset-0  flex flex-col md:mt-28 lg:mt-32 items-center text-white text-center mx-5">
+          <div className="text-2xl md:text-6xl space-y-5 mt-36 lg:text-6xl  font-bold">
             <AnimatedText text="HIT SOLUTION" className="text-white" />
             <br />
             <AnimatedText
-              text="Empowering your tech"
-              className="text-teal-400"
-            />
-            <br />
-            <AnimatedText
-              text="with innovative IT solutions."
-              className="text-teal-400"
+              text="Your One Stop IT Solution"
+              className="text-teal-400 pt-2"
             />
           </div>
-          <motion.div
+          {/* <motion.div
             className="text-gray-300 my-8 max-w-2xl"
             variants={paragraphAnimation}
             initial="hidden"
@@ -112,12 +107,12 @@ const Banner = () => {
             At <span className="text-teal-400">Hit Solution</span>, we power
             your vision with next-level tech, IoT, cloud, and immersive AR
             solutions—driving innovation, precision, and growth for your brand.
-          </motion.div>
+          </motion.div> */}
 
-          <div className="flex gap-10">
+          <div className="flex gap-10 mt-24">
             <motion.button
               className="bg-teal-600 flex items-center justify-center gap-1 hover:bg-teal-600 text-white py-2 px-4 rounded transition duration-300"
-              variants={buttonAnimation}
+              // variants={buttonAnimation}
               initial="hidden"
               animate={"visible"}
               whileHover="whileHover"
@@ -128,7 +123,7 @@ const Banner = () => {
             </motion.button>
             <motion.button
               className="bg-teal-600 hover:bg-teal-600 text-white py-2 px-4 flex items-center justify-center gap-1 rounded transition duration-300"
-              variants={buttonAnimation}
+              // variants={buttonAnimation}
               initial="hidden"
               animate={"visible"}
               whileHover="whileHover"
