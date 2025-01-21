@@ -6,6 +6,7 @@ import image2 from "../../../public/clinet-profile/client2.png";
 
 import Image from "next/image";
 import ReusableBackground from "@/components/ReusableBackground";
+import Link from "next/link";
 const OurProcess = () => {
   return (
     <div>
@@ -178,14 +179,16 @@ const OurProcess = () => {
                   needs. Your satisfaction is our cue to excel.
                 </p>
               </div>
-              <Button
-                className="bg-teal-500 ms-16"
-                size="lg"
-                variant="shadow"
-                color="success"
-              >
-                Schedule a Call <FaLongArrowAltRight size={20} />
-              </Button>
+              <Link href={"/contact"}>
+                <Button
+                  className="bg-teal-500 ms-16"
+                  size="lg"
+                  variant="shadow"
+                  color="success"
+                >
+                  Schedule a Call <FaLongArrowAltRight size={20} />
+                </Button>
+              </Link>
             </div>
 
             <div className="flex gap-3 mx-auto">

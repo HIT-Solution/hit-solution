@@ -76,7 +76,7 @@ const BannerSlider = () => {
 
   return (
     <ReusableBackground>
-      <div className="lg:mx-52 mx-5 -translate-y-32 relative">
+      <div id="ourProducts" className="lg:mx-52 mx-5 -translate-y-32 relative">
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           freeMode={true}
@@ -135,8 +135,8 @@ const BannerSlider = () => {
                       transition={waveAnimation.transition}
                     />
                   </svg>
-                  <div className="relative z-10 flex flex-col items-center justify-center h-full max-w-4xl mx-auto px-4">
-                    <div className="flex flex-col gap-5 justify-center items-center text-2xl text-white">
+                  <div className="relative z-10 flex flex-col items-center justify-center h-full  max-w-4xl mx-auto px-4">
+                    <div className="flex flex-col gap-5 justify-center items-center hover:text-gray-300  text-2xl text-white">
                       <Icon size={60} />
                       <h1 className="flex items-center">
                         {label} <IoIosArrowForward />

@@ -30,13 +30,13 @@ const NavBar = () => {
   };
 
   const servicesContent = (
-    <div className="p-10">
+    <div className="p-10 ">
       <ul className="text-lg space-y-5">
         <h1 className="text-teal-600 font-semibold">Service List</h1>
         <li>
           <Link
             className="hover:text-teal-600"
-            href={"/"}
+            href={"/services"}
             onClick={handleMenuClick}
           >
             Software Development & Digital Product
@@ -45,7 +45,7 @@ const NavBar = () => {
         <li>
           <Link
             className="hover:text-teal-600"
-            href={"/"}
+            href={"/services"}
             onClick={handleMenuClick}
           >
             Cloud Computing Solutions
@@ -54,7 +54,7 @@ const NavBar = () => {
         <li>
           <Link
             className="hover:text-teal-600"
-            href={"/"}
+            href={"/services"}
             onClick={handleMenuClick}
           >
             Internet of Things (IoT) Solutions
@@ -63,7 +63,7 @@ const NavBar = () => {
         <li>
           <Link
             className="hover:text-teal-600"
-            href={"/"}
+            href={"/services"}
             onClick={handleMenuClick}
           >
             Product Design
@@ -72,7 +72,7 @@ const NavBar = () => {
         <li>
           <Link
             className="hover:text-teal-600"
-            href={"/"}
+            href={"/services"}
             onClick={handleMenuClick}
           >
             Quality Assurance
@@ -81,7 +81,7 @@ const NavBar = () => {
         <li>
           <Link
             className="hover:text-teal-600"
-            href={"/"}
+            href={"/services"}
             onClick={handleMenuClick}
           >
             Tech Consultancy and IT Support
@@ -90,7 +90,7 @@ const NavBar = () => {
         <li>
           <Link
             className="hover:text-teal-600"
-            href={"/"}
+            href={"/services"}
             onClick={handleMenuClick}
           >
             Digital Marketing
@@ -99,19 +99,21 @@ const NavBar = () => {
         <li>
           <Link
             className="hover:text-teal-600"
-            href={"/"}
+            href={"/services"}
             onClick={handleMenuClick}
           >
             AR Creative Studio
           </Link>
         </li>
-        <Button
-          variant="shadow"
-          className="bg-gradient-to-br from-black to-teal-700 text-white"
-          onClick={handleMenuClick}
-        >
-          Hire The Best Team <FaArrowRightLong />
-        </Button>
+        <Link href={"/contact"}>
+          <Button
+            variant="shadow"
+            className="bg-gradient-to-br from-black to-teal-700 text-white"
+            onClick={handleMenuClick}
+          >
+            Hire The Best Team <FaArrowRightLong />
+          </Button>
+        </Link>
       </ul>
     </div>
   );
@@ -159,7 +161,7 @@ const NavBar = () => {
         >
           <Tooltip content={servicesContent}>
             <Link
-              className="flex items-center"
+              className="flex  items-center"
               href="/services"
               onClick={handleMenuClick}
             >
@@ -180,13 +182,13 @@ const NavBar = () => {
         </NavbarItem>
         <NavbarItem
           className={
-            isActive("/Portfolio")
+            isActive("/products")
               ? "text-teal-400"
               : "text-white hover:text-teal-400"
           }
         >
-          <Link href="/" onClick={handleMenuClick}>
-            Portfolio
+          <Link href="/products" onClick={handleMenuClick}>
+            Our Products
           </Link>
         </NavbarItem>
         <NavbarItem
@@ -263,7 +265,7 @@ const NavBar = () => {
         </NavbarMenuItem>
         <NavbarMenuItem>
           <Link className="text-white" href="/" onClick={handleMenuClick}>
-            Portfolio
+            Our Products
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>

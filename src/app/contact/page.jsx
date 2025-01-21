@@ -94,21 +94,24 @@ const Contact = () => {
             />
           </div>
 
-          <ContactUsForm />
+          <div id="contactForm">
+            <ContactUsForm />
+          </div>
         </div>
 
+        {/* google map  */}
         <div className="relative w-full container mx-auto py-4">
           <h1 className="text-5xl  text-teal-600 py-12 font-semibold">
             OUR <span className="text-black">OFFICE </span>LOCATION
           </h1>
           <div className="overflow-hidden bg-none w-full h-[600px] rounded-lg shadow-lg border border-gray-300">
             <iframe
-              className="w-full h-full"
+              className="w-full h-full rounded-lg shadow-lg"
               frameBorder="0"
               scrolling="no"
-              marginHeight={0}
-              marginWidth={0}
-              src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Green Multimedia Ltd.&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              marginHeight="0"
+              marginWidth="0"
+              src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Green Multimedia Ltd. (Green TV), Rongdhanu Corporate Building (opposite to South gate of Jamuna Future Park)&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
               allowFullScreen
             ></iframe>
           </div>

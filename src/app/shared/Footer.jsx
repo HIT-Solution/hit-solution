@@ -38,31 +38,31 @@ const Footer = () => {
               <SocialSharing />
             </div>
             <div className="space-y-3">
-              <h1 className="text-gray-200 text-xl font-semibold mb-5">
+              <h1 className="text-gray-200 hover:text-white text-xl font-semibold mb-5">
                 Quick Links
               </h1>
-              <h1 className=" text-gray-400 font-semibold">
+              <h1 className=" text-gray-400 hover:text-white font-semibold">
                 <Link href={"/"}>Home</Link>
               </h1>
-              <h1 className=" text-gray-400 font-semibold">
+              <h1 className=" text-gray-400 hover:text-white font-semibold">
                 <Link href={"/services"}>Services</Link>
               </h1>
-              <h1 className=" text-gray-400 font-semibold">
-                <Link href={"/"}>Portfolio</Link>
+              <h1 className=" text-gray-400 hover:text-white font-semibold">
+                <Link href={"/products"}>Products</Link>
               </h1>
-              <h1 className=" text-gray-400 font-semibold">
+              <h1 className=" text-gray-400 hover:text-white font-semibold">
                 <Link href={"blogs"}>Blogs</Link>
               </h1>
-              <h1 className=" text-gray-400 font-semibold">
+              <h1 className=" text-gray-400 hover:text-white font-semibold">
                 <Link href={"/career"}>Career</Link>
               </h1>
-              <h1 className=" text-gray-400 font-semibold">
+              <h1 className=" text-gray-400 hover:text-white font-semibold">
                 <Link href={"/technologies"}>Technologies</Link>
               </h1>
-              <h1 className=" text-gray-400 font-semibold">
+              <h1 className=" text-gray-400 hover:text-white font-semibold">
                 <Link href={"/aboutUs"}>About Us</Link>
               </h1>
-              <h1 className=" text-gray-400 font-semibold">
+              <h1 className=" text-gray-400 hover:text-white font-semibold">
                 <Link href={"/contact"}>Contact</Link>
               </h1>
             </div>
@@ -70,13 +70,13 @@ const Footer = () => {
               <h1 className="text-gray-200 text-xl font-semibold mb-5">
                 Legal
               </h1>
-              <h1 className=" text-gray-400 font-semibold">
+              <h1 className=" text-gray-400 hover:text-white font-semibold">
                 <Link href={"/"}>Terms of use</Link>
               </h1>
-              <h1 className=" text-gray-400 font-semibold">
+              <h1 className=" text-gray-400 hover:text-white font-semibold">
                 <Link href={"/policy/privicypolicy"}>Privacy policy</Link>
               </h1>
-              <h1 className=" text-gray-400 font-semibold">
+              <h1 className=" text-gray-400 hover:text-white font-semibold">
                 <Link href={"/"}>Cookie policy</Link>
               </h1>
             </div>

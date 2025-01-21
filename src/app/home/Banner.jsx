@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { IoIosArrowForward } from "react-icons/io";
+import Link from "next/link";
 // import BannerSlider from "../../components/BannerSlider";
 // import { Spinner } from "@nextui-org/react";
 
@@ -110,27 +111,31 @@ const Banner = () => {
           </motion.div> */}
 
           <div className="flex gap-10 mt-24">
-            <motion.button
-              className="bg-teal-600 flex items-center justify-center gap-1 hover:bg-teal-600 text-white py-2 px-4 rounded transition duration-300"
-              // variants={buttonAnimation}
-              initial="hidden"
-              animate={"visible"}
-              whileHover="whileHover"
-              whileTap="whileTap"
-            >
-              View Our Products
-              <IoIosArrowForward size={20} />
-            </motion.button>
-            <motion.button
-              className="bg-teal-600 hover:bg-teal-600 text-white py-2 px-4 flex items-center justify-center gap-1 rounded transition duration-300"
-              // variants={buttonAnimation}
-              initial="hidden"
-              animate={"visible"}
-              whileHover="whileHover"
-              whileTap="whileTap"
-            >
-              Hire The Best Team <IoIosArrowForward size={20} />
-            </motion.button>
+            <Link href={"/products"}>
+              <motion.button
+                className="bg-teal-600 flex items-center justify-center gap-1 hover:bg-teal-700 hover:text-gray-700 text-white py-2 px-4 rounded transition duration-300"
+                // variants={buttonAnimation}
+                initial="hidden"
+                animate={"visible"}
+                whileHover="whileHover"
+                whileTap="whileTap"
+              >
+                View Our Products
+                <IoIosArrowForward size={20} />
+              </motion.button>
+            </Link>
+            <Link href={"contact"}>
+              <motion.button
+                className="bg-teal-600 hover:bg-teal-700 text-white hover:text-gray-700 py-2 px-4 flex items-center justify-center gap-1 rounded transition duration-300"
+                // variants={buttonAnimation}
+                initial="hidden"
+                animate={"visible"}
+                whileHover="whileHover"
+                whileTap="whileTap"
+              >
+                Hire The Best Team <IoIosArrowForward size={20} />
+              </motion.button>
+            </Link>
           </div>
         </motion.div>
       </div>
