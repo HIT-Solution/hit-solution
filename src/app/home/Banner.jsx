@@ -90,7 +90,7 @@ const Banner = () => {
         </video>
 
         {/* Text Overlay */}
-        <motion.div className="absolute inset-0  flex flex-col md:mt-28 lg:mt-32 items-center text-white text-center mx-5">
+        <motion.div className="absolute inset-0  flex flex-col md:mt-12 lg:mt-32 items-center text-white text-center mx-5">
           <div className="text-2xl md:text-6xl space-y-5 mt-36 lg:text-6xl  font-bold">
             <AnimatedText text="HIT SOLUTION" className="text-white" />
             <br />
@@ -110,10 +110,10 @@ const Banner = () => {
             solutions—driving innovation, precision, and growth for your brand.
           </motion.div> */}
 
-          <div className="flex gap-10 mt-24">
+          <div className="flex lg:gap-10 md:gap-8 gap-6 lg:mt-24 md:mt-12 mt-6">
             <Link href={"/products"}>
               <motion.button
-                className="bg-teal-600 flex items-center justify-center gap-1 hover:bg-teal-700 hover:text-gray-700 text-white py-2 px-4 rounded transition duration-300"
+                className="bg-teal-600 flex xs:text-3xl items-center justify-center gap-1 hover:bg-teal-700 hover:text-gray-700 text-white py-2 px-4 rounded transition duration-300"
                 // variants={buttonAnimation}
                 initial="hidden"
                 animate={"visible"}

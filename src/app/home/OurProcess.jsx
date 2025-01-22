@@ -15,7 +15,7 @@ const OurProcess = () => {
           <h1 className="lg:text-5xl px-1 md:text-4xl text-3xl font-bold text-center text-white">
             Our process is simple, smooth <br /> and efficient
           </h1>
-          <div className="grid lg:grid-cols-2 container mx-auto lg:gap-20 md:gap-8 gap-7   pt-20">
+          <div className="grid lg:grid-cols-2 container mx-auto lg:gap-20 md:gap-8 gap-7 px-2 items-center pt-20">
             <div className="mx-auto justify-center">
               <div className="lg:mb-4 md:mb-2 pb-8">
                 <div className="flex gap-5 items-end">
@@ -191,15 +191,15 @@ const OurProcess = () => {
               </Link>
             </div>
 
-            <div className="flex gap-3 mx-auto">
-              <div className="flex flex-col gap-3">
+            <div className="flex gap-1 mx-auto">
+              <div className="flex flex-col gap-1">
                 <div className="w-[160px] md:w-[200px] h-[250px] bg-violet-200 rounded-tr-[120px] flex flex-col justify-center items-center p-5">
                   <h1 className="text-3xl font-bold text-gray-500">
                     Tech Stack
                   </h1>
                   <h1 className="text-6xl font-serif font-bold">10+</h1>
                 </div>
-                <div className="w-[160px] md:w-[200px] h-[500px]">
+                <div className="w-[160px] md:w-[200px] h-[250px]">
                   <Image
                     className="rounded-bl-[120px] w-[160px] md:w-[200px] lg:w-[250px] h-[250px] object-cover"
                     alt="abc"
@@ -210,7 +210,7 @@ const OurProcess = () => {
                   />
                 </div>
               </div>
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-1">
                 <div className="w-[160px] md:w-[200px] h-[250px] bg-green-200 rounded-tl-[120px]">
                   <Image
                     className="rounded-tl-[120px] object-cover w-[160px] md:w-[200px] lg:w-[250px] h-[250px]"

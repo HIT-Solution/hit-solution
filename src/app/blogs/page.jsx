@@ -14,7 +14,7 @@ const Blogs = () => {
   return (
     <div>
       <ReusableBackground>
-        <section className="relative  h-[800px] md:h-[540px] lg:h-[700px]">
+        <section className="relative  h-[560px] md:h-[570px] lg:h-[620px]">
           {/* Image Container */}
           <div className="absolute top-0 left-0 w-full h-full">
             <Image
@@ -27,15 +27,15 @@ const Blogs = () => {
             />
           </div>
           {/* Text Overlay */}
-          <div className="absolute container mx-auto inset-0 pt-32 grid md:grid-cols-2 gap-5 mt-10 lg:flex-row py-10">
+          <div className="absolute container px-2 mx-auto inset-0 pt-32 grid md:grid-cols-2 lg:gap-20 gap-2  lg:flex-row py-10">
             <div className="">
-              <h1 className="lg:text-8xl md:text-5xl text-5xl font-bold text-gray-200">
+              <h1 className="lg:text-4xl md:text-5xl text-2xl font-bold text-gray-200">
                 Latest Blog<span className="text-teal-500">.</span>
               </h1>
               <h1 className="lg:text-5xl md-text-4xl text-3xl mt-6 text-teal-300 font-semibold">
-                Title of The BLog
+                Expert Opinions & News
               </h1>
-              <p className="text-lg py-3 hover:text-gray-800 text-gray-400">
+              <p className="text-lg py-3 hover:text-white text-gray-300">
                 {new Date().toLocaleDateString("en-US", {
                   weekday: "long",
                   month: "long",
@@ -63,23 +63,21 @@ const Blogs = () => {
             </h1> */}
               <SocialSharing />
             </div>
-            <div className="">
-              <div className="">
-                <Image
-                  className="object-cover rounded-tr-[110px] rounded-bl-[110px]"
-                  src={banner}
-                  alt="Blog Header"
-                  // layout="responsive"
-                  objectFit="cover" // Ensures the image covers the container proportionally
-                  quality={100}
-                  height={400}
-                  width={600}
-                />
-              </div>
+            <div className="md:block hidden">
+              <Image
+                className="object-cover  rounded-tr-[110px] rounded-bl-[110px]"
+                src={banner}
+                alt="Blog Header"
+                // layout="responsive"
+                objectFit="cover" // Ensures the image covers the container proportionally
+                quality={100}
+                height={400}
+                width={600}
+              />
             </div>
           </div>
         </section>
-        <div id="blogData" className="">
+        <div id="blogData" className=" py-5">
           <BlogsTab />
         </div>
       </ReusableBackground>

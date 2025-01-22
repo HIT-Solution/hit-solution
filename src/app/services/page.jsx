@@ -276,12 +276,12 @@ export default function ServicesPage() {
             alt="Our Services"
             className="w-full h-full object-cover opacity-30"
           />
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center pt-20 p-6">
             <motion.h1
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg"
+              className="lg:text-4xl text-2xl xl:text-6xl font-extrabold text-white drop-shadow-lg"
             >
               <TitleFontStyle title={"Our Expertise in Innovation"} />
             </motion.h1>
@@ -289,7 +289,7 @@ export default function ServicesPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="text-lg md:text-2xl text-gray-200 mt-4"
+              className="text-base lg:text-2xl md:text-xl xl:text-2xl text-gray-200 mt-4"
             >
               Advanced Solutions Tailored for Your Business Growth.
             </motion.p>
@@ -321,10 +321,10 @@ export default function ServicesPage() {
 
               {/* Text Content */}
               <div className="w-full md:w-1/2">
-                <h2 className="text-3xl font-bold text-teal-700 mb-4">
+                <h2 className="xl:text-3xl lg:text-2xl text-xl font-bold text-teal-700 mb-4">
                   {service.title}
                 </h2>
-                <p className="text-gray-700 text-lg leading-relaxed">
+                <p className="text-gray-700 md:text-lg text-base leading-relaxed">
                   {service.desc}
                 </p>
               </div>

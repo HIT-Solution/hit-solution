@@ -48,7 +48,7 @@ const SocialSharing = ({ title }) => {
         <button onClick={() => handleShare(socialLinks.twitter)}>
           {" "}
           <Image
-            className="object-cover"
+            className="object-cover transform hover:-translate-y-1 transition duration-300"
             alt="abc"
             src={"/twitter.png"}
             height={30}
@@ -60,7 +60,7 @@ const SocialSharing = ({ title }) => {
         <button onClick={() => handleShare(socialLinks.facebook)}>
           {" "}
           <Image
-            className="object-cover"
+            className="object-cover transform hover:-translate-y-1 transition duration-300"
             alt="abc"
             src={"/facebook.png"}
             height={30}
@@ -72,7 +72,7 @@ const SocialSharing = ({ title }) => {
         <button onClick={() => handleShare(socialLinks.linkedin)}>
           {" "}
           <Image
-            className="object-cover"
+            className="object-cover transform hover:-translate-y-1 transition duration-300"
             alt="abc"
             src={"/linkedin.png"}
             height={40}
@@ -84,7 +84,7 @@ const SocialSharing = ({ title }) => {
         <button onClick={() => handleShare(socialLinks.email)}>
           {" "}
           <Image
-            className="object-cover"
+            className="object-cover transform hover:-translate-y-1 transition duration-300"
             alt="abc"
             src={"/gmail.png"}
             height={40}

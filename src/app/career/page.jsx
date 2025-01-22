@@ -87,7 +87,10 @@ const Career = () => {
           </div>
         </div>
       ) : (
-        <div className="text-center py-52 bg-gradient-to-br from-teal-500 via-gray-200 to-teal-100  shadow-lg">
+        <div
+          id="jobs"
+          className="text-center py-52 bg-gradient-to-br from-teal-500 via-gray-200 to-teal-100  shadow-lg"
+        >
           <div className="flex justify-center items-center mb-5">
             <span className="text-6xl">🚫</span>
           </div>

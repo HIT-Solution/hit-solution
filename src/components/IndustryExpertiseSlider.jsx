@@ -36,12 +36,6 @@ const IndustryExpertiseSlider = () => {
       imgUrl: "https://i.ibb.co.com/tqfDDbN/Screenshot-2025-01-16-125105.png",
       desc: "Showcasing Innovative Designs, Seamless Integrations, and End-to-End Solutions for Every Client Need.",
     },
-    // {
-    //   id: 5,
-    //   projectUrl: "https://www.youtube.com/",
-    //   imgUrl: image1,
-    //   desc: "Secure your applications with our comprehensive cybersecurity services and compliance assurance.",
-    // },
   ];
 
   // //  Get Demo Project data
@@ -71,7 +65,7 @@ const IndustryExpertiseSlider = () => {
   ];
 
   return (
-    <div className="mt-32 mx-5 ">
+    <div className="xl:pt-32 lg:pt-28 md:pt-24 pt-12  mx-5 ">
       <Swiper
         pagination={{
           clickable: true,
@@ -104,15 +98,15 @@ const IndustryExpertiseSlider = () => {
                 <div
                   className={`h-[550px] ${
                     bgColors[index % bgColors.length]
-                  } p-5 rounded-3xl flex flex-col justify-between hover:zoom-in-110 items-center`}
+                  } p-5 rounded-3xl flex flex-col justify-between hover:zoom-in-100 items-center`}
                 >
-                  <h1 className="text-3xl font-bold pt-8 pb-5">
+                  <h1 className="xl:text-3xl lg:text-2xl  text-2xl font-bold py-2">
                     Our Client Project- {index + 1}
                   </h1>
                   <p className="text-lg">{slide.desc}</p>
                   <div className="my-10">
                     <img
-                      className="rounded-3xl border-4 border-black h-[300px]"
+                      className="rounded-3xl border-4 border-black xl:h-[300px] lg:h-[280px] md:h-[200px] h-[220px] "
                       src={slide.imgUrl}
                       width={350}
                       height={600}

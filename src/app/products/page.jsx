@@ -46,7 +46,7 @@ export default function ProductPage() {
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="relative w-full h-72 md:h-[500px] bg-teal-600 overflow-hidden"
+        className="relative w-full h-96 md:h-[500px] bg-teal-600 overflow-hidden"
       >
         <Image
           src={bannerImg}

@@ -57,11 +57,11 @@ const Contact = () => {
         </div>
 
         {/* This is Contuct From  */}
-        <h3 className="text-5xl font-serif container mx-auto pt-12">
+        <h3 className="lg:text-5xl md:text-3xl text-2xl font-serif container mx-auto py-8">
           <span className="font-bold">Hello.</span> How can we help you?
         </h3>
-        <div className="grid grid-cols-2 container mx-auto items-center">
-          <div className="lg:space-y-12 lg:px-0 md:px-0 px-5">
+        <div className="grid lg:grid-cols-2 grid-cols-1 container mx-auto items-center">
+          <div className="lg:space-y-12 md:space-y-6 space-y-4 mx-auto lg:px-0 md:px-0 px-5">
             <h1 className="lg:text-4xl md:text-4xl text-2xl">
               Talk to us and <br />
               <span className="font-semibold">
@@ -101,7 +101,7 @@ const Contact = () => {
 
         {/* google map  */}
         <div className="relative w-full container mx-auto py-4">
-          <h1 className="text-5xl  text-teal-600 py-12 font-semibold">
+          <h1 className="lg:text-5xl md:text-3xl text-2xl  text-teal-600 py-12 font-semibold">
             OUR <span className="text-black">OFFICE </span>LOCATION
           </h1>
           <div className="overflow-hidden bg-none w-full h-[600px] rounded-lg shadow-lg border border-gray-300">

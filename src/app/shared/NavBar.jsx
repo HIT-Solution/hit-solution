@@ -108,7 +108,7 @@ const NavBar = () => {
         <Link href={"/contact"}>
           <Button
             variant="shadow"
-            className="bg-gradient-to-br from-black to-teal-700 text-white"
+            className="bg-gradient-to-br from-black to-teal-700 text-white hover:text-gray-400"
             onClick={handleMenuClick}
           >
             Hire The Best Team <FaArrowRightLong />
@@ -140,7 +140,7 @@ const NavBar = () => {
 
       {/* Main Navbar Items */}
       <NavbarContent
-        className="hidden md:flex bg-transparent py-10 from-black  to-teal-800 bg-opacity-60 rounded-tl-full rounded-br-full px-24 bg-teal-950"
+        className="hidden md:flex bg-transparent p-10 from-black  to-teal-800 bg-opacity-60 rounded-tl-full rounded-br-full bg-teal-950"
         justify="end"
       >
         <NavbarItem
@@ -239,7 +239,7 @@ const NavBar = () => {
       </NavbarContent>
 
       {/* Hamburger Menu Content */}
-      <NavbarMenu className="bg-gradient-to-br from-black to-teal-800 sm:block md:hidden">
+      <NavbarMenu className="bg-gradient-to-br pt-12 space-y-2 from-black to-teal-800 sm:block md:hidden">
         <NavbarMenuItem>
           <Link className="text-white" href="/" onClick={handleMenuClick}>
             Home
@@ -289,7 +289,12 @@ const NavBar = () => {
         </NavbarMenuItem>
         <NavbarMenuItem>
           <Link href={"/contact"} onClick={handleMenuClick}>
-            <Button className="bg-teal-400" variant="shadow" color="success">
+            <Button
+              className="bg-transparent text-white border-2 border-teal-400 rounded-full relative overflow-hidden group"
+              variant="shadow"
+              color="success"
+            >
+              <span className="absolute inset-0 border-2 border-white rounded-full group-hover:animate-border-motion"></span>
               Contact
             </Button>
           </Link>

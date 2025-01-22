@@ -97,13 +97,15 @@ const BlogSlider = () => {
                 />
                 <div>
                   {/* Blog Category */}
-                  <h1 className="text-blue-200 mt-5">{blog.category}</h1>
+                  <h1 className="text-blue-200 line-clamp-1 mt-5">
+                    {blog.category}
+                  </h1>
                   {/* Blog Title */}
-                  <h1 className="lg:text-3xl md:text-2xl text-xl my-2 line-clamp-2">
+                  <h1 className="xl:text-3xl lg:text-2xl md:text-xl text-lg my-2 line-clamp-2">
                     {blog.title}
                   </h1>
                   {/* Blog Summary */}
-                  <p className="text-gray-300 text-start line-clamp-4">
+                  <p className="text-gray-300 text-start line-clamp-3">
                     {blog.desc}
                   </p>
                 </div>
@@ -121,7 +123,9 @@ const BlogSlider = () => {
                   />
                   <div>
                     {/* Author Name */}
-                    <h1 className="font-semibold">{blog.author}</h1>
+                    <h1 className="font-semibold line-clamp-1">
+                      {blog.author}
+                    </h1>
                     {/* Publish Date */}
                     <h1>{blog.publishDate}</h1>
                   </div>

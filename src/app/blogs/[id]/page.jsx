@@ -9,6 +9,8 @@ import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import ReusableBackground from "@/components/ReusableBackground";
+import { useState } from "react";
+import notFoundImg from "../../../../public/notfoundImg/Not-Found.webp";
 
 const blogData = [
   {
@@ -64,29 +66,55 @@ const blogData = [
 ];
 
 const BlogDetail = () => {
+  const [loading, setLoading] = useState(false);
   const params = useParams();
   const { id } = params;
 
-  const blog = blogData.find((item) => item.id === parseInt(id));
+  if (!id) {
+    setLoading(true);
+  }
+  if (loading) {
+    return <p>Loading.....</p>;
+  }
+
+  const blog = blogData?.find((item) => item.id === parseInt(id));
 
   if (!blog) {
-    return <div className="text-center py-20 text-3xl">Blog Not Found</div>;
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[60vh] bg-teal-50 p-8">
+        <Image
+          src={notFoundImg}
+          alt="Not Found"
+          className="w-64 h-40 object-cover rounded-lg shadow-lg mb-6"
+        />
+        <h2 className="text-teal-600 text-4xl font-bold mb-2">Oops!</h2>
+        <p className="text-gray-700 text-lg">
+          The blog you're looking for doesn't exist.
+        </p>
+        <a
+          href="/blogs"
+          className="mt-6 bg-teal-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition duration-300"
+        >
+          Go Back to Blogs
+        </a>
+      </div>
+    );
   }
 
   return (
     <ReusableBackground>
-      <div className="container mx-auto px-6 py-12">
+      <div className="md:container mx-auto px-6 py-12">
         {/* Blog Image with Animation */}
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="relative w-full h-[500px] overflow-hidden"
+          className="relative w-full md:h-[500px] h-[250px] overflow-hidden"
         >
           <Image
-            className="w-full h-full object-cover rounded-lg shadow-lg"
-            src={blog.imgUrl}
-            alt={blog.title}
+            className="w-full h-full px-0 mx-0 object-cover rounded-lg shadow-lg"
+            src={blog?.imgUrl}
+            alt={blog?.title}
             width={1200}
             height={600}
             quality={100}
@@ -98,7 +126,7 @@ const BlogDetail = () => {
             className="absolute bottom-0 left-0 bg-gradient-to-t from-gray-900 to-transparent w-full p-6"
           >
             <h1 className="text-teal-300 text-lg font-semibold">
-              {blog.category}
+              {blog?.category}
             </h1>
           </motion.div>
         </motion.div>
@@ -110,9 +138,9 @@ const BlogDetail = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-5xl font-extrabold text-gray-900 leading-tight"
+            className="xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-extrabold text-gray-900 leading-tight"
           >
-            {blog.title}
+            {blog?.title}
           </motion.h1>
 
           {/* Author & Publish Date */}
@@ -124,17 +152,17 @@ const BlogDetail = () => {
           >
             <Image
               className="rounded-full border-2 border-teal-400"
-              src={blog.authorImg}
-              alt={blog.author}
+              src={blog?.authorImg}
+              alt={blog?.author}
               width={60}
               height={60}
               quality={100}
             />
             <div>
               <h2 className="font-semibold text-gray-800 text-lg">
-                {blog.author}
+                {blog?.author}
               </h2>
-              <p className="text-gray-500">{blog.publishDate}</p>
+              <p className="text-gray-500">{blog?.publishDate}</p>
             </div>
           </motion.div>
 
@@ -143,9 +171,9 @@ const BlogDetail = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="text-gray-700 text-lg mt-6  border-l-4 border-teal-500 pl-5"
+            className="text-gray-700 md:text-lg text-base mt-6  border-l-4 border-teal-500 pl-5"
           >
-            {blog.desc}
+            {blog?.desc}
           </motion.p>
 
           {/* Animated Divider */}

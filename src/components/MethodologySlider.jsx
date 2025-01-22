@@ -334,9 +334,9 @@ const MethodologySlider = () => {
   ];
 
   return (
-    <div className="mx-10 relative">
+    <div className="xl:mx-10 mx-auto relative">
       {/* Custom Navigation Buttons positioned above Swiper on the right side */}
-      <div className="absolute z-10 flex lg:right-52 right-10 lg:space-x-[700px] space-x-12">
+      <div className="absolute z-10 flex xl:right-52 lg:right-28 right-0 xl:space-x-[700px] lg:space-x[400px] space-x-12">
         <div className="custom-prev flex items-center justify-center w-8 h-8 bg-gray-300 text-black rounded-full cursor-pointer hover:bg-gray-200">
           <FaChevronLeft />
         </div>
@@ -367,14 +367,14 @@ const MethodologySlider = () => {
         {data.map((item) => (
           <SwiperSlide key={item.name}>
             <div className="relative overflow-hidden">
-              <h1 className="lg:text-4xl md:text-3xl text-2xl text-white text-center pl-[500px]">
+              <h1 className="lg:text-4xl md:text-3xl xl:pt-0 pt-12 text-2xl text-white text-center xl:pl-[500px]">
                 {item.name}
               </h1>
-              <div className="grid grid-cols-1 gap-5 pt-12 md:grid-cols-2 lg:grid-cols-4 lg:px-52 md:px-32">
+              <div className="grid sm:grid-cols-1 gap-5 mx-auto py-2 pt-12 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 xl:px-52 lg:px-32 md:px-2">
                 {item.data.map((item, index) => (
                   <div
                     key={item.color}
-                    className={`${item.color} rounded-2xl w-80 h-[450px] hover:cursor-pointer overflow-hidden py-10 group relative`}
+                    className={`${item.color} rounded-2xl mx-auto w-80 h-[450px] hover:cursor-pointer overflow-hidden py-10 group relative`}
                   >
                     <div className="flex justify-between px-5">
                       <h1>

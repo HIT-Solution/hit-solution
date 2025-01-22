@@ -45,7 +45,7 @@ const Faq = () => {
 
   return (
     <ReusableBackground>
-      <div className=" container mx-auto py-32">
+      <div className=" container mx-auto xl:py-32 lg:py-28 md:py-24 py-20">
         {/* <SimpleBackground> */}
         <h1 className="text-center lg:text-5xl md:text-4xl text-3xl ">
           Frequently Asked Questions
@@ -130,7 +130,7 @@ const Faq = () => {
                   aria-label={faqData?.question}
                   title={
                     <div className="flex justify-between ">
-                      <span className="text-xl font-bold">
+                      <span className="lg:text-xl text-base  font-bold">
                         {faqData?.question}
                       </span>
                     </div>

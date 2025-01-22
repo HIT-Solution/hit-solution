@@ -76,7 +76,7 @@ const BannerSlider = () => {
 
   return (
     <ReusableBackground>
-      <div id="ourProducts" className="lg:mx-52 mx-5 -translate-y-32 relative">
+      <div id="ourProducts" className="xl:mx-52 mx-5  -translate-y-32 relative">
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           freeMode={true}

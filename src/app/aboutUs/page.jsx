@@ -82,17 +82,17 @@ const AboutUs = () => {
             {/* Semi-transparent overlay */}
             <div className="absolute inset-0 bg-black bg-opacity-60"></div>
           </div>
-          <div className="absolute inset-0 mt-10 mx-5 lg:mx-10">
-            <h1 className="lg:text-5xl pt-32 md:text-4xl text-3xl font-bold text-gray-300 text-center">
+          <div className="absolute container mx-auto inset-0 mt-10 px-2 lg:space-y-12  ">
+            <h1 className="lg:text-5xl lg:pt-32 xl:pt-36 md:pt-20 pt-16 md:text-4xl text-3xl font-bold text-gray-300 text-center">
               About Us
             </h1>
-            <h1 className="lg:text-7xl text-4xl md:text-6xl text-center font-bold text-gray-200 my-5 mb-10">
+            <h1 className="lg:text-7xl text-2xl md:text-4xl text-center font-bold text-gray-200 md:my-5 my-2 mb-10">
               Empowering Innovation, <br />
               <span>
                 <TitleFontStyle title={"Crafting the Future"} />{" "}
               </span>
             </h1>
-            <h1 className="text-gray-300 text-justify lg:px-52 md:px-24">
+            <h1 className="text-gray-300 md:text-justify text-base lg:px-52 md:px-24">
               We are a dynamic technology company committed to delivering
               innovative and scalable software solutions that drive digital
               transformation. Our passion is turning ideas into reality,
@@ -100,7 +100,7 @@ const AboutUs = () => {
               efficiency. Through excellence, creativity, and collaboration, we
               bridge the gap between challenges and impactful solutions.
             </h1>
-            <div className="flex items-center justify-center gap-4 md:gap-10 mt-3 lg:mt-8">
+            <div className="flex items-center justify-center gap-4 md:gap-10 mt-6 md:mt-8">
               <div>
                 <Link href={"/services"}>
                   <Button
@@ -129,7 +129,7 @@ const AboutUs = () => {
           </div>
         </section>
 
-        <div className="lg:my-20 md:my-28 my-16 md:py-10 container mx-auto grid lg:grid-cols-2 content-center gap-16">
+        <div className="lg:my-20 md:my-28 my-16 md:py-10 container mx-auto grid lg:grid-cols-2 content-center lg:gap-16 md:gap-8 gap-2 px-2">
           <div>
             <Image
               src={
@@ -148,7 +148,7 @@ const AboutUs = () => {
               {" "}
               Who We Are
             </h1>
-            <p className="text-gray-700 text-justify text-xl mt-10">
+            <p className="text-gray-700 text-justify lg:text-xl md:text-lg text-base lg:mt-10 md:mt-6 mt-3">
               At Hit Solution, we are a team of passionate developers,
               designers, and strategists who believe in the transformative power
               of technology. Our multidisciplinary expertise spans software
@@ -159,14 +159,14 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-        <div className="bg-gradient-to-br from-black to-teal-900 py-10">
+        <div className="bg-gradient-to-br from-black to-teal-900 lg:py-10 md:py-4 py-2 px-2">
           <ReusableBackground>
             <div className="lg:py-32 md:py-28 py-16 container mx-auto  grid lg:grid-cols-2 content-center gap-16">
               <div>
                 <h1 className="lg:text-5xl md:text-4xl text-3xl font-bold text-center text-teal-400">
                   Why Choose Us
                 </h1>
-                <p className="text-gray-300 text-justify text-xl mt-10">
+                <p className="text-gray-300 text-justify lg:text-xl md:text-lg text-base lg:mt-10 md:mt-6 mt-3">
                   Choosing Hit Solution means partnering with a team that values
                   your success as much as you do. We are committed to delivering
                   solutions that are not only innovative but also practical,
@@ -181,7 +181,7 @@ const AboutUs = () => {
               <div>
                 <Image
                   src={"/full-shot-man-experiencing-virtual-reality.jpg"}
-                  className="rounded-tr-[120px] rounded-bl-[120px] h-[380px] object-cover"
+                  className="rounded-tr-[120px] rounded-bl-[120px] lg:h-[380px] md:h-[300px] h-[250px] object-cover"
                   alt="abc"
                   width={550}
                   height={400}
@@ -192,9 +192,9 @@ const AboutUs = () => {
             </div>
           </ReusableBackground>
         </div>
-        <div className="lg:my-32 md:my-28 my-16 md:py-10 container mx-auto  grid lg:grid-cols-2 content-center ">
+        <div className="lg:my-32 md:my-28 my-16 md:py-10 gap-12 container mx-auto px-2  grid lg:grid-cols-2 content-center ">
           <div>
-            <div className="flex gap-5 justify-center items-center">
+            <div className="flex gap-1 justify-center items-center">
               <Image
                 src={
                   "/mission-goals-target-aspirations-motivation-strategy-concept.jpg"
@@ -216,7 +216,7 @@ const AboutUs = () => {
                 objectFit="cover"
               />
             </div>
-            <div className="flex gap-5 mt-5 justify-center items-center">
+            <div className="flex gap-1 mt-1 justify-center items-center">
               <Image
                 src={finger}
                 className="w-[150px] h-[200px] md:w-[250px] md:h[250] object-cover rounded-bl-[120px]"
@@ -240,7 +240,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div>
-            <h1 className="lg:text-3xl md:text-3xl text-2xl font-bold text-center">
+            <h1 className="lg:text-3xl md:text-3xl py-5 text-2xl font-bold text-center">
               Our Mission
             </h1>
             <p className="text-gray-700 text-justify text-lg mt-2">
@@ -271,10 +271,10 @@ const AboutUs = () => {
 
         {/* google map  */}
         <div className="relative w-full container mx-auto py-4">
-          <h1 className="text-5xl  text-teal-600 py-12 font-semibold">
+          <h1 className="lg:text-5xl md:text-3xl text-2xl   text-teal-600 py-4 font-semibold">
             OUR <span className="text-black">OFFICE </span>LOCATION
           </h1>
-          <div className="overflow-hidden bg-none w-full h-[600px] rounded-lg shadow-lg border border-gray-300">
+          <div className="overflow-hidden bg-none w-full md:h-[600px] h-[500px] rounded-lg shadow-lg border border-gray-300">
             <iframe
               className="w-full h-full rounded-lg shadow-lg"
               frameBorder="0"

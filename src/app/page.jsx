@@ -12,6 +12,8 @@ import ContactUs from "./home/ContactUs";
 import Methodology from "./home/Methodology";
 import OurProcess from "./home/OurProcess";
 
+import Calendaly from "@/components/Calendaly";
+
 const Banner = dynamic(() => import("./home/Banner"));
 
 import "sweetalert2/src/sweetalert2.scss";
@@ -35,6 +37,7 @@ const Home = async () => {
       }
     >
       <div>
+        <Calendaly />
         <Banner />
         <BannerSlider />
         <Methodology />
