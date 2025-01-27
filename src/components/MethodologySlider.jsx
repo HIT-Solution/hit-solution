@@ -379,13 +379,13 @@ const MethodologySlider = () => {
                     <div className="flex justify-between px-5">
                       <h1>
                         <motion.img
-                          className="w-12 h-12"
-                          src="https://aicdn.picsart.com/077e0c34-8995-4017-ba75-a7818bfc7e83.png"
+                          className="w-16 h-16"
+                          src="/ioncercel.png"
                           alt=""
-                          animate={{ rotate: 360 }}
+                          animate={{ rotate: -360 }}
                           transition={{
                             repeat: Infinity,
-                            duration: 12,
+                            duration: 10,
                             ease: "linear",
                           }}
                         />

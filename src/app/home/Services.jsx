@@ -89,7 +89,7 @@ const Services = () => {
           </h1>
         </div>
 
-        <div className=" xl:px-32 lg:px-12  md:px-20 gap-2  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className=" xl:px-32 lg:px-12  md:px-20 gap-2 xl:ml-16  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {/* Row 1 - Single Hexagon (Centered) */}
 
           <Link href={"/services"}>
@@ -179,7 +179,7 @@ const Services = () => {
           {/* Row 3 - Three Hexagons */}
 
           <Link href={"/services"}>
-            <div className="hex-card mx-auto  relative overflow-hidden group">
+            <div className="hex-card mx-auto  relative overflow-hidden group xl:-ml-40 xl:-mt-16">
               <div className="absolute inset-0 bg-gradient-to-t from-[#0884B5] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-[500ms]"></div>
               <Image
                 src={qa}
@@ -199,7 +199,7 @@ const Services = () => {
           </Link>
 
           <Link href={"/services"}>
-            <div className="hex-card mx-auto  relative overflow-hidden group">
+            <div className="hex-card mx-auto xl:-ml-40 xl:-mt-16 relative overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-t from-[#0884B5] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-[500ms]"></div>
               <Image
                 src={support}
@@ -220,7 +220,7 @@ const Services = () => {
           </Link>
 
           <Link href={"/services"}>
-            <div className="hex-card mx-auto  relative overflow-hidden group">
+            <div className="hex-card mx-auto xl:-ml-40 xl:-mt-16 relative overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-t from-[#0884B5] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-[500ms]"></div>
               <Image
                 src={social}
@@ -243,7 +243,7 @@ const Services = () => {
           {/* Row 4 - Single Hexagon (Centered) */}
 
           <Link href={"/services"}>
-            <div className="hex-card mx-auto  relative overflow-hidden group">
+            <div className="hex-card mx-auto xl:-ml-40 xl:-mt-16  relative overflow-hidden group">
               <div className="absolute inset-0 bg-gradient-to-t from-[#0884B5] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-[500ms]"></div>
               <Image
                 src={studio}

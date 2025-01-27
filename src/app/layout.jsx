@@ -17,6 +17,7 @@ import { Providers } from "./providers";
 import NavBar from "./shared/NavBar";
 import Footer from "./shared/Footer";
 // import Loader from "./loader";
+import Calendaly from "@/components/Calendaly";
 
 export default function RootLayout({ children }) {
   return (
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
         className={`${fontName.className} antialiased bg-[#F8FAFC]`}
       >
         <Providers suppressHydrationWarning={true}>
+          <Calendaly />
           <NavBar />
           {children}
           <Footer />

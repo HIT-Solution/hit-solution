@@ -126,8 +126,8 @@ const Contact = () => {
                 <div>
                   <h1 className="text-2xl text-teal-400">Location:</h1>
                   <p className="text-gray-300">
-                    H 20, Lutfunnesa Road, Priyanka City, Sector 12, Uttara,
-                    Dhaka, Bangladesh.
+                    Hasan's It Solutions, Rongdhanu Corporate Building Level: 9,
+                    Block: C, Plot: 1447, Pragati Sarani, Dhaka, Dhaka 1229.
                   </p>
                 </div>
               </div>
@@ -155,7 +155,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h1 className="text-2xl text-teal-400">Open Hours:</h1>
-                  <p className="text-gray-300">Sun-Thu : 9AM - 6PM</p>
+                  <p className="text-gray-300">Sat-Thu : 9AM - 5PM</p>
                 </div>
               </div>
             </div>

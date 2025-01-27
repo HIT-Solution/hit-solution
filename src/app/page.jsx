@@ -36,8 +36,8 @@ const Home = async () => {
         </div>
       }
     >
+      {/* <Calendaly /> */}
       <div>
-        <Calendaly />
         <Banner />
         <BannerSlider />
         <Methodology />

@@ -17,6 +17,7 @@ import {
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -188,7 +189,7 @@ const NavBar = () => {
           }
         >
           <Link href="/products" onClick={handleMenuClick}>
-            Our Products
+            Our Projects
           </Link>
         </NavbarItem>
         <NavbarItem
@@ -213,6 +214,7 @@ const NavBar = () => {
             Career
           </Link>
         </NavbarItem>
+
         <NavbarItem
           className={
             isActive("/aboutUs")
@@ -226,14 +228,35 @@ const NavBar = () => {
         </NavbarItem>
         <NavbarItem>
           <Link href={"/contact"} onClick={handleMenuClick}>
-            <Button
-              className="bg-transparent text-white border-2 border-teal-400 rounded-full relative overflow-hidden group"
-              variant="shadow"
-              color="success"
-            >
-              <span className="absolute inset-0 border-2 border-white rounded-full group-hover:animate-border-motion"></span>
-              Contact
-            </Button>
+            <motion.button className="relative px-6 py-2 text-white font-bold bg-transparent rounded-full border-2 border-transparent overflow-hidden shadow-2xl">
+              <motion.span
+                initial={{
+                  clipPath: "inset(0% 100% 0% 0%)",
+                  borderColor: "#14b8a6",
+                }} // Teal-500
+                animate={{
+                  clipPath: [
+                    "inset(0% 0% 0% 0%)", // Left border
+                    "inset(0% 100% 0% 0%)", // Top border
+                    "inset(100% 0% 0% 0%)", // Right border
+                    "inset(0% 0% 0% 100%)", // Bottom border
+                    "inset(0% 0% 100% 0%)", // Loop back
+                  ],
+                  borderColor: [
+                    "#14b8a6", // Teal-500
+                    "#0ea5e9", // Sky-500
+                    "#a855f7", // Purple-500
+                    "#f43f5e", // Red-500
+                    "#f97316", // Orange-500
+                    // "#14b8a6", // Teal-500 (Loop back)
+                  ],
+                }}
+                transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
+                className="absolute inset-0 border-4 rounded-full"
+              ></motion.span>
+
+              <span className="relative hover:text-teal-500 z-10">Contact</span>
+            </motion.button>
           </Link>
         </NavbarItem>
       </NavbarContent>
@@ -265,7 +288,7 @@ const NavBar = () => {
         </NavbarMenuItem>
         <NavbarMenuItem>
           <Link className="text-white" href="/" onClick={handleMenuClick}>
-            Our Products
+            Our Projects
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>

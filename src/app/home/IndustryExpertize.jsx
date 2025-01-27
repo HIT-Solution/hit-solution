@@ -26,7 +26,7 @@ const IndustryExpertize = () => {
           className="overflow-hidden"
         >
           <div className="flex gap-4">
-            <div className="flex flex-col justify-center ml-8 items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20  xl:w-96 lg:w-52 w-48  p-4 mx-1 bg-green-200">
+            <div className="flex flex-col justify-center ml-8 items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20  xl:w-72 lg:w-52 w-48  p-4 mx-1 bg-green-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -66,7 +66,7 @@ const IndustryExpertize = () => {
               </svg>
               <h1>E-commerce</h1>
             </div>
-            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-96 lg:w-52 w-48  p-4 mx-1 bg-orange-200">
+            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-72 lg:w-52 w-48  p-4 mx-1 bg-orange-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -116,7 +116,7 @@ const IndustryExpertize = () => {
               </svg>
               <h1>Software</h1>
             </div>
-            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-96 lg:w-52 w-48  p-4 mx-1 bg-yellow-200">
+            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-72 lg:w-52 w-48  p-4 mx-1 bg-yellow-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -139,7 +139,7 @@ const IndustryExpertize = () => {
               </svg>
               <h1>Health & Fitness</h1>
             </div>
-            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-96 lg:w-52 w-48  p-4 mx-1 bg-cyan-200">
+            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-72 lg:w-52 w-48  p-4 mx-1 bg-cyan-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -211,7 +211,7 @@ const IndustryExpertize = () => {
               </svg>
               <h1>Automotive</h1>
             </div>
-            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-96 lg:w-52 w-48  p-4 mx-1 bg-cyan-200">
+            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-72 lg:w-52 w-48  p-4 mx-1 bg-cyan-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -245,17 +245,7 @@ const IndustryExpertize = () => {
               </svg>
               <h1>Photo & Video</h1>
             </div>
-          </div>
-        </Marquee>
-        <Marquee
-          speed={60}
-          gradient={false}
-          direction="left"
-          loop={0}
-          className="overflow-hidden"
-        >
-          <div className="flex  gap-4 my-5">
-            <div className="flex flex-col justify-center ml-8 items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-96 lg:w-52 w-48  p-4 mx-1 bg-yellow-200">
+            <div className="flex flex-col justify-center ml-8 items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-72 lg:w-52 w-48  p-4 mx-1 bg-yellow-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -290,7 +280,7 @@ const IndustryExpertize = () => {
               </svg>
               <h1>Business</h1>
             </div>
-            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-96 lg:w-52 w-48  p-4 mx-1 bg-orange-200">
+            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-72 lg:w-52 w-48  p-4 mx-1 bg-orange-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -334,105 +324,26 @@ const IndustryExpertize = () => {
               </svg>
               <h1>Startup</h1>
             </div>
-            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-96 lg:w-52 w-48 p-4 mx-1 bg-violet-200">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-              >
-                <path
-                  d="M9.33341 12H22.6667C25.159 12 26.4051 12 27.3334 12.5359C27.9415 12.887 28.4465 13.3919 28.7975 14C29.3334 14.9283 29.3334 16.1744 29.3334 18.6667C29.3334 21.1589 29.3334 22.4051 28.7975 23.3333C28.4465 23.9415 27.9415 24.4464 27.3334 24.7975C26.4051 25.3333 25.159 25.3333 22.6667 25.3333H22.1418C21.2259 25.3333 20.7679 25.3333 20.3395 25.2381C19.7659 25.1108 19.2275 24.8585 18.7625 24.4995C18.415 24.2312 18.1218 23.8795 17.5355 23.1759C17.0683 22.6152 16.8347 22.3349 16.5666 22.2091C16.2077 22.0407 15.7925 22.0407 15.4335 22.2091C15.1654 22.3349 14.9318 22.6152 14.4646 23.1759C13.8783 23.8795 13.5851 24.2312 13.2377 24.4995C12.7727 24.8585 12.2342 25.1108 11.6606 25.2381C11.2322 25.3333 10.7742 25.3333 9.85833 25.3333H9.33341C6.84111 25.3333 5.59495 25.3333 4.66675 24.7975C4.05867 24.4464 3.55372 23.9415 3.20264 23.3333C2.66675 22.4051 2.66675 21.1589 2.66675 18.6667C2.66675 16.1744 2.66675 14.9283 3.20264 14C3.55372 13.3919 4.05867 12.887 4.66675 12.5359C5.59495 12 6.84111 12 9.33341 12Z"
-                  stroke="#0C0A25"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                ></path>
-                <path
-                  d="M6.66675 16H9.33341"
-                  stroke="#0C0A25"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                ></path>
-                <path
-                  d="M29.3334 17.3334V15.7712C29.3334 14.233 29.3334 13.4639 29.1291 12.7472C29.0169 12.3534 28.8597 11.9739 28.6606 11.6162C28.2983 10.9649 27.7545 10.421 26.6667 9.33335C25.579 8.24565 25.0351 7.70179 24.3839 7.33945C24.0262 7.14041 23.6466 6.98322 23.2529 6.87098C22.5362 6.66669 21.7671 6.66669 20.2289 6.66669H11.7713C10.2331 6.66669 9.46395 6.66669 8.74721 6.87098C8.35349 6.98322 7.974 7.14041 7.61624 7.33945C6.96497 7.70179 6.42112 8.24565 5.33341 9.33335C4.24571 10.4211 3.70185 10.9649 3.33951 11.6162C3.14047 11.9739 2.98328 12.3534 2.87104 12.7472C2.66675 13.4639 2.66675 14.233 2.66675 15.7712V17.3334"
-                  stroke="#0C0A25"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                ></path>
-              </svg>
-              <h1>AR/VR</h1>
-            </div>
-            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-96 lg:w-52 w-48 ${item.bg} p-4 mx-1 bg-blue-200">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M10 11.6273L5.07498 17.4215C4.41411 18.199 3.23201 18.2464 2.51138 17.5241C1.79074 16.8019 1.83795 15.6172 2.61376 14.9549L8.3953 10.019"
-                  stroke="black"
-                  strokeWidth="1.5"
-                  strokeLinejoin="round"
-                ></path>
-                <path
-                  d="M18 10.0667L13.0476 15.03M9.95238 2.00146L5 6.96472M9.33337 2.62183L5.61908 6.34428C5.61908 6.34428 7.47622 8.82592 9.33337 10.6871C11.1905 12.5484 13.6667 14.4096 13.6667 14.4096L17.381 10.6871C17.381 10.6871 15.5238 8.2055 13.6667 6.34428C11.8096 4.48306 9.33337 2.62183 9.33337 2.62183Z"
-                  stroke="black"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                ></path>
-                <path
-                  d="M20 11.659L22 10.019M20 14.9389L22 16.0322"
-                  stroke="black"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                ></path>
-                <path
-                  d="M11.002 21.9987H20.9998M12.2267 21.9987C12.7782 21.0113 13.19 19.1216 15.142 19.0157C15.7218 18.9843 16.3117 18.9843 16.8914 19.0157C18.8434 19.1216 19.2572 21.0113 19.8087 21.9987"
-                  stroke="black"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                ></path>
-              </svg>
-              <h1>Legal Services</h1>
-            </div>
-            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-96 lg:w-52 w-48 ${item.bg} p-4 mx-1 bg-green-200">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M19.4173 15.7133C23.368 10.7038 22.3007 5.73508 19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801L11.9998 4.84158M19.4173 15.7133C18.469 16.9156 17.2317 18.1204 15.6605 19.2834C14.1143 20.4278 13.3412 21 12 21C10.6588 21 9.88572 20.4278 8.33953 19.2834C0.221719 13.2749 1.01807 6.15293 4.53744 3.99415C7.21909 2.34923 9.55962 3.01211 10.9656 4.06801L11.9998 4.84158M19.4173 15.7133L13.8921 9.44479C13.6659 9.1882 13.2873 9.13296 12.9972 9.31424L10.8111 10.6806C10.0418 11.1614 9.04334 11.0532 8.3949 10.4187C7.53837 9.58062 7.62479 8.17769 8.5777 7.45106L11.9998 4.84158"
-                  stroke="black"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                ></path>
-              </svg>
-              <h1>Non-profit</h1>
-            </div>
           </div>
         </Marquee>
-        <Marquee
-          speed={50}
+        {/* <Marquee
+          speed={60}
           gradient={false}
-          direction="right"
+          direction="left"
           loop={0}
           className="overflow-hidden"
         >
+          <div className="flex  gap-4 my-5"></div>
+        </Marquee> */}
+        <Marquee
+          speed={50}
+          gradient={false}
+          direction="left"
+          loop={0}
+          className="overflow-hidden py-6"
+        >
           <div className="flex gap-4">
-            <div className="flex flex-col ml-8 justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-96 lg:w-52 w-48  p-4 mx-1 bg-red-200">
+            <div className="flex flex-col ml-8 justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-72 lg:w-52 w-48  p-4 mx-1 bg-red-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -468,7 +379,7 @@ const IndustryExpertize = () => {
               </svg>
               <h1>Govt. & Public Sector</h1>
             </div>
-            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-96 lg:w-52 w-48  p-4 mx-1 bg-violet-200">
+            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-72 lg:w-52 w-48  p-4 mx-1 bg-violet-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -521,7 +432,7 @@ const IndustryExpertize = () => {
               </svg>
               <h1>Fashion & Apparel</h1>
             </div>
-            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-96 lg:w-52 w-48  p-4 mx-1 bg-blue-200">
+            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-72 lg:w-52 w-48  p-4 mx-1 bg-blue-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -539,7 +450,7 @@ const IndustryExpertize = () => {
               </svg>
               <h1>Energy & Utilities</h1>
             </div>
-            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-96 lg:w-52 w-48  p-4 mx-1 bg-yellow-200">
+            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-72 lg:w-52 w-48  p-4 mx-1 bg-yellow-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
@@ -574,7 +485,7 @@ const IndustryExpertize = () => {
               </svg>
               <h1>Logistics</h1>
             </div>
-            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-96 lg:w-52 w-48  p-4 mx-1 bg-cyan-200">
+            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-72 lg:w-52 w-48  p-4 mx-1 bg-cyan-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -626,6 +537,94 @@ const IndustryExpertize = () => {
                 ></path>
               </svg>
               <h1>Sports & Fitness</h1>
+            </div>
+            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-72 lg:w-52 w-48 p-4 mx-1 bg-violet-200">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M9.33341 12H22.6667C25.159 12 26.4051 12 27.3334 12.5359C27.9415 12.887 28.4465 13.3919 28.7975 14C29.3334 14.9283 29.3334 16.1744 29.3334 18.6667C29.3334 21.1589 29.3334 22.4051 28.7975 23.3333C28.4465 23.9415 27.9415 24.4464 27.3334 24.7975C26.4051 25.3333 25.159 25.3333 22.6667 25.3333H22.1418C21.2259 25.3333 20.7679 25.3333 20.3395 25.2381C19.7659 25.1108 19.2275 24.8585 18.7625 24.4995C18.415 24.2312 18.1218 23.8795 17.5355 23.1759C17.0683 22.6152 16.8347 22.3349 16.5666 22.2091C16.2077 22.0407 15.7925 22.0407 15.4335 22.2091C15.1654 22.3349 14.9318 22.6152 14.4646 23.1759C13.8783 23.8795 13.5851 24.2312 13.2377 24.4995C12.7727 24.8585 12.2342 25.1108 11.6606 25.2381C11.2322 25.3333 10.7742 25.3333 9.85833 25.3333H9.33341C6.84111 25.3333 5.59495 25.3333 4.66675 24.7975C4.05867 24.4464 3.55372 23.9415 3.20264 23.3333C2.66675 22.4051 2.66675 21.1589 2.66675 18.6667C2.66675 16.1744 2.66675 14.9283 3.20264 14C3.55372 13.3919 4.05867 12.887 4.66675 12.5359C5.59495 12 6.84111 12 9.33341 12Z"
+                  stroke="#0C0A25"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+                <path
+                  d="M6.66675 16H9.33341"
+                  stroke="#0C0A25"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+                <path
+                  d="M29.3334 17.3334V15.7712C29.3334 14.233 29.3334 13.4639 29.1291 12.7472C29.0169 12.3534 28.8597 11.9739 28.6606 11.6162C28.2983 10.9649 27.7545 10.421 26.6667 9.33335C25.579 8.24565 25.0351 7.70179 24.3839 7.33945C24.0262 7.14041 23.6466 6.98322 23.2529 6.87098C22.5362 6.66669 21.7671 6.66669 20.2289 6.66669H11.7713C10.2331 6.66669 9.46395 6.66669 8.74721 6.87098C8.35349 6.98322 7.974 7.14041 7.61624 7.33945C6.96497 7.70179 6.42112 8.24565 5.33341 9.33335C4.24571 10.4211 3.70185 10.9649 3.33951 11.6162C3.14047 11.9739 2.98328 12.3534 2.87104 12.7472C2.66675 13.4639 2.66675 14.233 2.66675 15.7712V17.3334"
+                  stroke="#0C0A25"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+              </svg>
+              <h1>AR/VR</h1>
+            </div>
+            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-72 lg:w-52 w-48 ${item.bg} p-4 mx-1 bg-blue-200">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M10 11.6273L5.07498 17.4215C4.41411 18.199 3.23201 18.2464 2.51138 17.5241C1.79074 16.8019 1.83795 15.6172 2.61376 14.9549L8.3953 10.019"
+                  stroke="black"
+                  strokeWidth="1.5"
+                  strokeLinejoin="round"
+                ></path>
+                <path
+                  d="M18 10.0667L13.0476 15.03M9.95238 2.00146L5 6.96472M9.33337 2.62183L5.61908 6.34428C5.61908 6.34428 7.47622 8.82592 9.33337 10.6871C11.1905 12.5484 13.6667 14.4096 13.6667 14.4096L17.381 10.6871C17.381 10.6871 15.5238 8.2055 13.6667 6.34428C11.8096 4.48306 9.33337 2.62183 9.33337 2.62183Z"
+                  stroke="black"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+                <path
+                  d="M20 11.659L22 10.019M20 14.9389L22 16.0322"
+                  stroke="black"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+                <path
+                  d="M11.002 21.9987H20.9998M12.2267 21.9987C12.7782 21.0113 13.19 19.1216 15.142 19.0157C15.7218 18.9843 16.3117 18.9843 16.8914 19.0157C18.8434 19.1216 19.2572 21.0113 19.8087 21.9987"
+                  stroke="black"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+              </svg>
+              <h1>Legal Services</h1>
+            </div>
+            <div className="flex flex-col justify-center items-center rounded-tl-3xl rounded-br-3xl xl:h-24 h-20 xl:w-72 lg:w-52 w-48 ${item.bg} p-4 mx-1 bg-green-200">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M19.4173 15.7133C23.368 10.7038 22.3007 5.73508 19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801L11.9998 4.84158M19.4173 15.7133C18.469 16.9156 17.2317 18.1204 15.6605 19.2834C14.1143 20.4278 13.3412 21 12 21C10.6588 21 9.88572 20.4278 8.33953 19.2834C0.221719 13.2749 1.01807 6.15293 4.53744 3.99415C7.21909 2.34923 9.55962 3.01211 10.9656 4.06801L11.9998 4.84158M19.4173 15.7133L13.8921 9.44479C13.6659 9.1882 13.2873 9.13296 12.9972 9.31424L10.8111 10.6806C10.0418 11.1614 9.04334 11.0532 8.3949 10.4187C7.53837 9.58062 7.62479 8.17769 8.5777 7.45106L11.9998 4.84158"
+                  stroke="black"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+              </svg>
+              <h1>Non-profit</h1>
             </div>
           </div>
         </Marquee>
