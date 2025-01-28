@@ -1,13 +1,40 @@
 "use client";
 import React from "react";
+import { motion } from "framer-motion";
 // import SimpleBackground from "../../components/SimpleBackground";
 import Image from "next/image";
-import fq1 from "../../../public/clinet-profile/profile5.jpg";
-import fq2 from "../../../public/clinet-profile/client2.png";
+import fq1 from "../../../public/clinet-profile/client1.png";
+import fq2 from "../../../public/clinet-profile/profile3.jpg";
 
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import ReusableBackground from "@/components/ReusableBackground";
 const Faq = () => {
+  const shapeAnimation = {
+    scale: [1, 1.03, 0.97, 1],
+    rotate: [0, 1, -5, 0],
+    clipPath: [
+      // "polygon(30% 10%, 70% 0%, 100% 30%, 90% 80%, 60% 100%, 10% 90%, 0% 50%, 10% 20%)",
+      // "polygon(25% 15%, 75% 0%, 100% 35%, 85% 75%, 55% 100%, 5% 85%, 0% 45%, 15% 15%)",
+      // "polygon(30% 10%, 70% 0%, 100% 30%, 90% 80%, 60% 100%, 10% 90%, 0% 50%, 10% 20%)",
+    ],
+    transition: {
+      duration: 6,
+      ease: "easeInOut",
+      repeat: Infinity,
+    },
+  };
+
+  const bubbleAnimation = {
+    y: [0, -10, 0],
+    x: [0, 5, -5, 0],
+    opacity: [0.3, 0.5, 0.2, 0.3],
+    transition: {
+      duration: 4,
+      ease: "easeInOut",
+      repeat: Infinity,
+    },
+  };
+
   const faqDatas = [
     {
       id: 1,
@@ -52,7 +79,7 @@ const Faq = () => {
         </h1>
 
         <div className="grid lg:grid-cols-2 gap-16 content-center mt-16">
-          <div>
+          {/* <div>
             <div className="flex gap-2 justify-center items-center">
               <div className="w-[150px] font-serif lg:w-[200px] h-[200px] flex flex-col items-center justify-center bg-blue-300 rounded-tr-[120px] rounded-bl-[120px]">
                 <h1 className="font-bold text-xl text-gray-600">Top Talent</h1>
@@ -82,6 +109,102 @@ const Faq = () => {
                 <h1 className="font-bold text-4xl">50+</h1>
               </div>
             </div>
+          </div> */}
+
+          <div className="flex flex-col items-center   gap-0 rounded">
+            {/* Top Section */}
+            <motion.div className="relative flex gap-6 justify-center items-center">
+              {/* Left Blob (Water Ripple Effect) */}
+              <motion.div
+                className="relative w-[180px] lg:w-[240px] shadow-2xl shadow-black h-[220px] flex flex-col items-center justify-center bg-gradient-to-br from-blue-500 to-blue-700 text-white"
+                animate={shapeAnimation}
+              >
+                <h1 className="font-bold text-xl">Top Talent</h1>
+                <h1 className="font-bold text-5xl">99+</h1>
+
+                {/* Floating Bubbles */}
+                <motion.div
+                  className="absolute top-[-10px] left-[-10px] w-8 h-8 bg-white rounded-full opacity-30"
+                  animate={bubbleAnimation}
+                />
+                <motion.div
+                  className="absolute bottom-[10px] right-[10px] w-6 h-6 bg-white rounded-full opacity-30"
+                  animate={bubbleAnimation}
+                />
+              </motion.div>
+
+              {/* Right Image with Blob Shape */}
+              <motion.div
+                animate={shapeAnimation}
+                transition={{
+                  repeat: Infinity,
+                  duration: 6,
+                  ease: "easeInOut",
+                }}
+              >
+                <Image
+                  className="w-[180px] lg:w-[240px] h-[220px] object-cover shadow-lg"
+                  style={{
+                    clipPath:
+                      "polygon(25% 15%, 75% 0%, 100% 35%, 85% 75%, 55% 100%, 5% 85%, 0% 45%, 15% 15%)",
+                  }}
+                  src={fq2}
+                  alt="Talent"
+                  width={250}
+                  height={200}
+                  quality={100}
+                />
+              </motion.div>
+            </motion.div>
+
+            {/* Bottom Section */}
+            <motion.div className="relative flex gap-6 justify-center items-center">
+              {/* Left Image with Blob Shape */}
+              <motion.div
+                animate={shapeAnimation}
+                transition={{
+                  repeat: Infinity,
+                  duration: 6,
+                  ease: "easeInOut",
+                }}
+              >
+                <Image
+                  className="w-[180px] lg:w-[240px] h-[220px] object-cover shadow-lg"
+                  style={{
+                    clipPath:
+                      "polygon(30% 10%, 70% 0%, 100% 30%, 90% 80%, 60% 100%, 10% 90%, 0% 50%, 10% 20%)",
+                  }}
+                  src={fq1}
+                  alt="Projects"
+                  width={250}
+                  height={200}
+                  quality={100}
+                />
+              </motion.div>
+
+              {/* Right Blob (Water Ripple Effect) */}
+              <motion.div
+                className="relative w-[180px] lg:w-[240px] h-[220px] shadow-2xl shadow-black flex flex-col items-center justify-center bg-gradient-to-br from-green-500 to-green-700 text-white "
+                animate={shapeAnimation}
+              >
+                <h1 className="font-bold text-xl">Projects</h1>
+                <h1 className="font-bold text-5xl">50+</h1>
+
+                {/* Floating Bubbles */}
+                <motion.div
+                  className="absolute top-[-10px] right-[-10px] w-8 h-8 bg-white rounded-full opacity-30"
+                  animate={bubbleAnimation}
+                />
+                <motion.div
+                  className="absolute top-[55px] right-[40px] w-5 h-5 bg-white rounded-full opacity-30"
+                  animate={bubbleAnimation}
+                />
+                <motion.div
+                  className="absolute bottom-[10px] left-[10px] w-6 h-6 bg-white rounded-full opacity-30"
+                  animate={bubbleAnimation}
+                />
+              </motion.div>
+            </motion.div>
           </div>
 
           <div className="border rounded-lg p-5 py-8 lg:mt-0 mt-5">
