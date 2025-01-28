@@ -9,13 +9,13 @@ const Calendaly = () => {
   return (
     <>
       {isOpen && (
-        <a
-          href="https://calendly.com/hitsubscription"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <div className="fixed right-4 bottom-4 z-30 bg-gradient-to-tr from-teal-400 to-emerald-700 lg:p-4 p-1 rounded-lg shadow-xl flex items-center space-x-3 border border-gray-200">
-            {/* Profile Section */}
+        <div className="fixed right-4 bottom-4 z-30 bg-gradient-to-tr from-teal-400 to-emerald-700 lg:p-4 p-1 rounded-lg shadow-xl flex items-center space-x-3 border border-gray-200">
+          {/* Profile Section */}
+          <a
+            href="https://calendly.com/hitsubscription"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             <div className="relative">
               <Image
                 src={profile} // Replace with your profile image
@@ -25,7 +25,12 @@ const Calendaly = () => {
               {/* Online Indicator */}
               <span className="absolute bottom-0 top-0 right-0 w-3 h-3 bg-green-500 border-2 border-white rounded-full"></span>
             </div>
-
+          </a>
+          <a
+            href="https://calendly.com/hitsubscription"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             {/* Text and Button */}
             <div className="flex flex-col">
               <p className="text-sm font-medium text-white">
@@ -40,16 +45,15 @@ const Calendaly = () => {
                 />
               </p>
             </div>
-
-            {/* Close Button */}
-            <button
-              onClick={() => setIsOpen(false)}
-              className=" text-gray-200 top-0 hover:text-gray-600 transition-all"
-            >
-              ✕
-            </button>
-          </div>
-        </a>
+          </a>
+          {/* Close Button */}
+          <button
+            onClick={() => setIsOpen(false)}
+            className=" text-gray-200 top-0 hover:text-gray-600 transition-all"
+          >
+            ✕
+          </button>
+        </div>
       )}
     </>
   );
