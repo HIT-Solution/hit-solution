@@ -91,12 +91,12 @@ const BlogDetail = () => {
         <p className="text-gray-700 text-lg">
           The blog you're looking for doesn't exist.
         </p>
-        <a
+        <Link
           href="/blogs"
           className="mt-6 bg-teal-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-700 transition duration-300"
         >
           Go Back to Blogs
-        </a>
+        </Link>
       </div>
     );
   }
